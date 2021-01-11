@@ -76,14 +76,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f76b7c530599e9272855b057edd7c81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_step2.html#a1f76b7c530599e9272855b057edd7c81">Step2</a> (double tf, double p0, double v0, double a0, double pf, double vf, double af, double vMax, double aMax, double jMax)</td></tr>
-<tr class="separator:a1f76b7c530599e9272855b057edd7c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe69952a167cd75e6617b8ed01655e9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_step2.html#abe69952a167cd75e6617b8ed01655e9d">get_profile</a> (<a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;profile, double vMax, double aMax, double jMax)</td></tr>
-<tr class="separator:abe69952a167cd75e6617b8ed01655e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad35bb1ec4a168842b335a6976f2d19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_step2.html#a8ad35bb1ec4a168842b335a6976f2d19">Step2</a> (double tf, double p0, double v0, double a0, double pf, double vf, double af, double vMax, double vMin, double aMax, double jMax)</td></tr>
+<tr class="separator:a8ad35bb1ec4a168842b335a6976f2d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124815248e5fee5792d61b712ae713d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_step2.html#a124815248e5fee5792d61b712ae713d9">get_profile</a> (<a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;profile)</td></tr>
+<tr class="separator:a124815248e5fee5792d61b712ae713d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1f76b7c530599e9272855b057edd7c81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f76b7c530599e9272855b057edd7c81">&#9670;&nbsp;</a></span>Step2()</h2>
+<a id="a8ad35bb1ec4a168842b335a6976f2d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad35bb1ec4a168842b335a6976f2d19">&#9670;&nbsp;</a></span>Step2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,6 +143,12 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aMax</em>, </td>
         </tr>
         <tr>
@@ -167,8 +173,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abe69952a167cd75e6617b8ed01655e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe69952a167cd75e6617b8ed01655e9d">&#9670;&nbsp;</a></span>get_profile()</h2>
+<a id="a124815248e5fee5792d61b712ae713d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124815248e5fee5792d61b712ae713d9">&#9670;&nbsp;</a></span>get_profile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,30 +183,8 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool ruckig::Step2::get_profile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;&#160;</td>
-          <td class="paramname"><em>profile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>profile</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vMax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>aMax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>jMax</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
