@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['update',['update',['../classruckig_1_1_quintic.html#a52b838209cc13a5ff869d6729133d714',1,'ruckig::Quintic::update()'],['../classruckig_1_1_reflexxes.html#ac744d53c51b54382b5f16654a58faf77',1,'ruckig::Reflexxes::update()'],['../classruckig_1_1_smoothie.html#afea6254a89b901105865d8f8e205b7f2',1,'ruckig::Smoothie::update()'],['../classruckig_1_1_ruckig.html#ae2d62f5b9cdc305aff68d94247621f90',1,'ruckig::Ruckig::update()']]]
+  ['v_5fat_5ft',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
+  ['validate_5finput',['validate_input',['../classruckig_1_1_smoothie.html#aea5beb601658796ebe001eb7ee9cf2b1',1,'ruckig::Smoothie::validate_input()'],['../classruckig_1_1_ruckig.html#ad3b2da32e4d62f44c95f05609281de3d',1,'ruckig::Ruckig::validate_input()']]]
 ];

@@ -8,7 +8,7 @@ var searchData=
   ['parameter_2ehpp',['parameter.hpp',['../parameter_8hpp.html',1,'']]],
   ['polyderi',['polyDeri',['../namespace_roots.html#ad5621822bfd80cb3eee0eb7e5fd9dbad',1,'Roots']]],
   ['polyeval',['polyEval',['../namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9',1,'Roots']]],
-  ['position',['Position',['../structruckig_1_1_input_parameter.html#ab041be6d207e660e97615050381a6697',1,'ruckig::InputParameter::Position()'],['../structruckig_1_1_input_parameter.html#a1ae97d0fe88eb66d2edd73933f37282ba52f5e0bc3859bc5f5e25130b6c7e8881',1,'ruckig::InputParameter::Position()']]],
+  ['position',['Position',['../classruckig_1_1_input_parameter.html#ab041be6d207e660e97615050381a6697',1,'ruckig::InputParameter::Position()'],['../classruckig_1_1_input_parameter.html#a1ae97d0fe88eb66d2edd73933f37282ba52f5e0bc3859bc5f5e25130b6c7e8881',1,'ruckig::InputParameter::Position()']]],
   ['position_2ecpp',['position.cpp',['../position_8cpp.html',1,'']]],
   ['power',['Power',['../namespaceruckig.html#ad684ea3ed8d724f9c18c27f3f06b812d',1,'ruckig']]],
   ['profile',['Profile',['../structruckig_1_1_profile.html',1,'ruckig']]],

@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4be438b72596d86d2de4f8d58c54feaf"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; double, double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a4be438b72596d86d2de4f8d58c54feaf">integrate</a> (double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double p0, double v0, double a0, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>)</td></tr>
-<tr class="memdesc:a4be438b72596d86d2de4f8d58c54feaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate with constant jerk for duration t. Returns new position, new velocity, and new acceleration.  <a href="#a4be438b72596d86d2de4f8d58c54feaf">More...</a><br /></td></tr>
-<tr class="separator:a4be438b72596d86d2de4f8d58c54feaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864171d5b4a88f8c7a64ca758273d463"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; double, double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a864171d5b4a88f8c7a64ca758273d463">integrate</a> (double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double p0, double v0, double a0, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>, double scale=1.0)</td></tr>
+<tr class="memdesc:a864171d5b4a88f8c7a64ca758273d463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate with constant jerk for duration t. Returns new position, new velocity, and new acceleration.  <a href="#a864171d5b4a88f8c7a64ca758273d463">More...</a><br /></td></tr>
+<tr class="separator:a864171d5b4a88f8c7a64ca758273d463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -451,8 +451,8 @@ template&lt;Teeth teeth&gt; </div>
 
 </div>
 </div>
-<a id="a4be438b72596d86d2de4f8d58c54feaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4be438b72596d86d2de4f8d58c54feaf">&#9670;&nbsp;</a></span>integrate()</h2>
+<a id="a864171d5b4a88f8c7a64ca758273d463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864171d5b4a88f8c7a64ca758273d463">&#9670;&nbsp;</a></span>integrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +488,13 @@ template&lt;Teeth teeth&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>j</em>&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>1.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
