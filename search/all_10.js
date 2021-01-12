@@ -7,6 +7,6 @@ var searchData=
   ['right',['right',['../structruckig_1_1_block_1_1_interval.html#a0c971d8968f07daa0850f93ac87644f7',1,'ruckig::Block::Interval']]],
   ['roots',['Roots',['../namespace_roots.html',1,'']]],
   ['roots_2ehpp',['roots.hpp',['../roots_8hpp.html',1,'']]],
-  ['ruckig',['Ruckig',['../classruckig_1_1_ruckig.html',1,'ruckig::Ruckig&lt; DOFs, THROW_ERROR &gt;'],['../namespaceruckig.html',1,'ruckig'],['../classruckig_1_1_ruckig.html#aaffb2227f9eadae3fee1ed3d2f66f189',1,'ruckig::Ruckig::Ruckig()']]],
+  ['ruckig',['Ruckig',['../classruckig_1_1_ruckig.html',1,'ruckig::Ruckig&lt; DOFs, throw_error &gt;'],['../namespaceruckig.html',1,'ruckig'],['../classruckig_1_1_ruckig.html#a4f6362edf2d6ee191255b1b760ced4a4',1,'ruckig::Ruckig::Ruckig()']]],
   ['ruckig_2ehpp',['ruckig.hpp',['../ruckig_8hpp.html',1,'']]]
 ];
