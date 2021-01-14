@@ -61,7 +61,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Roots Namespace Reference</div>  </div>
 </div><!--header-->
@@ -86,9 +87,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ac113c00ce73f1b9bdc12a1eb0278fb9a"><td class="memTemplParams" colspan="2">template&lt;typename F , typename DF &gt; </td></tr>
 <tr class="memitem:ac113c00ce73f1b9bdc12a1eb0278fb9a"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#ac113c00ce73f1b9bdc12a1eb0278fb9a">safeNewton</a> (const F &amp;func, const DF &amp;dfunc, const double &amp;l, const double &amp;h, const double &amp;tol, const int &amp;maxIts)</td></tr>
 <tr class="separator:ac113c00ce73f1b9bdc12a1eb0278fb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752c81e76f2d52e74d74871790cf991b"><td class="memTemplParams" colspan="2">template&lt;size_t N, size_t maxDblIts = 128&gt; </td></tr>
-<tr class="memitem:a752c81e76f2d52e74d74871790cf991b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#a752c81e76f2d52e74d74871790cf991b">shrinkInterval</a> (const std::array&lt; double, N &gt; &amp;p, double lbound, double ubound, double tol=1e-14)</td></tr>
-<tr class="separator:a752c81e76f2d52e74d74871790cf991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bdbe9eaa74e23ce25bea0953abd658"><td class="memTemplParams" colspan="2">template&lt;size_t N, size_t maxDblIts = 128&gt; </td></tr>
+<tr class="memitem:a56bdbe9eaa74e23ce25bea0953abd658"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#a56bdbe9eaa74e23ce25bea0953abd658">shrinkInterval</a> (const std::array&lt; double, N &gt; &amp;p, double lbound, double ubound)</td></tr>
+<tr class="separator:a56bdbe9eaa74e23ce25bea0953abd658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac8574d616e7281fb23b50d0611a1d5f0"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_roots.html#ac8574d616e7281fb23b50d0611a1d5f0">tolerance</a> {1e-14}</td></tr>
+<tr class="separator:ac8574d616e7281fb23b50d0611a1d5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad5621822bfd80cb3eee0eb7e5fd9dbad"></a>
@@ -219,8 +225,8 @@ template&lt;typename F , typename DF &gt; </div>
 
 </div>
 </div>
-<a id="a752c81e76f2d52e74d74871790cf991b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a752c81e76f2d52e74d74871790cf991b">&#9670;&nbsp;</a></span>shrinkInterval()</h2>
+<a id="a56bdbe9eaa74e23ce25bea0953abd658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56bdbe9eaa74e23ce25bea0953abd658">&#9670;&nbsp;</a></span>shrinkInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,13 +252,7 @@ template&lt;size_t N, size_t maxDblIts = 128&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ubound</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tol</em> = <code>1e-14</code>&#160;</td>
+          <td class="paramname"><em>ubound</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -435,6 +435,21 @@ template&lt;size_t N, size_t maxDblIts = 128&gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac8574d616e7281fb23b50d0611a1d5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8574d616e7281fb23b50d0611a1d5f0">&#9670;&nbsp;</a></span>tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double Roots::tolerance {1e-14}</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
