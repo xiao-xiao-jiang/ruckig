@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reflexxes',['Reflexxes',['../classruckig_1_1_reflexxes.html#abe1b314f846e99a7f33df326f2f88349',1,'ruckig::Reflexxes']]],
-  ['ruckig',['Ruckig',['../classruckig_1_1_ruckig.html#a4f6362edf2d6ee191255b1b760ced4a4',1,'ruckig::Ruckig']]]
+  ['quintic',['Quintic',['../classruckig_1_1_quintic.html#ade4cf6dd15a4484485f240e73cb483b7',1,'ruckig::Quintic']]]
 ];

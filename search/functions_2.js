@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['get_5fbrake_5ftrajectory',['get_brake_trajectory',['../classruckig_1_1_brake.html#acf76cd8a84b6efaefd0b5c4b1a8b914d',1,'ruckig::Brake']]],
-  ['get_5fprofile',['get_profile',['../classruckig_1_1_step1.html#a2c322c8762f9bb07b8e5b39f15c39c2f',1,'ruckig::Step1::get_profile()'],['../classruckig_1_1_step2.html#a124815248e5fee5792d61b712ae713d9',1,'ruckig::Step2::get_profile()']]],
-  ['get_5ftime',['get_time',['../classruckig_1_1_ruckig.html#a40c42e58f50131d80ee01f3b770a4b49',1,'ruckig::Ruckig']]]
+  ['check',['check',['../structruckig_1_1_profile.html#ab74eb4c222b923bb550f9529b2bdc5c5',1,'ruckig::Profile::check(double pf, double vf, double af, double jf, double vMax, double aMax)'],['../structruckig_1_1_profile.html#a22b682577e31e9aeb12cb5b6cb5eccc8',1,'ruckig::Profile::check(double tf, double pf, double vf, double af, double jf, double vMax, double aMax)'],['../structruckig_1_1_profile.html#abf220b49203e553d0ce1e8770f9ded08',1,'ruckig::Profile::check(double tf, double pf, double vf, double af, double jf, double vMax, double aMax, double jMax)']]]
 ];
