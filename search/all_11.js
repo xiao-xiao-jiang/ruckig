@@ -1,7 +1,6 @@
 var searchData=
 [
   ['safenewton',['safeNewton',['../namespace_roots.html#ac113c00ce73f1b9bdc12a1eb0278fb9a',1,'Roots']]],
-  ['scale',['scale',['../classruckig_1_1_input_parameter.html#ae3ee6e89557a484d5c25803754ca4e7e',1,'ruckig::InputParameter']]],
   ['shrinkinterval',['shrinkInterval',['../namespace_roots.html#a56bdbe9eaa74e23ce25bea0953abd658',1,'Roots']]],
   ['smoothie',['Smoothie',['../classruckig_1_1_smoothie.html',1,'ruckig::Smoothie&lt; DOFs &gt;'],['../classruckig_1_1_smoothie.html#a3c1537755b2476ed0ae2fb9600cf2066',1,'ruckig::Smoothie::Smoothie()']]],
   ['smoothie_2ehpp',['smoothie.hpp',['../smoothie_8hpp.html',1,'']]],
