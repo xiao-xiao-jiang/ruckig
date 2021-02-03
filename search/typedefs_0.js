@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input',['Input',['../classruckig_1_1_ruckig.html#ad7a0c7d08e7db33462c6a226c7b7ff29',1,'ruckig::Ruckig']]]
+  ['input',['Input',['../classruckig_1_1_ruckig.html#a5db066a26fa2a565a7c43d3defe2b9a5',1,'ruckig::Ruckig']]]
 ];
