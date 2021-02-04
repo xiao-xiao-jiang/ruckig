@@ -112,6 +112,7 @@ Functions</h2></td></tr>
 <tr class="separator:a46343db1e513e5d7ffe22eadb17ffb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb3f4c2081b443153e18d253bf2afd9"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:a0cb3f4c2081b443153e18d253bf2afd9"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">Roots::polyEval</a> (std::array&lt; double, N &gt; p, double x)</td></tr>
+<tr class="memdesc:a0cb3f4c2081b443153e18d253bf2afd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a polynomial of order N at x.  <a href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">More...</a><br /></td></tr>
 <tr class="separator:a0cb3f4c2081b443153e18d253bf2afd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5621822bfd80cb3eee0eb7e5fd9dbad"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:ad5621822bfd80cb3eee0eb7e5fd9dbad"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; double, N-1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#ad5621822bfd80cb3eee0eb7e5fd9dbad">Roots::polyDeri</a> (const std::array&lt; double, N &gt; &amp;coeffs)</td></tr>
@@ -119,9 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aea8a4d104c9c227ff4d13979bce7a378"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:aea8a4d104c9c227ff4d13979bce7a378"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; double, N-1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#aea8a4d104c9c227ff4d13979bce7a378">Roots::polyMonicDeri</a> (const std::array&lt; double, N &gt; &amp;monic_coeffs)</td></tr>
 <tr class="separator:aea8a4d104c9c227ff4d13979bce7a378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac113c00ce73f1b9bdc12a1eb0278fb9a"><td class="memTemplParams" colspan="2">template&lt;typename F , typename DF &gt; </td></tr>
-<tr class="memitem:ac113c00ce73f1b9bdc12a1eb0278fb9a"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#ac113c00ce73f1b9bdc12a1eb0278fb9a">Roots::safeNewton</a> (const F &amp;func, const DF &amp;dfunc, const double &amp;l, const double &amp;h, const double &amp;tol, const int &amp;maxIts)</td></tr>
-<tr class="separator:ac113c00ce73f1b9bdc12a1eb0278fb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636d5ed9aa9082638d9e0b36292ef43a"><td class="memTemplParams" colspan="2">template&lt;size_t maxIts, typename F , typename DF &gt; </td></tr>
+<tr class="memitem:a636d5ed9aa9082638d9e0b36292ef43a"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#a636d5ed9aa9082638d9e0b36292ef43a">Roots::safeNewton</a> (const F &amp;func, const DF &amp;dfunc, double l, double h, const double tol)</td></tr>
+<tr class="separator:a636d5ed9aa9082638d9e0b36292ef43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56bdbe9eaa74e23ce25bea0953abd658"><td class="memTemplParams" colspan="2">template&lt;size_t N, size_t maxDblIts = 128&gt; </td></tr>
 <tr class="memitem:a56bdbe9eaa74e23ce25bea0953abd658"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_roots.html#a56bdbe9eaa74e23ce25bea0953abd658">Roots::shrinkInterval</a> (const std::array&lt; double, N &gt; &amp;p, double lbound, double ubound)</td></tr>
 <tr class="separator:a56bdbe9eaa74e23ce25bea0953abd658"><td class="memSeparator" colspan="2">&#160;</td></tr>
