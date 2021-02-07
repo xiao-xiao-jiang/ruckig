@@ -96,15 +96,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae033489c154d2226fe443f4ee328826f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad90bcd408b4edeacc3ea6a0e1c6439cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb">update</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;input, <a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;output)</td></tr>
 <tr class="separator:ad90bcd408b4edeacc3ea6a0e1c6439cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab571d47b6bbe2912c3340032070c8bd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#ab571d47b6bbe2912c3340032070c8bd3">at_time</a> (double time, <a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;output) const</td></tr>
-<tr class="memdesc:ab571d47b6bbe2912c3340032070c8bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output parameter for the given time on the current trajectory.  <a href="#ab571d47b6bbe2912c3340032070c8bd3">More...</a><br /></td></tr>
-<tr class="separator:ab571d47b6bbe2912c3340032070c8bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af785195a33ebb17d432208d3b1db5fe6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#af785195a33ebb17d432208d3b1db5fe6">get_time</a> () const</td></tr>
-<tr class="memdesc:af785195a33ebb17d432208d3b1db5fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current time of the trajectory.  <a href="#af785195a33ebb17d432208d3b1db5fe6">More...</a><br /></td></tr>
-<tr class="separator:af785195a33ebb17d432208d3b1db5fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9023ad1419b379f745bb1187b83ae5"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::pair&lt; double, double &gt;, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#aba9023ad1419b379f745bb1187b83ae5">get_position_range</a> ()</td></tr>
-<tr class="memdesc:aba9023ad1419b379f745bb1187b83ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the min/max values of the position for each DoF and the current trajectory.  <a href="#aba9023ad1419b379f745bb1187b83ae5">More...</a><br /></td></tr>
-<tr class="separator:aba9023ad1419b379f745bb1187b83ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -207,104 +198,6 @@ template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab571d47b6bbe2912c3340032070c8bd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab571d47b6bbe2912c3340032070c8bd3">&#9670;&nbsp;</a></span>at_time()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::at_time </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the output parameter for the given time on the current trajectory. </p>
-
-</div>
-</div>
-<a id="aba9023ad1419b379f745bb1187b83ae5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba9023ad1419b379f745bb1187b83ae5">&#9670;&nbsp;</a></span>get_position_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;std::pair&lt;double, double&gt;, DOFs&gt; <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::get_position_range </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the min/max values of the position for each DoF and the current trajectory. </p>
-
-</div>
-</div>
-<a id="af785195a33ebb17d432208d3b1db5fe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af785195a33ebb17d432208d3b1db5fe6">&#9670;&nbsp;</a></span>get_time()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::get_time </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current time of the trajectory. </p>
-
-</div>
-</div>
 <a id="ad90bcd408b4edeacc3ea6a0e1c6439cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad90bcd408b4edeacc3ea6a0e1c6439cb">&#9670;&nbsp;</a></span>update()</h2>
 

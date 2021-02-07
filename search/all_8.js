@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['independent_5fmin_5fdurations',['independent_min_durations',['../structruckig_1_1_output_parameter.html#a02224131da87b3bfc715e272243640c2',1,'ruckig::OutputParameter']]],
+  ['independent_5fmin_5fdurations',['independent_min_durations',['../structruckig_1_1_trajectory.html#a6f851f019da9a96a8029df7458b0ebad',1,'ruckig::Trajectory']]],
   ['input',['Input',['../classruckig_1_1_ruckig.html#a5db066a26fa2a565a7c43d3defe2b9a5',1,'ruckig::Ruckig']]],
   ['inputparameter',['InputParameter',['../classruckig_1_1_input_parameter.html',1,'ruckig::InputParameter&lt; DOFs &gt;'],['../classruckig_1_1_input_parameter.html#a111980a954ea264531bc974069cbe2a6',1,'ruckig::InputParameter::InputParameter()']]],
   ['integrate',['integrate',['../structruckig_1_1_profile.html#a4be438b72596d86d2de4f8d58c54feaf',1,'ruckig::Profile']]],

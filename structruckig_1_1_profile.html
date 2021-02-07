@@ -78,7 +78,7 @@ $(function() {
 <p>The state profile for position, velocity, acceleration and jerk for a single DoF.  
  <a href="structruckig_1_1_profile.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="profile_8hpp_source.html">profile.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="trajectory_8hpp_source.html">trajectory.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -107,16 +107,16 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab74eb4c222b923bb550f9529b2bdc5c5"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
-<tr class="memitem:ab74eb4c222b923bb550f9529b2bdc5c5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ab74eb4c222b923bb550f9529b2bdc5c5">check</a> (double pf, double vf, double af, double jf, double vMax, double aMax)</td></tr>
+<tr class="memitem:ab74eb4c222b923bb550f9529b2bdc5c5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ab74eb4c222b923bb550f9529b2bdc5c5">check</a> (double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>, double jf, double vMax, double aMax)</td></tr>
 <tr class="separator:ab74eb4c222b923bb550f9529b2bdc5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a309d0e733646d80e9f5d7ab3984c73cd"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
-<tr class="memitem:a309d0e733646d80e9f5d7ab3984c73cd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a309d0e733646d80e9f5d7ab3984c73cd">check</a> ([[maybe_unused]] double tf, double pf, double vf, double af, double jf, double vMax, double aMax)</td></tr>
+<tr class="memitem:a309d0e733646d80e9f5d7ab3984c73cd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a309d0e733646d80e9f5d7ab3984c73cd">check</a> ([[maybe_unused]] double tf, double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>, double jf, double vMax, double aMax)</td></tr>
 <tr class="separator:a309d0e733646d80e9f5d7ab3984c73cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf220b49203e553d0ce1e8770f9ded08"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
-<tr class="memitem:abf220b49203e553d0ce1e8770f9ded08"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#abf220b49203e553d0ce1e8770f9ded08">check</a> (double tf, double pf, double vf, double af, double jf, double vMax, double aMax, double jMax)</td></tr>
+<tr class="memitem:abf220b49203e553d0ce1e8770f9ded08"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#abf220b49203e553d0ce1e8770f9ded08">check</a> (double tf, double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>, double jf, double vMax, double aMax, double jMax)</td></tr>
 <tr class="separator:abf220b49203e553d0ce1e8770f9ded08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe6ddc95b1dd2207a5f2528938af9b1"><td class="memItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a0fe6ddc95b1dd2207a5f2528938af9b1">get_position_range</a> ()</td></tr>
-<tr class="separator:a0fe6ddc95b1dd2207a5f2528938af9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71134f06ed24ff2481c20e9dd4bf84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d">get_position_extrema</a> () const</td></tr>
+<tr class="separator:aa71134f06ed24ff2481c20e9dd4bf84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9938a2febac8bb21ee77b2827c015db"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ad9938a2febac8bb21ee77b2827c015db">to_string</a> () const</td></tr>
 <tr class="separator:ad9938a2febac8bb21ee77b2827c015db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -125,10 +125,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4be438b72596d86d2de4f8d58c54feaf"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; double, double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a4be438b72596d86d2de4f8d58c54feaf">integrate</a> (double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double p0, double v0, double a0, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>)</td></tr>
 <tr class="memdesc:a4be438b72596d86d2de4f8d58c54feaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate with constant jerk for duration t. Returns new position, new velocity, and new acceleration.  <a href="#a4be438b72596d86d2de4f8d58c54feaf">More...</a><br /></td></tr>
 <tr class="separator:a4be438b72596d86d2de4f8d58c54feaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456d77b054324d7c3075c697ed677afd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a456d77b054324d7c3075c697ed677afd">check_position_extremum</a> (double t_ext, double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double <a class="el" href="structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0">p</a>, double <a class="el" href="structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722">v</a>, double <a class="el" href="structruckig_1_1_profile.html#a84bdf8bde47451b809c9acd1937b9dfd">a</a>, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>, double &amp;min, double &amp;max)</td></tr>
-<tr class="separator:a456d77b054324d7c3075c697ed677afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18f44ecab5ae7289e69418a3a5fd5580"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a18f44ecab5ae7289e69418a3a5fd5580">check_step_for_position_extremum</a> (double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double <a class="el" href="structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0">p</a>, double <a class="el" href="structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722">v</a>, double <a class="el" href="structruckig_1_1_profile.html#a84bdf8bde47451b809c9acd1937b9dfd">a</a>, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>, double &amp;min, double &amp;max)</td></tr>
-<tr class="separator:a18f44ecab5ae7289e69418a3a5fd5580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3917ca8e3fc834a0f811646354014143"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a3917ca8e3fc834a0f811646354014143">check_position_extremum</a> (double t_ext, double <a class="el" href="structruckig_1_1_profile.html#aa214b57a822aec2d7c952a7156b3cd5f">t_sum</a>, double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double <a class="el" href="structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0">p</a>, double <a class="el" href="structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722">v</a>, double <a class="el" href="structruckig_1_1_profile.html#a84bdf8bde47451b809c9acd1937b9dfd">a</a>, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>, <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> &amp;ext)</td></tr>
+<tr class="separator:a3917ca8e3fc834a0f811646354014143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc768d1eeadb759a23a07f789f69f5c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a7cc768d1eeadb759a23a07f789f69f5c">check_step_for_position_extremum</a> (double <a class="el" href="structruckig_1_1_profile.html#aa214b57a822aec2d7c952a7156b3cd5f">t_sum</a>, double <a class="el" href="structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513">t</a>, double <a class="el" href="structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0">p</a>, double <a class="el" href="structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722">v</a>, double <a class="el" href="structruckig_1_1_profile.html#a84bdf8bde47451b809c9acd1937b9dfd">a</a>, double <a class="el" href="structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5">j</a>, <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> &amp;ext)</td></tr>
+<tr class="separator:a7cc768d1eeadb759a23a07f789f69f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -150,6 +150,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9037fdd1f5a069723d4a48a6b3b08722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b074b9392dc0636e214b84ca3b42c0"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0">p</a></td></tr>
 <tr class="separator:a30b074b9392dc0636e214b84ca3b42c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81b22ceab3b0fc5d46239130745db64"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a></td></tr>
+<tr class="memdesc:ae81b22ceab3b0fc5d46239130745db64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target (final) kinematic state.  <a href="#ae81b22ceab3b0fc5d46239130745db64">More...</a><br /></td></tr>
+<tr class="separator:ae81b22ceab3b0fc5d46239130745db64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6f5139d98d45428f32d0efeb38d909"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a></td></tr>
+<tr class="separator:aea6f5139d98d45428f32d0efeb38d909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73126a23f9fee9c859b3b832f8b1ab8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a></td></tr>
+<tr class="separator:ab73126a23f9fee9c859b3b832f8b1ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4de687cd66d2f96402430b769e29fe4"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#aa4de687cd66d2f96402430b769e29fe4">t_brake</a></td></tr>
 <tr class="memdesc:aa4de687cd66d2f96402430b769e29fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total time of the braking segments.  <a href="#aa4de687cd66d2f96402430b769e29fe4">More...</a><br /></td></tr>
 <tr class="separator:aa4de687cd66d2f96402430b769e29fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,8 +464,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
-<a id="a456d77b054324d7c3075c697ed677afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a456d77b054324d7c3075c697ed677afd">&#9670;&nbsp;</a></span>check_position_extremum()</h2>
+<a id="a3917ca8e3fc834a0f811646354014143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3917ca8e3fc834a0f811646354014143">&#9670;&nbsp;</a></span>check_position_extremum()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,6 +483,12 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t_sum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
@@ -505,14 +518,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> &amp;&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -529,8 +536,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
-<a id="a18f44ecab5ae7289e69418a3a5fd5580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18f44ecab5ae7289e69418a3a5fd5580">&#9670;&nbsp;</a></span>check_step_for_position_extremum()</h2>
+<a id="a7cc768d1eeadb759a23a07f789f69f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc768d1eeadb759a23a07f789f69f5c">&#9670;&nbsp;</a></span>check_step_for_position_extremum()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,6 +549,12 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
           <td class="memname">static void ruckig::Profile::check_step_for_position_extremum </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t_sum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
@@ -571,14 +584,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> &amp;&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -595,8 +602,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
-<a id="a0fe6ddc95b1dd2207a5f2528938af9b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fe6ddc95b1dd2207a5f2528938af9b1">&#9670;&nbsp;</a></span>get_position_range()</h2>
+<a id="aa71134f06ed24ff2481c20e9dd4bf84d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71134f06ed24ff2481c20e9dd4bf84d">&#9670;&nbsp;</a></span>get_position_extrema()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,10 +612,10 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;double, double&gt; ruckig::Profile::get_position_range </td>
+          <td class="memname"><a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> ruckig::Profile::get_position_extrema </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -730,6 +737,20 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
+<a id="ab73126a23f9fee9c859b3b832f8b1ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73126a23f9fee9c859b3b832f8b1ab8">&#9670;&nbsp;</a></span>af</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ruckig::Profile::af</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af038ea1d3c1f9ee1069433a7bf86a01e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af038ea1d3c1f9ee1069433a7bf86a01e">&#9670;&nbsp;</a></span>direction</h2>
 
@@ -828,6 +849,22 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
+<a id="ae81b22ceab3b0fc5d46239130745db64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81b22ceab3b0fc5d46239130745db64">&#9670;&nbsp;</a></span>pf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ruckig::Profile::pf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Target (final) kinematic state. </p>
+
+</div>
+</div>
 <a id="a2bc5950650548a42934a1c06f13a5513"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bc5950650548a42934a1c06f13a5513">&#9670;&nbsp;</a></span>t</h2>
 
@@ -916,8 +953,22 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
+<a id="aea6f5139d98d45428f32d0efeb38d909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6f5139d98d45428f32d0efeb38d909">&#9670;&nbsp;</a></span>vf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ruckig::Profile::vf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/ruckig/ruckig/include/ruckig/<a class="el" href="profile_8hpp_source.html">profile.hpp</a></li>
+<li>/home/runner/work/ruckig/ruckig/include/ruckig/<a class="el" href="trajectory_8hpp_source.html">trajectory.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
