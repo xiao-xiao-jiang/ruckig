@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['uddu',['UDDU',['../structruckig_1_1_profile.html#a3e29df91c25f6764d3d6580a15212c2ea735730012ca9aa99e91edbcbcb2e95e8',1,'ruckig::Profile']]],
-  ['udud',['UDUD',['../structruckig_1_1_profile.html#a3e29df91c25f6764d3d6580a15212c2eab8849b1984bdab156402b5d1c97945b3',1,'ruckig::Profile']]],
-  ['up',['UP',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739afbaedde498cdead4f2780217646e9ba1',1,'ruckig::Profile']]]
+  ['timealways',['TimeAlways',['../classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252da90f6ad7a6c79fcdbccfa0c748573c8c8',1,'ruckig::InputParameter']]],
+  ['timeifnecessary',['TimeIfNecessary',['../classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252da7ddc8e24add04a76f06998f3f12404e2',1,'ruckig::InputParameter']]]
 ];

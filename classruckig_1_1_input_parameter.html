@@ -86,6 +86,11 @@ Public Types</h2></td></tr>
 <a class="el" href="classruckig_1_1_input_parameter.html#a1ae97d0fe88eb66d2edd73933f37282ba88156d46910a2d733443c339a9231d12">Type::Velocity</a>
  }</td></tr>
 <tr class="separator:a1ae97d0fe88eb66d2edd73933f37282b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1188a44f84ed73ddb255abb12daf252d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d">Synchronization</a> { <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252da90f6ad7a6c79fcdbccfa0c748573c8c8">Synchronization::TimeAlways</a>, 
+<a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252da7ddc8e24add04a76f06998f3f12404e2">Synchronization::TimeIfNecessary</a>, 
+<a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252da6adf97f83acf6453d4a6a4b1070f3754">Synchronization::None</a>
+ }</td></tr>
+<tr class="separator:a1188a44f84ed73ddb255abb12daf252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50fdda7cd9e126071069d055196d8ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a> = std::array&lt; double, DOFs &gt;</td></tr>
 <tr class="separator:ae50fdda7cd9e126071069d055196d8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -102,6 +107,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab041be6d207e660e97615050381a6697"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classruckig_1_1_input_parameter.html#a1ae97d0fe88eb66d2edd73933f37282b">ruckig::InputParameter::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#ab041be6d207e660e97615050381a6697">Position</a></td></tr>
 <tr class="separator:ab041be6d207e660e97615050381a6697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202f47103ec21fa967c5f7d2d8b5b1c0"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d">ruckig::InputParameter::Synchronization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a202f47103ec21fa967c5f7d2d8b5b1c0">TimeAlways</a></td></tr>
+<tr class="separator:a202f47103ec21fa967c5f7d2d8b5b1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e3e74e833753cbf8824db5a2215ce5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a68e3e74e833753cbf8824db5a2215ce5">current_position</a></td></tr>
 <tr class="separator:a68e3e74e833753cbf8824db5a2215ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ebaaf77bffd32fb36f575b0e8fb154d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a0ebaaf77bffd32fb36f575b0e8fb154d">current_velocity</a> {}</td></tr>
@@ -157,6 +164,35 @@ template&lt;size_t DOFs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a1188a44f84ed73ddb255abb12daf252d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1188a44f84ed73ddb255abb12daf252d">&#9670;&nbsp;</a></span>Synchronization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d">ruckig::InputParameter::Synchronization</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da90f6ad7a6c79fcdbccfa0c748573c8c8"></a>TimeAlways&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da7ddc8e24add04a76f06998f3f12404e2"></a>TimeIfNecessary&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a1ae97d0fe88eb66d2edd73933f37282b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ae97d0fe88eb66d2edd73933f37282b">&#9670;&nbsp;</a></span>Type</h2>
 
@@ -512,6 +548,22 @@ template&lt;size_t DOFs&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a> <a class="el" href="classruckig_1_1_input_parameter.html">ruckig::InputParameter</a>&lt; DOFs &gt;::target_velocity {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a202f47103ec21fa967c5f7d2d8b5b1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a202f47103ec21fa967c5f7d2d8b5b1c0">&#9670;&nbsp;</a></span>TimeAlways</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d">ruckig::InputParameter::Synchronization</a> <a class="el" href="classruckig_1_1_input_parameter.html">ruckig::InputParameter</a>&lt; DOFs &gt;::TimeAlways</td>
         </tr>
       </table>
 </div><div class="memdoc">

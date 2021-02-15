@@ -12,5 +12,6 @@ var searchData=
   ['step1_2ecpp',['step1.cpp',['../step1_8cpp.html',1,'']]],
   ['step2',['Step2',['../classruckig_1_1_step2.html',1,'ruckig::Step2'],['../classruckig_1_1_step2.html#abb20f7f1412e9b21d9a80165f2ef4a0a',1,'ruckig::Step2::Step2()']]],
   ['step2_2ecpp',['step2.cpp',['../step2_8cpp.html',1,'']]],
-  ['steps_2ehpp',['steps.hpp',['../steps_8hpp.html',1,'']]]
+  ['steps_2ehpp',['steps.hpp',['../steps_8hpp.html',1,'']]],
+  ['synchronization',['Synchronization',['../classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d',1,'ruckig::InputParameter']]]
 ];
