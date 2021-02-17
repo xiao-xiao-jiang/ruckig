@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['v_5fat_5fa_5fzero',['v_at_a_zero',['../namespaceruckig.html#a7fd5b73571b4274e4062b57ddb086714',1,'ruckig']]],
-  ['v_5fat_5ft',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
-  ['validate_5finput',['validate_input',['../classruckig_1_1_smoothie.html#aea5beb601658796ebe001eb7ee9cf2b1',1,'ruckig::Smoothie::validate_input()'],['../classruckig_1_1_ruckig.html#ae033489c154d2226fe443f4ee328826f',1,'ruckig::Ruckig::validate_input()']]]
+  ['update',['update',['../classruckig_1_1_quintic.html#a52b838209cc13a5ff869d6729133d714',1,'ruckig::Quintic::update()'],['../classruckig_1_1_reflexxes.html#ac744d53c51b54382b5f16654a58faf77',1,'ruckig::Reflexxes::update()'],['../classruckig_1_1_smoothie.html#afea6254a89b901105865d8f8e205b7f2',1,'ruckig::Smoothie::update()'],['../classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb',1,'ruckig::Ruckig::update()']]]
 ];

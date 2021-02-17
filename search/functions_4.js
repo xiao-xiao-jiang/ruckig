@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['inputparameter',['InputParameter',['../classruckig_1_1_input_parameter.html#a111980a954ea264531bc974069cbe2a6',1,'ruckig::InputParameter']]],
-  ['integrate',['integrate',['../structruckig_1_1_profile.html#a4be438b72596d86d2de4f8d58c54feaf',1,'ruckig::Profile']]],
-  ['interval',['Interval',['../structruckig_1_1_block_1_1_interval.html#a34b14f1657ad300e3c0bc9301b819213',1,'ruckig::Block::Interval']]],
-  ['is_5fblocked',['is_blocked',['../structruckig_1_1_block.html#aa9e3ec5548f2b8da43eac0384ee51948',1,'ruckig::Block']]]
+  ['get_5fbrake_5ftrajectory',['get_brake_trajectory',['../classruckig_1_1_brake.html#a7ef69c55a821c895883517be176b2d8b',1,'ruckig::Brake']]],
+  ['get_5fposition_5fextrema',['get_position_extrema',['../structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d',1,'ruckig::Profile::get_position_extrema()'],['../structruckig_1_1_trajectory.html#a9cb3fd0e4d286e893cc520766016d549',1,'ruckig::Trajectory::get_position_extrema()']]],
+  ['get_5fprofile',['get_profile',['../classruckig_1_1_step1.html#ad18be1b34895513f86d752eb3be672c0',1,'ruckig::Step1::get_profile()'],['../classruckig_1_1_step2.html#a124815248e5fee5792d61b712ae713d9',1,'ruckig::Step2::get_profile()']]]
 ];
