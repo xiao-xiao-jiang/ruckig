@@ -124,6 +124,11 @@ $(function() {
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> duration; <span class="comment">// Duration of the trajectory</span></div><div class="line">std::array&lt;double, DOFs&gt; independent_min_durations; <span class="comment">// Time-optimal profile for each independent DoF</span></div><div class="line"></div><div class="line">&lt;...&gt; at_time(<span class="keywordtype">double</span> time); <span class="comment">// Get the kinematic state of the trajectory at a given time</span></div><div class="line">&lt;...&gt; get_position_extrema(); <span class="comment">// Returns information about the position extrema and their times</span></div></div><!-- fragment --><p> We refer to the API documentation for the exact signature.</p>
 <h2>Tests and Numerical Stability</h2>
 <p>The current test suite validates over 1.000.000.000 random trajectories. The numerical exactness is tested for the final position and final velocity to be within <code>1e-8</code>, for the velocity, acceleration and jerk limit to be withing <code>1e-12</code>, and for the final acceleration as well to be within a numerical error of <code>1e-12</code>. The maximal supported trajectory duration is <code>7e3</code>, which sounds short but should suffice for most applications seeking for time-optimality. Note that Ruckig will also output values outside of this range, there is however no guarantee for correctness.</p>
+<h2>Benchmark</h2>
+<p>We find that Ruckig is around twice as fast as Reflexxes Type IV on our hardware.</p>
+<div class="image">
+<img src="https://github.com/pantor/ruckig/raw/master/doc/benchmark.png?raw=true" alt="Benchmark"/>
+</div>
 <h2>Development</h2>
 <p>Ruckig is written in C++17. It is currently tested against following versions</p>
 <ul>
