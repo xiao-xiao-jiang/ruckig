@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['synchronization',['Synchronization',['../classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d',1,'ruckig::InputParameter']]]
+  ['result',['Result',['../namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9',1,'ruckig']]]
 ];

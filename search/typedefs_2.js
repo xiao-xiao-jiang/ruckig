@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector',['Vector',['../classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce',1,'ruckig::InputParameter']]]
+  ['limits',['Limits',['../namespaceruckig.html#a13481e645093ae0bf190682a088f001d',1,'ruckig']]]
 ];

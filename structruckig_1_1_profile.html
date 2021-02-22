@@ -78,7 +78,7 @@ $(function() {
 <p>The state profile for position, velocity, acceleration and jerk for a single DoF.  
  <a href="structruckig_1_1_profile.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="trajectory_8hpp_source.html">trajectory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="profile_8hpp_source.html">profile.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -106,15 +106,18 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af714c53a7af66842d34fa1c3e80b88d7"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
-<tr class="memitem:af714c53a7af66842d34fa1c3e80b88d7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#af714c53a7af66842d34fa1c3e80b88d7">check</a> (double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>, double jf, double vMax, double aMax, double aMin)</td></tr>
-<tr class="separator:af714c53a7af66842d34fa1c3e80b88d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505aa8a95ba274ad32a387f2051881b1"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
-<tr class="memitem:a505aa8a95ba274ad32a387f2051881b1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a505aa8a95ba274ad32a387f2051881b1">check</a> ([[maybe_unused]] double tf, double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>, double jf, double vMax, double aMax, double aMin)</td></tr>
-<tr class="separator:a505aa8a95ba274ad32a387f2051881b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216f029703be72251ef38a6e42dee77a"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
-<tr class="memitem:a216f029703be72251ef38a6e42dee77a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a216f029703be72251ef38a6e42dee77a">check</a> (double tf, double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>, double jf, double vMax, double aMax, double aMin, double jMax)</td></tr>
-<tr class="separator:a216f029703be72251ef38a6e42dee77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe24e5ffae0b039e9345a62c52510be7"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
+<tr class="memitem:afe24e5ffae0b039e9345a62c52510be7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#afe24e5ffae0b039e9345a62c52510be7">check</a> (double jf, double aMax, double aMin)</td></tr>
+<tr class="separator:afe24e5ffae0b039e9345a62c52510be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982cc20d0fefce298992c9d92bc2815c"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
+<tr class="memitem:a982cc20d0fefce298992c9d92bc2815c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a982cc20d0fefce298992c9d92bc2815c">check</a> (double jf, double vMax, double aMax, double aMin)</td></tr>
+<tr class="separator:a982cc20d0fefce298992c9d92bc2815c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215a6d742190d89a91bee6e95981cc74"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
+<tr class="memitem:a215a6d742190d89a91bee6e95981cc74"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#a215a6d742190d89a91bee6e95981cc74">check</a> ([[maybe_unused]] double tf, double jf, double vMax, double aMax, double aMin)</td></tr>
+<tr class="separator:a215a6d742190d89a91bee6e95981cc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4335b4b56a5ee9c5a260f2fdd2f01cb"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
+<tr class="memitem:ad4335b4b56a5ee9c5a260f2fdd2f01cb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ad4335b4b56a5ee9c5a260f2fdd2f01cb">check</a> (double tf, double jf, double vMax, double aMax, double aMin, double jMax)</td></tr>
+<tr class="separator:ad4335b4b56a5ee9c5a260f2fdd2f01cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71134f06ed24ff2481c20e9dd4bf84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d">get_position_extrema</a> () const</td></tr>
 <tr class="separator:aa71134f06ed24ff2481c20e9dd4bf84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9938a2febac8bb21ee77b2827c015db"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ad9938a2febac8bb21ee77b2827c015db">to_string</a> () const</td></tr>
@@ -260,8 +263,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af714c53a7af66842d34fa1c3e80b88d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af714c53a7af66842d34fa1c3e80b88d7">&#9670;&nbsp;</a></span>check() <span class="overload">[1/3]</span></h2>
+<a id="afe24e5ffae0b039e9345a62c52510be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe24e5ffae0b039e9345a62c52510be7">&#9670;&nbsp;</a></span>check() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,23 +278,49 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
           <td class="memname">bool ruckig::Profile::check </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>pf</em>, </td>
+          <td class="paramname"><em>jf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vf</em>, </td>
+          <td class="paramname"><em>aMax</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>af</em>, </td>
+          <td class="paramname"><em>aMin</em>&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a982cc20d0fefce298992c9d92bc2815c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982cc20d0fefce298992c9d92bc2815c">&#9670;&nbsp;</a></span>check() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ruckig::Profile::check </td>
+          <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>jf</em>, </td>
         </tr>
@@ -328,8 +357,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
-<a id="a505aa8a95ba274ad32a387f2051881b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a505aa8a95ba274ad32a387f2051881b1">&#9670;&nbsp;</a></span>check() <span class="overload">[2/3]</span></h2>
+<a id="a215a6d742190d89a91bee6e95981cc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215a6d742190d89a91bee6e95981cc74">&#9670;&nbsp;</a></span>check() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,24 +378,6 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>pf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>af</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>jf</em>, </td>
         </tr>
         <tr>
@@ -402,8 +413,8 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 
 </div>
 </div>
-<a id="a216f029703be72251ef38a6e42dee77a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a216f029703be72251ef38a6e42dee77a">&#9670;&nbsp;</a></span>check() <span class="overload">[3/3]</span></h2>
+<a id="ad4335b4b56a5ee9c5a260f2fdd2f01cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4335b4b56a5ee9c5a260f2fdd2f01cb">&#9670;&nbsp;</a></span>check() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,24 +429,6 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>tf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>pf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>af</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -986,7 +979,7 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/ruckig/ruckig/include/ruckig/<a class="el" href="trajectory_8hpp_source.html">trajectory.hpp</a></li>
+<li>/home/runner/work/ruckig/ruckig/include/ruckig/<a class="el" href="profile_8hpp_source.html">profile.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

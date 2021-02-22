@@ -70,6 +70,9 @@ $(function() {
 <li>a_brakes
 : <a class="el" href="structruckig_1_1_profile.html#acf1d4286370316217cfa7f7d10eebc16">ruckig::Profile</a>
 </li>
+<li>add_interval()
+: <a class="el" href="structruckig_1_1_block.html#a622f0f4137bac1f7e54ca474de9131b6">ruckig::Block</a>
+</li>
 <li>af
 : <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">ruckig::Profile</a>
 </li>
@@ -94,11 +97,14 @@ $(function() {
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>calculate_block()
+: <a class="el" href="structruckig_1_1_block.html#a834329fe8e6f33f28fdca1c1b04e1161">ruckig::Block</a>
+</li>
 <li>calculation_duration
 : <a class="el" href="structruckig_1_1_output_parameter.html#a9cbad641e20fc589a3f20e6a4820216d">ruckig::OutputParameter&lt; DOFs &gt;</a>
 </li>
 <li>check()
-: <a class="el" href="structruckig_1_1_profile.html#af714c53a7af66842d34fa1c3e80b88d7">ruckig::Profile</a>
+: <a class="el" href="structruckig_1_1_profile.html#a982cc20d0fefce298992c9d92bc2815c">ruckig::Profile</a>
 </li>
 <li>check_position_extremum()
 : <a class="el" href="structruckig_1_1_profile.html#a3917ca8e3fc834a0f811646354014143">ruckig::Profile</a>
@@ -156,16 +162,21 @@ $(function() {
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
-<li>get_brake_trajectory()
-: <a class="el" href="classruckig_1_1_brake.html#a7ef69c55a821c895883517be176b2d8b">ruckig::Brake</a>
+<li>get_position_brake_trajectory()
+: <a class="el" href="classruckig_1_1_brake.html#acf8c354388ca7a743e001b4f663dc29c">ruckig::Brake</a>
 </li>
 <li>get_position_extrema()
 : <a class="el" href="structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d">ruckig::Profile</a>
 , <a class="el" href="structruckig_1_1_trajectory.html#a9cb3fd0e4d286e893cc520766016d549">ruckig::Trajectory&lt; DOFs &gt;</a>
 </li>
 <li>get_profile()
-: <a class="el" href="classruckig_1_1_step1.html#ad18be1b34895513f86d752eb3be672c0">ruckig::Step1</a>
-, <a class="el" href="classruckig_1_1_step2.html#a124815248e5fee5792d61b712ae713d9">ruckig::Step2</a>
+: <a class="el" href="classruckig_1_1_position1.html#a2d434e0531e5c09ea82f5ffb028ca6ad">ruckig::Position1</a>
+, <a class="el" href="classruckig_1_1_position2.html#aebc10f9083d1d416de0ec55c5d9df41e">ruckig::Position2</a>
+, <a class="el" href="classruckig_1_1_velocity1.html#a329985e5eb6de4a03caed82de9227a55">ruckig::Velocity1</a>
+, <a class="el" href="classruckig_1_1_velocity2.html#a1cb29a0cc50d039ed7ffaadd9fa43ef3">ruckig::Velocity2</a>
+</li>
+<li>get_velocity_brake_trajectory()
+: <a class="el" href="classruckig_1_1_brake.html#a89868f2ff622c335ce300ce6e22733bd">ruckig::Brake</a>
 </li>
 </ul>
 
@@ -185,6 +196,9 @@ $(function() {
 </li>
 <li>integrate()
 : <a class="el" href="structruckig_1_1_profile.html#a4be438b72596d86d2de4f8d58c54feaf">ruckig::Profile</a>
+</li>
+<li>Interface
+: <a class="el" href="classruckig_1_1_input_parameter.html#a88b2bfda6eb02d24370b168e36e06aca">ruckig::InputParameter&lt; DOFs &gt;</a>
 </li>
 <li>Interval()
 : <a class="el" href="structruckig_1_1_block_1_1_interval.html#a34b14f1657ad300e3c0bc9301b819213">ruckig::Block::Interval</a>
@@ -215,11 +229,11 @@ $(function() {
 <li>left
 : <a class="el" href="structruckig_1_1_block_1_1_interval.html#a42bc9d6e9d1ff449d261a26b68c96f27">ruckig::Block::Interval</a>
 </li>
-<li>limits
-: <a class="el" href="structruckig_1_1_profile.html#ac5d736e15c2656ba1c4d5181d7540e2f">ruckig::Profile</a>
-</li>
 <li>Limits
 : <a class="el" href="structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53">ruckig::Profile</a>
+</li>
+<li>limits
+: <a class="el" href="structruckig_1_1_profile.html#ac5d736e15c2656ba1c4d5181d7540e2f">ruckig::Profile</a>
 </li>
 </ul>
 
@@ -292,7 +306,13 @@ $(function() {
 : <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">ruckig::Profile</a>
 </li>
 <li>Position
-: <a class="el" href="classruckig_1_1_input_parameter.html#ab041be6d207e660e97615050381a6697">ruckig::InputParameter&lt; DOFs &gt;</a>
+: <a class="el" href="classruckig_1_1_input_parameter.html#ae619523593151532677e50b7ddfbbd26">ruckig::InputParameter&lt; DOFs &gt;</a>
+</li>
+<li>Position1()
+: <a class="el" href="classruckig_1_1_position1.html#a4230fecce44d891e469188b85faab234">ruckig::Position1</a>
+</li>
+<li>Position2()
+: <a class="el" href="classruckig_1_1_position2.html#adbc4d51f4215dcd65d778c189cfd0187">ruckig::Position2</a>
 </li>
 <li>profile
 : <a class="el" href="structruckig_1_1_block_1_1_interval.html#abd7b26844de3d7c1fa50cac051dfb487">ruckig::Block::Interval</a>
@@ -326,12 +346,6 @@ $(function() {
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>Smoothie()
 : <a class="el" href="classruckig_1_1_smoothie.html#a3c1537755b2476ed0ae2fb9600cf2066">ruckig::Smoothie&lt; DOFs &gt;</a>
-</li>
-<li>Step1()
-: <a class="el" href="classruckig_1_1_step1.html#a6bfcc93b07668bbc0df845948c86d1ea">ruckig::Step1</a>
-</li>
-<li>Step2()
-: <a class="el" href="classruckig_1_1_step2.html#abb20f7f1412e9b21d9a80165f2ef4a0a">ruckig::Step2</a>
 </li>
 <li>Synchronization
 : <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d">ruckig::InputParameter&lt; DOFs &gt;</a>
@@ -381,9 +395,6 @@ $(function() {
 <li>trajectory
 : <a class="el" href="structruckig_1_1_output_parameter.html#a792e57830acbd01e894982b5e5bcd885">ruckig::OutputParameter&lt; DOFs &gt;</a>
 </li>
-<li>Type
-: <a class="el" href="classruckig_1_1_input_parameter.html#a1ae97d0fe88eb66d2edd73933f37282b">ruckig::InputParameter&lt; DOFs &gt;</a>
-</li>
 </ul>
 
 
@@ -410,6 +421,12 @@ $(function() {
 </li>
 <li>Vector
 : <a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">ruckig::InputParameter&lt; DOFs &gt;</a>
+</li>
+<li>Velocity1()
+: <a class="el" href="classruckig_1_1_velocity1.html#a6f002dec27a07eacf477173cf2928ec6">ruckig::Velocity1</a>
+</li>
+<li>Velocity2()
+: <a class="el" href="classruckig_1_1_velocity2.html#a255909ec7f8b73136034da7f04306187">ruckig::Velocity2</a>
 </li>
 <li>vf
 : <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">ruckig::Profile</a>

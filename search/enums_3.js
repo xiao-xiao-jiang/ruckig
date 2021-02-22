@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['result',['Result',['../namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9',1,'ruckig']]]
+  ['limits',['Limits',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53',1,'ruckig::Profile']]]
 ];

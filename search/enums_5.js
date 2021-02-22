@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['Type',['../classruckig_1_1_input_parameter.html#a1ae97d0fe88eb66d2edd73933f37282b',1,'ruckig::InputParameter']]]
+  ['synchronization',['Synchronization',['../classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d',1,'ruckig::InputParameter']]]
 ];

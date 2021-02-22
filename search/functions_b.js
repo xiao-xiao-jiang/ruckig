@@ -6,7 +6,5 @@ var searchData=
   ['solvecub',['solveCub',['../namespace_roots.html#a570fb067451345730f4849374c78ab95',1,'Roots']]],
   ['solvequartmonic',['solveQuartMonic',['../namespace_roots.html#ade53363a85618611fa55e2042f95ed35',1,'Roots::solveQuartMonic(double a, double b, double c, double d)'],['../namespace_roots.html#a46339e67f73b9a77619c95014fa21e63',1,'Roots::solveQuartMonic(const std::array&lt; double, 5 &gt; &amp;polynom)']]],
   ['solveresolvent',['solveResolvent',['../namespace_roots.html#a667459f4b47b151b3114ed626c11d491',1,'Roots']]],
-  ['sqrt',['Sqrt',['../namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628',1,'ruckig']]],
-  ['step1',['Step1',['../classruckig_1_1_step1.html#a6bfcc93b07668bbc0df845948c86d1ea',1,'ruckig::Step1']]],
-  ['step2',['Step2',['../classruckig_1_1_step2.html#abb20f7f1412e9b21d9a80165f2ef4a0a',1,'ruckig::Step2']]]
+  ['sqrt',['Sqrt',['../namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628',1,'ruckig']]]
 ];
