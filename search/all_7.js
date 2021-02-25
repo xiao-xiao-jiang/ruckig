@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['get_5fposition_5fbrake_5ftrajectory',['get_position_brake_trajectory',['../classruckig_1_1_brake.html#acf8c354388ca7a743e001b4f663dc29c',1,'ruckig::Brake']]],
-  ['get_5fposition_5fextrema',['get_position_extrema',['../structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d',1,'ruckig::Profile::get_position_extrema()'],['../structruckig_1_1_trajectory.html#a9cb3fd0e4d286e893cc520766016d549',1,'ruckig::Trajectory::get_position_extrema()']]],
-  ['get_5fprofile',['get_profile',['../classruckig_1_1_position1.html#a2d434e0531e5c09ea82f5ffb028ca6ad',1,'ruckig::Position1::get_profile()'],['../classruckig_1_1_position2.html#aebc10f9083d1d416de0ec55c5d9df41e',1,'ruckig::Position2::get_profile()'],['../classruckig_1_1_velocity1.html#a329985e5eb6de4a03caed82de9227a55',1,'ruckig::Velocity1::get_profile()'],['../classruckig_1_1_velocity2.html#a1cb29a0cc50d039ed7ffaadd9fa43ef3',1,'ruckig::Velocity2::get_profile()']]],
-  ['get_5fvelocity_5fbrake_5ftrajectory',['get_velocity_brake_trajectory',['../classruckig_1_1_brake.html#a89868f2ff622c335ce300ce6e22733bd',1,'ruckig::Brake']]]
+  ['independent_5fmin_5fdurations',['independent_min_durations',['../structruckig_1_1_trajectory.html#a6f851f019da9a96a8029df7458b0ebad',1,'ruckig::Trajectory']]],
+  ['input',['Input',['../classruckig_1_1_ruckig.html#a5db066a26fa2a565a7c43d3defe2b9a5',1,'ruckig::Ruckig']]],
+  ['inputparameter',['InputParameter',['../classruckig_1_1_input_parameter.html',1,'ruckig::InputParameter&lt; DOFs &gt;'],['../classruckig_1_1_input_parameter.html#a111980a954ea264531bc974069cbe2a6',1,'ruckig::InputParameter::InputParameter()']]],
+  ['insert',['insert',['../class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf',1,'Roots::Set']]],
+  ['integrate',['integrate',['../structruckig_1_1_profile.html#a4be438b72596d86d2de4f8d58c54feaf',1,'ruckig::Profile']]],
+  ['interface',['Interface',['../classruckig_1_1_input_parameter.html#a88b2bfda6eb02d24370b168e36e06aca',1,'ruckig::InputParameter']]],
+  ['interval',['Interval',['../structruckig_1_1_block_1_1_interval.html',1,'ruckig::Block::Interval'],['../structruckig_1_1_block_1_1_interval.html#a34b14f1657ad300e3c0bc9301b819213',1,'ruckig::Block::Interval::Interval()']]],
+  ['is_5fblocked',['is_blocked',['../structruckig_1_1_block.html#aa9e3ec5548f2b8da43eac0384ee51948',1,'ruckig::Block']]]
 ];

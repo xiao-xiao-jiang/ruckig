@@ -1,7 +1,17 @@
 var searchData=
 [
-  ['uddu',['UDDU',['../structruckig_1_1_profile.html#a3e29df91c25f6764d3d6580a15212c2ea735730012ca9aa99e91edbcbcb2e95e8',1,'ruckig::Profile']]],
-  ['udud',['UDUD',['../structruckig_1_1_profile.html#a3e29df91c25f6764d3d6580a15212c2eab8849b1984bdab156402b5d1c97945b3',1,'ruckig::Profile']]],
-  ['up',['UP',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739afbaedde498cdead4f2780217646e9ba1',1,'ruckig::Profile']]],
-  ['update',['update',['../classruckig_1_1_quintic.html#a52b838209cc13a5ff869d6729133d714',1,'ruckig::Quintic::update()'],['../classruckig_1_1_reflexxes.html#ac744d53c51b54382b5f16654a58faf77',1,'ruckig::Reflexxes::update()'],['../classruckig_1_1_smoothie.html#afea6254a89b901105865d8f8e205b7f2',1,'ruckig::Smoothie::update()'],['../classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb',1,'ruckig::Ruckig::update()']]]
+  ['v',['v',['../structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722',1,'ruckig::Profile']]],
+  ['v_5fat_5fa_5fzero',['v_at_a_zero',['../namespaceruckig.html#a7fd5b73571b4274e4062b57ddb086714',1,'ruckig']]],
+  ['v_5fat_5ft',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
+  ['v_5fbrakes',['v_brakes',['../structruckig_1_1_profile.html#a1186ebb86cc607d02cc20e4e9b3edf57',1,'ruckig::Profile']]],
+  ['validate_5finput',['validate_input',['../classruckig_1_1_smoothie.html#aea5beb601658796ebe001eb7ee9cf2b1',1,'ruckig::Smoothie::validate_input()'],['../classruckig_1_1_ruckig.html#ae033489c154d2226fe443f4ee328826f',1,'ruckig::Ruckig::validate_input()']]],
+  ['vector',['Vector',['../classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce',1,'ruckig::InputParameter']]],
+  ['vel',['VEL',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53aa3a448d1135671c0db409157841e73d5',1,'ruckig::Profile']]],
+  ['velocity',['Velocity',['../classruckig_1_1_input_parameter.html#a88b2bfda6eb02d24370b168e36e06acaa88156d46910a2d733443c339a9231d12',1,'ruckig::InputParameter']]],
+  ['velocity_2ehpp',['velocity.hpp',['../velocity_8hpp.html',1,'']]],
+  ['velocity1',['Velocity1',['../classruckig_1_1_velocity1.html',1,'ruckig::Velocity1'],['../classruckig_1_1_velocity1.html#a6f002dec27a07eacf477173cf2928ec6',1,'ruckig::Velocity1::Velocity1()']]],
+  ['velocity1_2ecpp',['velocity1.cpp',['../velocity1_8cpp.html',1,'']]],
+  ['velocity2',['Velocity2',['../classruckig_1_1_velocity2.html',1,'ruckig::Velocity2'],['../classruckig_1_1_velocity2.html#a255909ec7f8b73136034da7f04306187',1,'ruckig::Velocity2::Velocity2()']]],
+  ['velocity2_2ecpp',['velocity2.cpp',['../velocity2_8cpp.html',1,'']]],
+  ['vf',['vf',['../structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909',1,'ruckig::Profile']]]
 ];
