@@ -91,6 +91,10 @@ Public Types</h2></td></tr>
 <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252da6adf97f83acf6453d4a6a4b1070f3754">Synchronization::None</a>
  }</td></tr>
 <tr class="separator:a1188a44f84ed73ddb255abb12daf252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e258d49902b9ba73c44a38c93edc656"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656">DurationDiscretization</a> { <a class="el" href="classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656a535863a82f163709557e59e2eb8139a7">DurationDiscretization::Continuous</a>, 
+<a class="el" href="classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656a4984667940802dedc139aa7a430a6553">DurationDiscretization::Discrete</a>
+ }</td></tr>
+<tr class="separator:a3e258d49902b9ba73c44a38c93edc656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50fdda7cd9e126071069d055196d8ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a> = std::array&lt; double, DOFs &gt;</td></tr>
 <tr class="separator:ae50fdda7cd9e126071069d055196d8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -109,6 +113,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae619523593151532677e50b7ddfbbd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6f9cf12ac16cbee522550bf795ea2c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classruckig_1_1_input_parameter.html#a1188a44f84ed73ddb255abb12daf252d">ruckig::InputParameter::Synchronization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a7b6f9cf12ac16cbee522550bf795ea2c">Time</a></td></tr>
 <tr class="separator:a7b6f9cf12ac16cbee522550bf795ea2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57674a8f0e6ac9ed6428d063171aabc7"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656">ruckig::InputParameter::DurationDiscretization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a57674a8f0e6ac9ed6428d063171aabc7">Continuous</a></td></tr>
+<tr class="separator:a57674a8f0e6ac9ed6428d063171aabc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e3e74e833753cbf8824db5a2215ce5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a68e3e74e833753cbf8824db5a2215ce5">current_position</a></td></tr>
 <tr class="separator:a68e3e74e833753cbf8824db5a2215ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ebaaf77bffd32fb36f575b0e8fb154d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a0ebaaf77bffd32fb36f575b0e8fb154d">current_velocity</a> {}</td></tr>
@@ -164,6 +170,34 @@ template&lt;size_t DOFs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a3e258d49902b9ba73c44a38c93edc656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e258d49902b9ba73c44a38c93edc656">&#9670;&nbsp;</a></span>DurationDiscretization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656">ruckig::InputParameter::DurationDiscretization</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3e258d49902b9ba73c44a38c93edc656a535863a82f163709557e59e2eb8139a7"></a>Continuous&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3e258d49902b9ba73c44a38c93edc656a4984667940802dedc139aa7a430a6553"></a>Discrete&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a88b2bfda6eb02d24370b168e36e06aca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88b2bfda6eb02d24370b168e36e06aca">&#9670;&nbsp;</a></span>Interface</h2>
 
@@ -306,6 +340,22 @@ template&lt;size_t DOFs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a57674a8f0e6ac9ed6428d063171aabc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57674a8f0e6ac9ed6428d063171aabc7">&#9670;&nbsp;</a></span>Continuous</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656">ruckig::InputParameter::DurationDiscretization</a> <a class="el" href="classruckig_1_1_input_parameter.html">ruckig::InputParameter</a>&lt; DOFs &gt;::Continuous</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5366cfd5039f07f1df5bac52d555eb46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5366cfd5039f07f1df5bac52d555eb46">&#9670;&nbsp;</a></span>current_acceleration</h2>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['down',['DOWN',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739ac4e0e4e3118472beeb2ae75827450f1f',1,'ruckig::Profile']]]
+  ['continuous',['Continuous',['../classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656a535863a82f163709557e59e2eb8139a7',1,'ruckig::InputParameter']]]
 ];
