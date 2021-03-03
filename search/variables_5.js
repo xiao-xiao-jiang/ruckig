@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['independent_5fmin_5fdurations_257',['independent_min_durations',['../structruckig_1_1_trajectory.html#a6f851f019da9a96a8029df7458b0ebad',1,'ruckig::Trajectory']]]
+  ['first_5foutput_265',['first_output',['../namespaceposition.html#af062c8e14341d9efa94ad21b8a6bb7d8',1,'position']]]
 ];

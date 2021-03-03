@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['p_275',['p',['../structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0',1,'ruckig::Profile']]],
-  ['p_5fbrakes_276',['p_brakes',['../structruckig_1_1_profile.html#a511da94d2380444aaded934de07fe273',1,'ruckig::Profile']]],
-  ['p_5fmin_277',['p_min',['../structruckig_1_1_block.html#a73b87c3f7d8247c54fdedf4c451b16da',1,'ruckig::Block']]],
-  ['pf_278',['pf',['../structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64',1,'ruckig::Profile']]],
-  ['position_279',['Position',['../structruckig_1_1_input_parameter.html#ae619523593151532677e50b7ddfbbd26',1,'ruckig::InputParameter']]],
-  ['profile_280',['profile',['../structruckig_1_1_block_1_1_interval.html#abd7b26844de3d7c1fa50cac051dfb487',1,'ruckig::Block::Interval']]],
-  ['profiles_281',['profiles',['../structruckig_1_1_trajectory.html#ae844db56080d303d89783ed841621352',1,'ruckig::Trajectory']]]
+  ['new_5facceleration_281',['new_acceleration',['../structruckig_1_1_output_parameter.html#a8b1cd7d01bb901084a9ac434022507f8',1,'ruckig::OutputParameter']]],
+  ['new_5fcalculation_282',['new_calculation',['../structruckig_1_1_output_parameter.html#a5b018d5675418927a8d30d10cfe84967',1,'ruckig::OutputParameter']]],
+  ['new_5fposition_283',['new_position',['../structruckig_1_1_output_parameter.html#a1e31ab56e8696d747e474ff814b6dbc2',1,'ruckig::OutputParameter']]],
+  ['new_5fvelocity_284',['new_velocity',['../structruckig_1_1_output_parameter.html#a91320318ad3227e4ac7febc5dc95584e',1,'ruckig::OutputParameter']]]
 ];
