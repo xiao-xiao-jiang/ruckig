@@ -208,7 +208,8 @@ template&lt;size_t DOFs&gt; </div>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3e258d49902b9ba73c44a38c93edc656a535863a82f163709557e59e2eb8139a7"></a>Continuous&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3e258d49902b9ba73c44a38c93edc656a535863a82f163709557e59e2eb8139a7"></a>Continuous&#160;</td><td class="fielddoc"><p>Every trajectory duration is allowed (Default) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a3e258d49902b9ba73c44a38c93edc656a4984667940802dedc139aa7a430a6553"></a>Discrete&#160;</td><td class="fielddoc"><p>The trajectory duration must be a multiple of the control cycle. </p>
 </td></tr>
 </table>
@@ -237,8 +238,10 @@ template&lt;size_t DOFs&gt; </div>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a88b2bfda6eb02d24370b168e36e06acaa52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a88b2bfda6eb02d24370b168e36e06acaa88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a88b2bfda6eb02d24370b168e36e06acaa52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"><p>Position-control: Full control over the entire kinematic state (Default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88b2bfda6eb02d24370b168e36e06acaa88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"><p>Velocity-control: Ignores the current position, target position, and velocity limits. </p>
+</td></tr>
 </table>
 
 </div>
@@ -265,9 +268,12 @@ template&lt;size_t DOFs&gt; </div>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252daa76d4ef5f3f6a672bbfab2865563e530"></a>Time&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da7ddc8e24add04a76f06998f3f12404e2"></a>TimeIfNecessary&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252daa76d4ef5f3f6a672bbfab2865563e530"></a>Time&#160;</td><td class="fielddoc"><p>Always synchronize the DoFs to reach the target at the same time (Default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da7ddc8e24add04a76f06998f3f12404e2"></a>TimeIfNecessary&#160;</td><td class="fielddoc"><p>Synchronize only when necessary (e.g. for non-zero target velocity or acceleration) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1188a44f84ed73ddb255abb12daf252da6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>Calculate every DoF independently. </p>
+</td></tr>
 </table>
 
 </div>

@@ -80,7 +80,7 @@ $(function() {
 <div class="line">cd build</div>
 <div class="line">cmake -DCMAKE_BUILD_TYPE=Release ..</div>
 <div class="line">make</div>
-</div><!-- fragment --><p>To install Ruckig in a system-wide directory, use <code>(sudo) make install</code>. An example of using Ruckig in your CMake project is given by <code>examples/CMakeLists.txt</code>. However, you can also include Ruckig as a directory within your project and call <code>add_subdirectory(ruckig)</code> in your parent <code>CMakeLists.txt</code>. A python module can be built using the <code>BUILD_PYTHON_MODULE</code> CMake flag.</p>
+</div><!-- fragment --><p>To install Ruckig in a system-wide directory, use <code>(sudo) make install</code>. An example of using Ruckig in your CMake project is given by <code>examples/CMakeLists.txt</code>. However, you can also include Ruckig as a directory within your project and call <code>add_subdirectory(ruckig)</code> in your parent <code>CMakeLists.txt</code>. A Python module can be built using the <code>BUILD_PYTHON_MODULE</code> CMake flag.</p>
 <h2>Tutorial</h2>
 <p>Furthermore, a tutorial will explain the basics to include online generated trajectories within your application. A working example can be found in the <code>examples</code> directory. A time-optimal trajectory for a single degree of freedom is shown in the figure below.</p>
 <p><img src="https://github.com/pantor/ruckig/raw/master/doc/example_profile.png?raw=true" alt="Trajectory Profile" class="inline"/></p>
@@ -129,41 +129,15 @@ $(function() {
 <div class="line">std::optional&lt;Vector&gt; min_velocity; <span class="comment">// If not given, the negative maximum velocity will be used.</span></div>
 <div class="line">std::optional&lt;Vector&gt; min_acceleration; <span class="comment">// If not given, the negative maximum acceleration will be used.</span></div>
 <div class="line"> </div>
-<div class="line">Interface interface; <span class="comment">// The default position interface controls the full kinematic state</span></div>
-<div class="line">Synchronization synchronization; <span class="comment">// Synchronization behavior of multiple DoFs</span></div>
-<div class="line">DurationDiscretization duration_discretization; <span class="comment">// Whether the duration should be a discrete multiple of the control cycle</span></div>
 <div class="line">std::array&lt;bool, DOFs&gt; enabled; <span class="comment">// Initialized to true</span></div>
 <div class="line">std::optional&lt;double&gt; minimum_duration;</div>
+<div class="line"> </div>
+<div class="line">Interface interface; <span class="comment">// The default position interface controls the full kinematic state.</span></div>
+<div class="line">Synchronization synchronization; <span class="comment">// Synchronization behavior of multiple DoFs</span></div>
+<div class="line">DurationDiscretization duration_discretization; <span class="comment">// Whether the duration should be a discrete multiple of the control cycle (off by default)</span></div>
 </div><!-- fragment --><p>Members are implemented using the C++ standard <code>array</code> and <code>optional</code> type. Note that there are range constraints due to numerical reasons, see below for more details. To check the input before a calculation step, the <code>ruckig.validate_input(input)</code> method returns <code>false</code> if an input is not valid. Of course, the target state needs to be within the given kinematic limits. Additionally, the target acceleration needs to fulfill </p><div class="fragment"><div class="line">Abs(target_acceleration) &lt;= Sqrt(2 * max_jerk * (max_velocity - Abs(target_velocity)))</div>
-</div><!-- fragment --><p>If a DoF is not enabled, it will be ignored in the calculation. A minimum duration can be optionally given. Furthermore, the minimum velocity and acceleration can be specified. If it is not given, the negative maximum velocity or acceleration will be used (similar to the jerk limit). For example, this might be useful in human robot collaboration settings with a different velocity limit towards a human. Or, the dynamic limits at a given configuration of the robot can be approximated much better with different acceleration limits. There are two interfaces implemented for both position- and velocity-control:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Interface </th><th class="markdownTableHeadNone">Explanation  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Position (default) </td><td class="markdownTableBodyNone">Position-control: Full control over the entire kinematic state  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Velocity </td><td class="markdownTableBodyNone">Velocity-control: Ignores the current position, target position, and velocity limits  </td></tr>
-</table>
-<p>The synchronization behavior is as follows:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Synchronization Behavior </th><th class="markdownTableHeadNone">Explanation  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Time (default) </td><td class="markdownTableBodyNone">Always synchronize the DoFs to reach the target at the same time  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">TimeIfNecessary </td><td class="markdownTableBodyNone">Synchronize only when necessary (e.g. for non-zero target velocity or acceleration)  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">None </td><td class="markdownTableBodyNone">Calculate every DoF independently  </td></tr>
-</table>
-<p>The duration discretization can be either:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Duration Discretization </th><th class="markdownTableHeadNone">Explanation  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Continuous (default) </td><td class="markdownTableBodyNone">Every trajectory duration is allowed  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Discrete </td><td class="markdownTableBodyNone">Only a discrete multiple of the control cycle is allowed  </td></tr>
-</table>
+</div><!-- fragment --><p>If a DoF is not enabled, it will be ignored in the calculation. A minimum duration can be optionally given. Furthermore, the minimum velocity and acceleration can be specified. If it is not given, the negative maximum velocity or acceleration will be used (similar to the jerk limit). For example, this might be useful in human robot collaboration settings with a different velocity limit towards a human. Or, the dynamic limits at a given configuration of the robot can be approximated much better with different acceleration limits.</p>
+<p>Furthermore, there are some options for advanced functionality, e.g. for velocity control or discrete trajectory durations. We refer to the <a href="https://pantor.github.io/ruckig/structruckig_1_1_input_parameter.html">API documentation</a> of the <code>InputParameter</code> class for the available options.</p>
 <h3>Result Type</h3>
 <p>The <code>update</code> function of the Ruckig class returns a Result type that indicates the current state of the algorithm. Currently, this can either be <b>working</b>, <b>finished</b> if the trajectory has finished, or an <b>error</b> type if something went wrong during calculation. The result type can be compared as a standard integer.</p>
 <table class="markdownTable">
@@ -186,9 +160,9 @@ $(function() {
 </table>
 <h3>Output Parameter</h3>
 <p>The output class gives the new kinematic state of the trajectory.</p>
-<div class="fragment"><div class="line">std::array&lt;double, DOFs&gt; new_position;</div>
-<div class="line">std::array&lt;double, DOFs&gt; new_velocity;</div>
-<div class="line">std::array&lt;double, DOFs&gt; new_acceleration;</div>
+<div class="fragment"><div class="line">Vector new_position;</div>
+<div class="line">Vector new_velocity;</div>
+<div class="line">Vector new_acceleration;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">bool</span> new_calculation; <span class="comment">// Whether a new calactuion was performed in the last cycle</span></div>
 <div class="line"><span class="keywordtype">double</span> calculation_duration; <span class="comment">// Duration of the calculation in the last cycle [µs]</span></div>
@@ -201,7 +175,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">&lt;...&gt; at_time(<span class="keywordtype">double</span> time); <span class="comment">// Get the kinematic state of the trajectory at a given time</span></div>
 <div class="line">&lt;...&gt; get_position_extrema(); <span class="comment">// Returns information about the position extrema and their times</span></div>
-</div><!-- fragment --><p>We refer to the <a href="https://pantor.github.io/ruckig/">API documentation</a> for the exact signature.</p>
+</div><!-- fragment --><p>Again, we refer to the <a href="https://pantor.github.io/ruckig/">API documentation</a> for the exact signatures.</p>
 <h2>Tests and Numerical Stability</h2>
 <p>The current test suite validates over 1.000.000.000 random trajectories. The numerical exactness is tested for the final position and final velocity to be within <code>1e-8</code>, for the velocity, acceleration and jerk limit to be within <code>1e-12</code>, and for the final acceleration as well to be within a numerical error of <code>1e-12</code>. The maximal supported trajectory duration is <code>7e3</code>, which sounds short but should suffice for most applications seeking for time-optimality. Note that Ruckig will also output values outside of this range, there is however no guarantee for correctness.</p>
 <h2>Benchmark</h2>
@@ -211,7 +185,6 @@ $(function() {
 <p>Ruckig is written in C++17. It is continuously tested on <code>ubuntu-latest</code>, <code>macos-latest</code>, and <code>windows-latest</code> against following versions</p>
 <ul>
 <li>Doctest v2.4 (only for testing)</li>
-<li>Reflexxes v1.2 (only for comparison)</li>
 <li>Pybind11 v2.6 (only for python wrapper)</li>
 </ul>
 <h2>Citation</h2>
