@@ -97,12 +97,13 @@ class Ruckig {
 
         auto& inp = current_input;
         auto& trajectory = output.trajectory;
+        ProfileTrajectory<DOFs> data {};
 
         std::array<Block, DOFs> blocks;
         std::array<double, DOFs> p0s, v0s, a0s; // Starting point of profiles without brake trajectory
         std::array<double, DOFs> inp_min_velocity, inp_min_acceleration;
         for (size_t dof = 0; dof < DOFs; ++dof) {
-            auto& p = trajectory.profiles[dof];
+            auto& p = data.profiles[dof];
 
             if (!inp.enabled[dof]) {
                 p.pf = inp.current_position[dof];
@@ -162,7 +163,7 @@ class Ruckig {
 
         int limiting_dof; // The DoF that doesn't need step 2
         const bool discrete_duration = (input.duration_discretization == Input::DurationDiscretization::Discrete);
-        const bool found_synchronization = synchronize(blocks, inp.minimum_duration, trajectory.duration, limiting_dof, trajectory.profiles, discrete_duration);
+        const bool found_synchronization = synchronize(blocks, inp.minimum_duration, trajectory.duration, limiting_dof, data.profiles, discrete_duration);
         if (!found_synchronization) {
             if constexpr (throw_error) {
                 throw std::runtime_error("[ruckig] error in time synchronization: " + std::to_string(trajectory.duration));
@@ -182,7 +183,7 @@ class Ruckig {
                     continue;
                 }
 
-                Profile& p = trajectory.profiles[dof];
+                Profile& p = data.profiles[dof];
                 const double t_profile = trajectory.duration - p.t_brake.value_or(0.0);
 
                 if (input.synchronization == Input::Synchronization::TimeIfNecessary && std::abs(input.target_velocity[dof]) < eps && std::abs(input.target_acceleration[dof]) < eps) {
@@ -228,12 +229,13 @@ class Ruckig {
                     continue;
                 }
 
-                trajectory.profiles[dof] = blocks[dof].p_min;
+                data.profiles[dof] = blocks[dof].p_min;
             }
         }
 
         output.time = 0.0;
         output.new_calculation = true;
+        output.trajectory.data = data;
         return Result::Working;
     }
 
