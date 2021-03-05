@@ -95,11 +95,11 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace ruckig</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespace_roots.html">   25</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_roots.html">Roots</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>Roots {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Use own set class on stack for real-time capability</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_roots_1_1_set.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_roots_1_1_set.html">Set</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>Set {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> std::array&lt;T, N&gt; Container;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Container::iterator iterator;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -108,31 +108,31 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Sort when accessing the elements</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_roots_1_1_set.html#aad811a7e21b6d1def0e12810c6e4e0e8">   38</a></span>&#160;    iterator <a class="code" href="class_roots_1_1_set.html#aad811a7e21b6d1def0e12810c6e4e0e8">begin</a>() {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    iterator begin() {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::sort(data.begin(), data.begin() + size);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> data.begin() + 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_roots_1_1_set.html#af16b83f6d254bf40cadb42491d7692ff">   43</a></span>&#160;    iterator <a class="code" href="class_roots_1_1_set.html#af16b83f6d254bf40cadb42491d7692ff">end</a>() {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    iterator end() {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> data.begin() + size;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">   47</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(T value) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> insert(T value) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        data[size] = value;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        ++size;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespace_roots.html#a570fb067451345730f4849374c78ab95">   55</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_roots_1_1_set.html">Set&lt;double, 4&gt;</a> <a class="code" href="namespace_roots.html#a570fb067451345730f4849374c78ab95">solveCub</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c, <span class="keywordtype">double</span> d) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_roots_1_1_set.html">Set&lt;double, 4&gt;</a> roots;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">inline</span> Set&lt;double, 4&gt; solveCub(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c, <span class="keywordtype">double</span> d) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Set&lt;double, 4&gt; roots;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    constexpr <span class="keywordtype">double</span> cos120 = -0.50;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    constexpr <span class="keywordtype">double</span> sin120 = 0.866025403784438646764;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (std::abs(d) &lt; DBL_EPSILON) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">// First solution is x = 0</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(0.0);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        roots.insert(0.0);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// Converting to a quadratic equation</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        d = c;</div>
@@ -145,7 +145,7 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (std::abs(b) &lt; DBL_EPSILON) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// Linear equation</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (std::abs(c) &gt; DBL_EPSILON) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(-d / c);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                roots.insert(-d / c);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        } <span class="keywordflow">else</span> {</div>
@@ -154,8 +154,8 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span> (discriminant &gt;= 0) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">double</span> inv2b = 1.0 / (2 * b);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">double</span> y = std::sqrt(discriminant);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>((-c + y) * inv2b);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>((-c - y) * inv2b);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                roots.insert((-c + y) * inv2b);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                roots.insert((-c - y) * inv2b);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
@@ -176,7 +176,7 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> vvv = -halfq - y;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> www = std::abs(uuu) &gt; std::abs(vvv) ? uuu : vvv;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> w = std::cbrt(www);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(w - p / (3.0 * w) - bover3a);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            roots.insert(w - p / (3.0 * w) - bover3a);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (yy &lt; -DBL_EPSILON) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="comment">// Sqrt is negative: three real solutions</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> x = -halfq;</div>
@@ -201,19 +201,19 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            ux = std::cos(theta) * r;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            uyi = std::sin(theta) * r;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="comment">// First solution</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(ux + ux - bover3a);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            roots.insert(ux + ux - bover3a);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">// Second solution, rotate +120 degrees</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(2 * (ux * cos120 - uyi * sin120) - bover3a);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            roots.insert(2 * (ux * cos120 - uyi * sin120) - bover3a);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="comment">// Third solution, rotate -120 degrees</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(2 * (ux * cos120 + uyi * sin120) - bover3a);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            roots.insert(2 * (ux * cos120 + uyi * sin120) - bover3a);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="comment">// Sqrt is zero: two real solutions</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> www = -halfq;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> w = std::cbrt(www);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="comment">// First solution</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(w + w - bover3a);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            roots.insert(w + w - bover3a);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="comment">// Second solution, rotate +120 degrees</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(2 * w * cos120 - bover3a);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            roots.insert(2 * w * cos120 - bover3a);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> roots;</div>
@@ -222,7 +222,7 @@ $(function() {
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// Solve resolvent eqaution of corresponding Quartic equation</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// The input x must be of length 3</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">// Number of zeros are returned</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="namespace_roots.html#a667459f4b47b151b3114ed626c11d491">  153</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespace_roots.html#a667459f4b47b151b3114ed626c11d491">solveResolvent</a>(<span class="keywordtype">double</span> *x, <span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> solveResolvent(<span class="keywordtype">double</span> *x, <span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> a2 = a * a;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">double</span> q = (a2 - 3.0 * b) / 9.0;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> r = (a * (2 * a2 - 9.0 * b) + 27.0 * c) / 54.0;</div>
@@ -264,8 +264,8 @@ $(function() {
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="namespace_roots.html#ade53363a85618611fa55e2042f95ed35">  196</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_roots_1_1_set.html">Set&lt;double, 4&gt;</a> <a class="code" href="namespace_roots.html#ade53363a85618611fa55e2042f95ed35">solveQuartMonic</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c, <span class="keywordtype">double</span> d) {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="class_roots_1_1_set.html">Set&lt;double, 4&gt;</a> roots;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">inline</span> Set&lt;double, 4&gt; solveQuartMonic(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c, <span class="keywordtype">double</span> d) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    Set&lt;double, 4&gt; roots;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> a3 = -b;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> b3 = a * c - 4 * d;</div>
@@ -273,7 +273,7 @@ $(function() {
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// Solve the resolvent: y^3 - b*y^2 + (ac - 4*d)*y - a^2*d - c^2 + 4*b*d = 0</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">double</span> x3[3];</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> iZeroes = <a class="code" href="namespace_roots.html#a667459f4b47b151b3114ed626c11d491">solveResolvent</a>(x3, a3, b3, c3);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> iZeroes = solveResolvent(x3, a3, b3, c3);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">double</span> q1, q2, p1, p2, D, sqrtD, y;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
@@ -315,33 +315,33 @@ $(function() {
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// Solve the quadratic equation: x^2 + p1*x + q1 = 0</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    D = p1 * p1 - 4 * q1;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (std::abs(D) &lt; eps) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(-p1 * 0.5);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        roots.insert(-p1 * 0.5);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (D &gt; 0.0) {</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        sqrtD = std::sqrt(D);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>((-p1 + sqrtD) * 0.5);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>((-p1 - sqrtD) * 0.5);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        roots.insert((-p1 + sqrtD) * 0.5);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        roots.insert((-p1 - sqrtD) * 0.5);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">// Solve the quadratic equation: x^2 + p2*x + q2 = 0</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    D = p2 * p2 - 4 * q2;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span> (std::abs(D) &lt; eps) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>(-p2 * 0.5);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        roots.insert(-p2 * 0.5);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (D &gt; 0.0) {</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        sqrtD = std::sqrt(D);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>((-p2 + sqrtD) * 0.5);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        roots.<a class="code" href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">insert</a>((-p2 - sqrtD) * 0.5);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        roots.insert((-p2 + sqrtD) * 0.5);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        roots.insert((-p2 - sqrtD) * 0.5);</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">return</span> roots;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="namespace_roots.html#a46339e67f73b9a77619c95014fa21e63">  268</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_roots_1_1_set.html">Set&lt;double, 4&gt;</a> <a class="code" href="namespace_roots.html#ade53363a85618611fa55e2042f95ed35">solveQuartMonic</a>(<span class="keyword">const</span> std::array&lt;double, 5&gt;&amp; polynom) {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespace_roots.html#ade53363a85618611fa55e2042f95ed35">solveQuartMonic</a>(polynom[1], polynom[2], polynom[3], polynom[4]);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">inline</span> Set&lt;double, 4&gt; solveQuartMonic(<span class="keyword">const</span> std::array&lt;double, 5&gt;&amp; polynom) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> solveQuartMonic(polynom[1], polynom[2], polynom[3], polynom[4]);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">  275</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">polyEval</a>(std::array&lt;double, N&gt; p, <span class="keywordtype">double</span> x) {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> polyEval(std::array&lt;double, N&gt; p, <span class="keywordtype">double</span> x) {</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">double</span> retVal = 0.0;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">if</span> constexpr (N &gt; 0) {</div>
@@ -366,7 +366,7 @@ $(function() {
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">// Calculate the derivative poly coefficients of a given poly</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="namespace_roots.html#ad5621822bfd80cb3eee0eb7e5fd9dbad">  300</a></span>&#160;<span class="keyword">inline</span> std::array&lt;double, N-1&gt; <a class="code" href="namespace_roots.html#ad5621822bfd80cb3eee0eb7e5fd9dbad">polyDeri</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; coeffs) {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">inline</span> std::array&lt;double, N-1&gt; polyDeri(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; coeffs) {</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    std::array&lt;double, N-1&gt; deriv;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N - 1; ++i) {</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        deriv[i] = (N - 1 - i) * coeffs[i];</div>
@@ -375,7 +375,7 @@ $(function() {
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="namespace_roots.html#aea8a4d104c9c227ff4d13979bce7a378">  309</a></span>&#160;<span class="keyword">inline</span> std::array&lt;double, N-1&gt; <a class="code" href="namespace_roots.html#aea8a4d104c9c227ff4d13979bce7a378">polyMonicDeri</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; monic_coeffs) {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">inline</span> std::array&lt;double, N-1&gt; polyMonicDeri(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; monic_coeffs) {</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    std::array&lt;double, N-1&gt; deriv;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    deriv[0] = 1.0;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; N - 1; ++i) {</div>
@@ -387,7 +387,7 @@ $(function() {
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">// Safe Newton Method</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">// Requirements: f(l)*f(h) &lt;= 0</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> maxIts, <span class="keyword">typename</span> F, <span class="keyword">typename</span> DF&gt;</div>
-<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="namespace_roots.html#a636d5ed9aa9082638d9e0b36292ef43a">  321</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespace_roots.html#a636d5ed9aa9082638d9e0b36292ef43a">safeNewton</a>(<span class="keyword">const</span> F&amp; func, <span class="keyword">const</span> DF&amp; dfunc, <span class="keywordtype">double</span> l, <span class="keywordtype">double</span> h, <span class="keyword">const</span> <span class="keywordtype">double</span> tol) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> safeNewton(<span class="keyword">const</span> F&amp; func, <span class="keyword">const</span> DF&amp; dfunc, <span class="keywordtype">double</span> l, <span class="keywordtype">double</span> h, <span class="keyword">const</span> <span class="keywordtype">double</span> tol) {</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> fl = func(l);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> fh = func(h);</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (fl == 0.0) {</div>
@@ -443,36 +443,22 @@ $(function() {
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">// Calculate a single zero of polynom p(x) inside [lbound, ubound]</span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">// Requirements: p(lbound)*p(ubound) &lt; 0, lbound &lt; ubound</span></div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="namespace_roots.html#ac8574d616e7281fb23b50d0611a1d5f0">  377</a></span>&#160;constexpr <span class="keywordtype">double</span> <a class="code" href="namespace_roots.html#ac8574d616e7281fb23b50d0611a1d5f0">tolerance</a> {1e-14};</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;constexpr <span class="keywordtype">double</span> tolerance {1e-14};</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N, <span class="keywordtype">size_t</span> maxDblIts = 128&gt;</div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="namespace_roots.html#a56bdbe9eaa74e23ce25bea0953abd658">  380</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="namespace_roots.html#a56bdbe9eaa74e23ce25bea0953abd658">shrinkInterval</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; p, <span class="keywordtype">double</span> lbound, <span class="keywordtype">double</span> ubound) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">auto</span> deriv = <a class="code" href="namespace_roots.html#ad5621822bfd80cb3eee0eb7e5fd9dbad">polyDeri</a>(p);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">auto</span> func = [&amp;p](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> <a class="code" href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">polyEval</a>(p, x); };</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">auto</span> dfunc = [&amp;deriv](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> <a class="code" href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">polyEval</a>(deriv, x); };</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> safeNewton&lt;maxDblIts&gt;(func, dfunc, lbound, ubound, <a class="code" href="namespace_roots.html#ac8574d616e7281fb23b50d0611a1d5f0">tolerance</a>);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> shrinkInterval(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; p, <span class="keywordtype">double</span> lbound, <span class="keywordtype">double</span> ubound) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">auto</span> deriv = polyDeri(p);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">auto</span> func = [&amp;p](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> polyEval(p, x); };</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">auto</span> dfunc = [&amp;deriv](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> polyEval(deriv, x); };</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> safeNewton&lt;maxDblIts&gt;(func, dfunc, lbound, ubound, tolerance);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;} <span class="comment">// namespace Roots</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespace_roots_html_ad5621822bfd80cb3eee0eb7e5fd9dbad"><div class="ttname"><a href="namespace_roots.html#ad5621822bfd80cb3eee0eb7e5fd9dbad">Roots::polyDeri</a></div><div class="ttdeci">std::array&lt; double, N-1 &gt; polyDeri(const std::array&lt; double, N &gt; &amp;coeffs)</div><div class="ttdef"><b>Definition:</b> roots.hpp:300</div></div>
-<div class="ttc" id="aclass_roots_1_1_set_html"><div class="ttname"><a href="class_roots_1_1_set.html">Roots::Set</a></div><div class="ttdef"><b>Definition:</b> roots.hpp:29</div></div>
 <div class="ttc" id="anamespaceruckig_html_a11aac51f01a8f0c5a35fecf4dd5e42a0"><div class="ttname"><a href="namespaceruckig.html#a11aac51f01a8f0c5a35fecf4dd5e42a0">ruckig::Abs</a></div><div class="ttdeci">double Abs(double v)</div><div class="ttdef"><b>Definition:</b> roots.hpp:18</div></div>
-<div class="ttc" id="anamespace_roots_html_ac8574d616e7281fb23b50d0611a1d5f0"><div class="ttname"><a href="namespace_roots.html#ac8574d616e7281fb23b50d0611a1d5f0">Roots::tolerance</a></div><div class="ttdeci">constexpr double tolerance</div><div class="ttdef"><b>Definition:</b> roots.hpp:377</div></div>
 <div class="ttc" id="anamespaceruckig_html"><div class="ttname"><a href="namespaceruckig.html">ruckig</a></div><div class="ttdef"><b>Definition:</b> quintic.hpp:6</div></div>
-<div class="ttc" id="aclass_roots_1_1_set_html_aad811a7e21b6d1def0e12810c6e4e0e8"><div class="ttname"><a href="class_roots_1_1_set.html#aad811a7e21b6d1def0e12810c6e4e0e8">Roots::Set::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> roots.hpp:38</div></div>
-<div class="ttc" id="anamespace_roots_html"><div class="ttname"><a href="namespace_roots.html">Roots</a></div><div class="ttdef"><b>Definition:</b> roots.hpp:25</div></div>
-<div class="ttc" id="anamespace_roots_html_ade53363a85618611fa55e2042f95ed35"><div class="ttname"><a href="namespace_roots.html#ade53363a85618611fa55e2042f95ed35">Roots::solveQuartMonic</a></div><div class="ttdeci">Set&lt; double, 4 &gt; solveQuartMonic(double a, double b, double c, double d)</div><div class="ttdoc">Calculate all roots of the monic quartic equation: x^4 + a*x^3 + b*x^2 + c*x + d = 0.</div><div class="ttdef"><b>Definition:</b> roots.hpp:196</div></div>
-<div class="ttc" id="anamespace_roots_html_a667459f4b47b151b3114ed626c11d491"><div class="ttname"><a href="namespace_roots.html#a667459f4b47b151b3114ed626c11d491">Roots::solveResolvent</a></div><div class="ttdeci">int solveResolvent(double *x, double a, double b, double c)</div><div class="ttdef"><b>Definition:</b> roots.hpp:153</div></div>
 <div class="ttc" id="anamespaceruckig_html_a33eb514e2c5ef12e59e6dd0e1bfa6628"><div class="ttname"><a href="namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628">ruckig::Sqrt</a></div><div class="ttdeci">double Sqrt(double v)</div><div class="ttdef"><b>Definition:</b> roots.hpp:14</div></div>
-<div class="ttc" id="anamespace_roots_html_a570fb067451345730f4849374c78ab95"><div class="ttname"><a href="namespace_roots.html#a570fb067451345730f4849374c78ab95">Roots::solveCub</a></div><div class="ttdeci">Set&lt; double, 4 &gt; solveCub(double a, double b, double c, double d)</div><div class="ttdoc">Calculate all roots of a*x^3 + b*x^2 + c*x + d = 0.</div><div class="ttdef"><b>Definition:</b> roots.hpp:55</div></div>
-<div class="ttc" id="aclass_roots_1_1_set_html_af16b83f6d254bf40cadb42491d7692ff"><div class="ttname"><a href="class_roots_1_1_set.html#af16b83f6d254bf40cadb42491d7692ff">Roots::Set::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> roots.hpp:43</div></div>
-<div class="ttc" id="anamespace_roots_html_a56bdbe9eaa74e23ce25bea0953abd658"><div class="ttname"><a href="namespace_roots.html#a56bdbe9eaa74e23ce25bea0953abd658">Roots::shrinkInterval</a></div><div class="ttdeci">double shrinkInterval(const std::array&lt; double, N &gt; &amp;p, double lbound, double ubound)</div><div class="ttdef"><b>Definition:</b> roots.hpp:380</div></div>
 <div class="ttc" id="anamespaceruckig_html_ad684ea3ed8d724f9c18c27f3f06b812d"><div class="ttname"><a href="namespaceruckig.html#ad684ea3ed8d724f9c18c27f3f06b812d">ruckig::Power</a></div><div class="ttdeci">double Power(double v, int e)</div><div class="ttdef"><b>Definition:</b> roots.hpp:10</div></div>
-<div class="ttc" id="anamespace_roots_html_a0cb3f4c2081b443153e18d253bf2afd9"><div class="ttname"><a href="namespace_roots.html#a0cb3f4c2081b443153e18d253bf2afd9">Roots::polyEval</a></div><div class="ttdeci">double polyEval(std::array&lt; double, N &gt; p, double x)</div><div class="ttdoc">Evaluate a polynomial of order N at x.</div><div class="ttdef"><b>Definition:</b> roots.hpp:275</div></div>
-<div class="ttc" id="aclass_roots_1_1_set_html_af827ab1ec3705c1121013bffbed25fcf"><div class="ttname"><a href="class_roots_1_1_set.html#af827ab1ec3705c1121013bffbed25fcf">Roots::Set::insert</a></div><div class="ttdeci">void insert(T value)</div><div class="ttdef"><b>Definition:</b> roots.hpp:47</div></div>
-<div class="ttc" id="anamespace_roots_html_aea8a4d104c9c227ff4d13979bce7a378"><div class="ttname"><a href="namespace_roots.html#aea8a4d104c9c227ff4d13979bce7a378">Roots::polyMonicDeri</a></div><div class="ttdeci">std::array&lt; double, N-1 &gt; polyMonicDeri(const std::array&lt; double, N &gt; &amp;monic_coeffs)</div><div class="ttdef"><b>Definition:</b> roots.hpp:309</div></div>
-<div class="ttc" id="anamespace_roots_html_a636d5ed9aa9082638d9e0b36292ef43a"><div class="ttname"><a href="namespace_roots.html#a636d5ed9aa9082638d9e0b36292ef43a">Roots::safeNewton</a></div><div class="ttdeci">double safeNewton(const F &amp;func, const DF &amp;dfunc, double l, double h, const double tol)</div><div class="ttdef"><b>Definition:</b> roots.hpp:321</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

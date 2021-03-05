@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ruckig: ruckig::Velocity1 Class Reference</title>
+<title>Ruckig: ruckig::VelocityStep2 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,35 +63,35 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceruckig.html">ruckig</a></li><li class="navelem"><a class="el" href="classruckig_1_1_velocity1.html">Velocity1</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceruckig.html">ruckig</a></li><li class="navelem"><a class="el" href="classruckig_1_1_velocity_step2.html">VelocityStep2</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classruckig_1_1_velocity1-members.html">List of all members</a>  </div>
+<a href="classruckig_1_1_velocity_step2-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ruckig::Velocity1 Class Reference</div>  </div>
+<div class="title">ruckig::VelocityStep2 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Mathematical equations for Step 1 in velocity interface: Extremal profiles.  
- <a href="classruckig_1_1_velocity1.html#details">More...</a></p>
+<p>Mathematical equations for Step 2 in velocity interface: Time synchronization.  
+ <a href="classruckig_1_1_velocity_step2.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="velocity_8hpp_source.html">velocity.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f002dec27a07eacf477173cf2928ec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_velocity1.html#a6f002dec27a07eacf477173cf2928ec6">Velocity1</a> (double p0, double v0, double a0, double vf, double af, double aMax, double aMin, double jMax)</td></tr>
-<tr class="separator:a6f002dec27a07eacf477173cf2928ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a329985e5eb6de4a03caed82de9227a55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_velocity1.html#a329985e5eb6de4a03caed82de9227a55">get_profile</a> (const <a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;input, <a class="el" href="structruckig_1_1_block.html">Block</a> &amp;block)</td></tr>
-<tr class="separator:a329985e5eb6de4a03caed82de9227a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9bdad5489fbc003a7cfc95afba6894"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_velocity_step2.html#a6a9bdad5489fbc003a7cfc95afba6894">VelocityStep2</a> (double tf, double p0, double v0, double a0, double vf, double af, double aMax, double aMin, double jMax)</td></tr>
+<tr class="separator:a6a9bdad5489fbc003a7cfc95afba6894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63743361e13791cbef414c4bf0366e68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_velocity_step2.html#a63743361e13791cbef414c4bf0366e68">get_profile</a> (<a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;profile)</td></tr>
+<tr class="separator:a63743361e13791cbef414c4bf0366e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Mathematical equations for Step 1 in velocity interface: Extremal profiles. </p>
+<div class="textblock"><p>Mathematical equations for Step 2 in velocity interface: Time synchronization. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6f002dec27a07eacf477173cf2928ec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f002dec27a07eacf477173cf2928ec6">&#9670;&nbsp;</a></span>Velocity1()</h2>
+<a id="a6a9bdad5489fbc003a7cfc95afba6894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9bdad5489fbc003a7cfc95afba6894">&#9670;&nbsp;</a></span>VelocityStep2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,8 +100,14 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ruckig::Velocity1::Velocity1 </td>
+          <td class="memname">ruckig::VelocityStep2::VelocityStep2 </td>
           <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>p0</em>, </td>
         </tr>
@@ -163,28 +169,18 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a329985e5eb6de4a03caed82de9227a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a329985e5eb6de4a03caed82de9227a55">&#9670;&nbsp;</a></span>get_profile()</h2>
+<a id="a63743361e13791cbef414c4bf0366e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63743361e13791cbef414c4bf0366e68">&#9670;&nbsp;</a></span>get_profile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ruckig::Velocity1::get_profile </td>
+          <td class="memname">bool ruckig::VelocityStep2::get_profile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;&#160;</td>
+          <td class="paramname"><em>profile</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structruckig_1_1_block.html">Block</a> &amp;&#160;</td>
-          <td class="paramname"><em>block</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -193,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/ruckig/ruckig/include/ruckig/<a class="el" href="velocity_8hpp_source.html">velocity.hpp</a></li>
-<li>/home/runner/work/ruckig/ruckig/src/<a class="el" href="velocity1_8cpp.html">velocity1.cpp</a></li>
+<li>/home/runner/work/ruckig/ruckig/src/<a class="el" href="velocity-step2_8cpp.html">velocity-step2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

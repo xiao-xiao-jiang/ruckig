@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ruckig: ruckig::Position2 Class Reference</title>
+<title>Ruckig: ruckig::PositionStep1 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,35 +63,35 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceruckig.html">ruckig</a></li><li class="navelem"><a class="el" href="classruckig_1_1_position2.html">Position2</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceruckig.html">ruckig</a></li><li class="navelem"><a class="el" href="classruckig_1_1_position_step1.html">PositionStep1</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classruckig_1_1_position2-members.html">List of all members</a>  </div>
+<a href="classruckig_1_1_position_step1-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ruckig::Position2 Class Reference</div>  </div>
+<div class="title">ruckig::PositionStep1 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Mathematical equations for Step 2 in position interface: Time synchronization.  
- <a href="classruckig_1_1_position2.html#details">More...</a></p>
+<p>Mathematical equations for Step 1 in position interface: Extremal profiles.  
+ <a href="classruckig_1_1_position_step1.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="position_8hpp_source.html">position.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adbc4d51f4215dcd65d778c189cfd0187"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_position2.html#adbc4d51f4215dcd65d778c189cfd0187">Position2</a> (double tf, double p0, double v0, double a0, double pf, double vf, double af, double vMax, double vMin, double aMax, double aMin, double jMax)</td></tr>
-<tr class="separator:adbc4d51f4215dcd65d778c189cfd0187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebc10f9083d1d416de0ec55c5d9df41e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_position2.html#aebc10f9083d1d416de0ec55c5d9df41e">get_profile</a> (<a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;profile)</td></tr>
-<tr class="separator:aebc10f9083d1d416de0ec55c5d9df41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3527b9fdabb575cd5b9ce8cd5a792f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_position_step1.html#afe3527b9fdabb575cd5b9ce8cd5a792f">PositionStep1</a> (double p0, double v0, double a0, double pf, double vf, double af, double vMax, double vMin, double aMax, double aMin, double jMax)</td></tr>
+<tr class="separator:afe3527b9fdabb575cd5b9ce8cd5a792f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef23483dbb4f6ca67ba8ed3d74629a47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_position_step1.html#aef23483dbb4f6ca67ba8ed3d74629a47">get_profile</a> (const <a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;input, <a class="el" href="structruckig_1_1_block.html">Block</a> &amp;block)</td></tr>
+<tr class="separator:aef23483dbb4f6ca67ba8ed3d74629a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Mathematical equations for Step 2 in position interface: Time synchronization. </p>
+<div class="textblock"><p>Mathematical equations for Step 1 in position interface: Extremal profiles. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adbc4d51f4215dcd65d778c189cfd0187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbc4d51f4215dcd65d778c189cfd0187">&#9670;&nbsp;</a></span>Position2()</h2>
+<a id="afe3527b9fdabb575cd5b9ce8cd5a792f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3527b9fdabb575cd5b9ce8cd5a792f">&#9670;&nbsp;</a></span>PositionStep1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,14 +100,8 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ruckig::Position2::Position2 </td>
+          <td class="memname">ruckig::PositionStep1::PositionStep1 </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>p0</em>, </td>
         </tr>
@@ -187,18 +181,28 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aebc10f9083d1d416de0ec55c5d9df41e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebc10f9083d1d416de0ec55c5d9df41e">&#9670;&nbsp;</a></span>get_profile()</h2>
+<a id="aef23483dbb4f6ca67ba8ed3d74629a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef23483dbb4f6ca67ba8ed3d74629a47">&#9670;&nbsp;</a></span>get_profile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ruckig::Position2::get_profile </td>
+          <td class="memname">bool ruckig::PositionStep1::get_profile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;&#160;</td>
-          <td class="paramname"><em>profile</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structruckig_1_1_block.html">Block</a> &amp;&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -207,7 +211,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/ruckig/ruckig/include/ruckig/<a class="el" href="position_8hpp_source.html">position.hpp</a></li>
-<li>/home/runner/work/ruckig/ruckig/src/<a class="el" href="position2_8cpp.html">position2.cpp</a></li>
+<li>/home/runner/work/ruckig/ruckig/src/<a class="el" href="position-step1_8cpp.html">position-step1.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_21_3d_225',['operator!=',['../structruckig_1_1_input_parameter.html#a292a929568b46a7fa1493dc3415a9f36',1,'ruckig::InputParameter']]]
+  ['quintic_207',['Quintic',['../classruckig_1_1_quintic.html#ade4cf6dd15a4484485f240e73cb483b7',1,'ruckig::Quintic']]]
 ];
