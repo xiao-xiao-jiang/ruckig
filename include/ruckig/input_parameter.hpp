@@ -6,7 +6,6 @@
 #include <sstream>
 
 #include <ruckig/path.hpp>
-#include <ruckig/trajectory.hpp>
 
 
 namespace ruckig {
@@ -22,10 +21,32 @@ enum Result {
     ErrorSynchronizationCalculation = -111,
 };
 
+enum class CalculationResult {
+    Working,
+    ErrorExecutionTimeCalculation,
+    ErrorSynchronizationCalculation,
+    ErrorTrajectoryDuration,
+};
 
 enum class Type {
     Waypoint,
     Path,
+};
+
+enum class Interface {
+    Position,
+    Velocity,
+};
+
+enum class Synchronization {
+    Time,
+    TimeIfNecessary,
+    None,
+};
+
+enum class DurationDiscretization {
+    Continuous,
+    Discrete, ///< The trajectory duration must be a multiple of the control cycle
 };
 
 
@@ -45,21 +66,9 @@ public:
     using Vector = std::array<double, DOFs>;
     static constexpr size_t degrees_of_freedom {DOFs};
     
-    enum class Interface {
-        Position,
-        Velocity,
-    } interface {Interface::Position};
-
-    enum class Synchronization {
-        Time,
-        TimeIfNecessary,
-        None,
-    } synchronization {Synchronization::Time};
-
-    enum class DurationDiscretization {
-        Continuous,
-        Discrete, ///< The trajectory duration must be a multiple of the control cycle
-    } duration_discretization {DurationDiscretization::Continuous};
+    Interface interface {Interface::Position};
+    Synchronization synchronization {Synchronization::Time};
+    DurationDiscretization duration_discretization {DurationDiscretization::Continuous};
 
     Vector current_position, current_velocity {}, current_acceleration {};
     Vector target_position, target_velocity {}, target_acceleration {};
@@ -69,14 +78,14 @@ public:
     std::array<bool, DOFs> enabled;
     std::optional<double> minimum_duration;
 
-    Path<DOFs>* path {nullptr}; // Const path value
+    std::optional<Path<DOFs>> path;
 
     InputParameter() {
         std::fill(enabled.begin(), enabled.end(), true);
     }
 
-    InputParameter(Path<DOFs>* path): path(path) {
-
+    InputParameter(const Path<DOFs>& path): path(path) {
+        std::fill(enabled.begin(), enabled.end(), true);
     }
 
     bool operator!=(const InputParameter<DOFs>& rhs) const {
@@ -119,28 +128,6 @@ public:
         }
         return ss.str();
     }
-};
-
-
-//! Output type of the OTG
-template<size_t DOFs>
-struct OutputParameter {
-    static constexpr size_t degrees_of_freedom {DOFs};
-    
-    std::array<double, DOFs> new_position, new_velocity, new_acceleration;
-
-    //! Was a new trajectory calculation performed in the last cycle?
-    bool new_calculation {false};
-    double calculation_duration; // [µs]
-
-    //! Current trajectory
-    Trajectory<DOFs> trajectory;
-
-    //! Current time on trajectory
-    double time;
-
-    //! Current type
-    Type type;
 };
 
 } // namespace ruckig

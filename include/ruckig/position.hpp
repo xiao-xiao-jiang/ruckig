@@ -3,6 +3,8 @@
 #include <array>
 #include <optional>
 
+#include <ruckig/block.hpp>
+
 
 namespace ruckig {
 

@@ -179,6 +179,17 @@ struct Profile {
         return (std::abs(jf) < std::abs(jMax) + 1e-12) && check<jerk_signs, limits>(tf, jf, vMax, aMax, aMin);
     }
 
+    inline std::tuple<double, double, double> state_at_time(double t) const {
+        const auto index_ptr = std::upper_bound(t_sum.begin(), t_sum.end(), t);
+        const size_t index = std::distance(t_sum.begin(), index_ptr);
+
+        if (index > 0) {
+            t -= t_sum[index - 1];
+        }
+
+        return Profile::integrate(t, p[index], v[index], a[index], j[index]);
+    }
+
     //! Integrate with constant jerk for duration t. Returns new position, new velocity, and new acceleration.
     inline static std::tuple<double, double, double> integrate(double t, double p0, double v0, double a0, double j) {
         return {

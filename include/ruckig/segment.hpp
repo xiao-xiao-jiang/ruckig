@@ -29,7 +29,7 @@ struct LinearSegment {
         return result;
     }
 
-    Vector pdq(double s) const {
+    Vector pdq([[maybe_unused]] double s) const {
         Vector result;
         for (size_t dof = 0; dof < DOFs; ++dof) {
             result[dof] = (end[dof] - start[dof]) / length;
@@ -37,12 +37,12 @@ struct LinearSegment {
         return result;
     }
 
-    Vector pddq(double s) const {
+    Vector pddq([[maybe_unused]] double s) const {
         Vector result {};
         return result;
     }
 
-    Vector pdddq(double s) const {
+    Vector pdddq([[maybe_unused]] double s) const {
         Vector result {};
         return result;
     }

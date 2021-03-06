@@ -36,8 +36,6 @@ class Path {
 
     std::vector<Vector> absolute_waypoints;
     std::vector<LinearSegment<DOFs>> line_segments;
-    std::vector<Segment> segments;
-    std::vector<double> cumulative_lengths;
 
     std::tuple<size_t, double> find_index(double s) const {
         const auto index_ptr = std::upper_bound(cumulative_lengths.begin(), cumulative_lengths.end(), s);
@@ -48,6 +46,9 @@ class Path {
 public:
     static constexpr size_t degrees_of_freedom {DOFs};
     double length;
+
+    std::vector<Segment> segments;
+    std::vector<double> cumulative_lengths;
     
     explicit Path(const Vector& start, const std::vector<PathWaypoint<DOFs>>& waypoints, double max_blend_distance = 0.0) {
         if (waypoints.empty()) {
@@ -123,27 +124,27 @@ public:
 
     Vector q(double s) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) { return segment.q(s_local); }, segments[i]);
+        return std::visit([s_local](auto&& segment) { return segment.q(s_local); }, segments[i]);
     }
 
     Vector pdq(double s) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) { return segment.pdq(s_local); }, segments[i]);
+        return std::visit([s_local](auto&& segment) { return segment.pdq(s_local); }, segments[i]);
     }
 
     Vector pddq(double s) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) { return segment.pddq(s_local); }, segments[i]);
+        return std::visit([s_local](auto&& segment) { return segment.pddq(s_local); }, segments[i]);
     }
 
     Vector pdddq(double s) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) { return segment.pdddq(s_local); }, segments[i]);
+        return std::visit([s_local](auto&& segment) { return segment.pdddq(s_local); }, segments[i]);
     }
 
     Vector dq(double s, double ds) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) {
+        return std::visit([s_local, ds](auto&& segment) {
             Vector result;
             const Vector pdq {segment.pdq(s_local)};
             for (size_t dof = 0; dof < DOFs; ++dof) {
@@ -155,7 +156,7 @@ public:
 
     Vector ddq(double s, double ds, double dds) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) {
+        return std::visit([s_local, ds, dds](auto&& segment) {
             Vector result;
             const Vector pdq {segment.pdq(s_local)}, pddq {segment.pddq(s_local)};
             for (size_t dof = 0; dof < DOFs; ++dof) {
@@ -167,7 +168,7 @@ public:
 
     Vector dddq(double s, double ds, double dds, double ddds) const {
         auto [i, s_local] = find_index(s);
-        return std::visit([&](auto&& segment) {
+        return std::visit([s_local, ds, dds, ddds](auto&& segment) {
             Vector result;
             const Vector pdq {segment.pdq(s_local)}, pddq {segment.pddq(s_local)}, pdddq {segment.pdddq(s_local)};
             for (size_t dof = 0; dof < DOFs; ++dof) {

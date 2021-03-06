@@ -9,7 +9,7 @@ sys.path.insert(0, str(Pathlib(__file__).parent.parent / 'build'))
 from _ruckig import Path, PathWaypoint
 
 
-def walk_through_path(path, s_diff=0.01):
+def walk_through_path(p, s_diff=0.01):
     s_list, q_list, pdq_list, pddq_list = [], [], [], []
     for s in np.arange(0, p.length, s_diff):
         s_list.append(s)

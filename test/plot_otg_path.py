@@ -1,14 +1,14 @@
 import copy
-from pathlib import Path
+from pathlib import Path as Pathlib
 import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).parent.parent / 'build'))
+sys.path.insert(0, str(Pathlib(__file__).parent.parent / 'build'))
 
-from _ruckig import Quintic, InputParameter, OutputParameter, Result, Ruckig, Smoothie
-from _ruckig import Reflexxes
+from _ruckig import InputParameter, OutputParameter, Result, Ruckig, Path, PathWaypoint
+from plot_path import plot_path
 
 
 def walk_through_trajectory(otg, inp, print_table=True):
@@ -17,8 +17,6 @@ def walk_through_trajectory(otg, inp, print_table=True):
     out = OutputParameter()
 
     res = Result.Working
-    old_acc = 0
-    print_dof = 0
     while res == Result.Working:
         res = otg.update(inp, out)
 
@@ -26,14 +24,9 @@ def walk_through_trajectory(otg, inp, print_table=True):
         inp.current_velocity = out.new_velocity
         inp.current_acceleration = out.new_acceleration
 
-        if print_table:
-            jerk = (old_acc - out.new_acceleration[print_dof]) / otg.delta_time
-            old_acc = out.new_acceleration[print_dof]
-            # print(str(t_start + t) + '\t' + str(inp.current_position[print_dof]) + '\t' + str(inp.current_velocity[print_dof]) + '\t' + str(inp.current_acceleration[print_dof]) + '\t' + str(jerk))
-            # print(str(inp.current_position[0]) + '\t' + str(inp.current_position[1]))
-
         t_list.append(out.time)
         out_list.append(copy.copy(out))
+        t += otg.delta_time
 
     return t_list, out_list
 
@@ -83,35 +76,27 @@ def plot_trajectory(t_list, out_list):
         plt.grid(True)
 
     plt.xlabel('t')
-    plt.savefig(Path(__file__).parent.parent / 'build' / 'trajectory-waypoint.png')
+    plt.savefig(Pathlib(__file__).parent.parent / 'build' / 'trajectory-path.png')
     # plt.show()
 
 
 if __name__ == '__main__':
     inp = InputParameter()
-    # inp.interface = InputParameter.Interface.Velocity
-    # inp.synchronization = InputParameter.TimeIfNecessary
-    # inp.duration_discretization = InputParameter.Discrete
-    inp.current_position = [0.5, -0.23, -1]
-    inp.current_velocity = [0, 0.2, 0]
-    inp.current_acceleration = [0, 1, 1]
-    inp.target_position = [1, -1, -1]
-    inp.target_velocity = [0, 0, 0]
-    inp.target_acceleration = [0, 0.3, 1]
+    inp.current_position = [0, 0, 0]
+    inp.current_velocity = [0, 0, 0]
+    inp.current_acceleration = [0, 0, 0]
     inp.max_velocity = [2, 2, 2]
     inp.max_acceleration = [2, 2, 2]
     inp.max_jerk = [1, 1, 1]
 
-    # otg = Quintic(0.005)
-    # otg = Smoothie(0.005)
-    # otg = Reflexxes(0.005)
+    inp.path = Path([0.0, 0.0, 0.0], [PathWaypoint([0.5, 2.0, -1.0])])
+
     otg = Ruckig(0.005)
 
     t_list, out_list = walk_through_trajectory(otg, inp)
 
-    # print(out_list[0].trajectory.get_position_extrema())
-
     print(f'Calculation duration: {out_list[0].calculation_duration:0.1f} [µs]')
     print(f'Trajectory duration: {out_list[0].trajectory.duration:0.4f} [s]')
 
+    plot_path(inp.path)
     plot_trajectory(t_list, out_list)

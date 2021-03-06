@@ -4,7 +4,6 @@
 #include <random>
 #include "randomizer.hpp"
 
-#include <ruckig/parameter.hpp>
 #include <ruckig/ruckig.hpp>
 #include <ruckig/alternative/quintic.hpp>
 
@@ -247,7 +246,7 @@ TEST_CASE("velocity_random_3" * doctest::description("Random input with 3 DoF an
     constexpr size_t DOFs {3};
     Ruckig<DOFs, true> otg {0.005};
     InputParameter<DOFs> input;
-    input.interface = InputParameter<DOFs>::Interface::Velocity;
+    input.interface = Interface::Velocity;
     
     Randomizer<DOFs, decltype(position_dist)> p { position_dist, seed + 3 };
     Randomizer<DOFs, decltype(dynamic_dist)> d { dynamic_dist, seed + 4 };
