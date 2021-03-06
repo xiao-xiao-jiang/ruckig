@@ -5,6 +5,7 @@
 #include <optional>
 #include <sstream>
 
+#include <ruckig/path.hpp>
 #include <ruckig/trajectory.hpp>
 
 
@@ -22,11 +23,16 @@ enum Result {
 };
 
 
+enum class Type {
+    Waypoint,
+    Path,
+};
+
+
+//! Input type of the OTG
 template<size_t DOFs>
-class Parameter {
-protected:
-    template<class T>
-    static std::string join(const T& array) {
+class InputParameter {
+    static std::string join(const std::array<double, DOFs>& array) {
         std::ostringstream ss;
         for (size_t i = 0; i < DOFs; ++i) {
             if (i) ss << ", ";
@@ -36,14 +42,8 @@ protected:
     }
 
 public:
-    static constexpr size_t degrees_of_freedom {DOFs};
-};
-
-
-//! Input type of the OTG
-template<size_t DOFs>
-struct InputParameter: public Parameter<DOFs> {
     using Vector = std::array<double, DOFs>;
+    static constexpr size_t degrees_of_freedom {DOFs};
     
     enum class Interface {
         Position,
@@ -69,8 +69,14 @@ struct InputParameter: public Parameter<DOFs> {
     std::array<bool, DOFs> enabled;
     std::optional<double> minimum_duration;
 
+    Path<DOFs>* path {nullptr}; // Const path value
+
     InputParameter() {
         std::fill(enabled.begin(), enabled.end(), true);
+    }
+
+    InputParameter(Path<DOFs>* path): path(path) {
+
     }
 
     bool operator!=(const InputParameter<DOFs>& rhs) const {
@@ -118,17 +124,23 @@ struct InputParameter: public Parameter<DOFs> {
 
 //! Output type of the OTG
 template<size_t DOFs>
-struct OutputParameter: public Parameter<DOFs> {
+struct OutputParameter {
+    static constexpr size_t degrees_of_freedom {DOFs};
+    
     std::array<double, DOFs> new_position, new_velocity, new_acceleration;
 
+    //! Was a new trajectory calculation performed in the last cycle?
     bool new_calculation {false};
     double calculation_duration; // [µs]
 
-    // Current trajectory
+    //! Current trajectory
     Trajectory<DOFs> trajectory;
 
-    // Current time on trajectory
+    //! Current time on trajectory
     double time;
+
+    //! Current type
+    Type type;
 };
 
 } // namespace ruckig

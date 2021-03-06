@@ -45,7 +45,7 @@ Furthermore, a tutorial will explain the basics to include online generated traj
 
 ![Trajectory Profile](https://github.com/pantor/ruckig/raw/master/doc/example_profile.png?raw=true)
 
-### Real-time trajectory generation
+### Waypoint-based Trajectory Generation
 
 Ruckig provides three main interface classes: the *Ruckig*, the *InputParameter*, and the *OutputParameter* class.
 
@@ -183,6 +183,9 @@ std::array<double, DOFs> independent_min_durations; // Time-optimal profile for 
 <...> get_position_extrema(); // Returns information about the position extrema and their times
 ```
 We refer to the [API documentation](https://pantor.github.io/ruckig/) for the exact signature.
+
+
+### *Experimental*: Path-based Trajectory Generation
 
 
 ## Tests and Numerical Stability

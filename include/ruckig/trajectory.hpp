@@ -11,19 +11,58 @@
 
 namespace ruckig {
 
+
+enum class CalculationError {
+    Working,
+};
+
+
 // For path-based OTG
 template<size_t DOFs>
-struct PathTrajectory {
-    double duration;
+class PathTrajectory {
+    using Vector = std::array<double, DOFs>;
 
-    std::vector<double> cumulative_lengths {1};
-    std::vector<std::shared_ptr<Segment<DOFs>>> segments {1};
+    double s0, ds0, dds0;
+    double sf, dsf, ddsf;
 
-    double s_length() {
-        return cumulative_lengths.back();
+    Vector p0, v0, a0;
+    Vector pf, vf, af;
+
+    std::tuple<double, double, double> time_parametrization(double time) const {
+        double s = 0.0;
+        double ds = 0.0;
+        double dds = 0.0;
+        return {s, ds, dds};
     }
 
-    void at_time(double time, std::array<double, DOFs>& new_position, std::array<double, DOFs>& new_velocity, std::array<double, DOFs>& new_acceleration) const {
+public:
+    double duration;
+    
+    Path<DOFs> path;
+
+    explicit PathTrajectory(const Path<DOFs>& path): PathTrajectory(path, {}, {}, {}, {}) { }
+    explicit PathTrajectory(const Path<DOFs>& path, Vector v0, Vector a0, Vector vf, Vector af): path(path), s0(0.0), sf(path.length), p0(path.q(s0)), pf(path.q(sf)), v0(v0), vf(vf), a0(a0), af(af) {
+        ds0 = 0.0;
+        dds0 = 0.0;
+
+        dsf = 0.0;
+        ddsf = 0.0;
+    }
+
+    CalculationError calculate() {
+        return CalculationError::Working;
+    }
+
+    void at_time(double time, Vector& new_position, Vector new_velocity, Vector& new_acceleration) const {
+        if (time > duration) {
+            // Keep constant acceleration from final state
+            
+        }
+
+        auto [s, ds, dds] = time_parametrization(time);
+        new_position = path.q(s);
+        new_velocity = path.dq(s, ds);
+        new_acceleration = path.ddq(s, ds, dds);
     }
 
     std::array<PositionExtrema, DOFs> get_position_extrema() const {
@@ -41,9 +80,15 @@ struct ProfileTrajectory {
     //! Set of current profiles for each DoF
     std::array<Profile, DOFs> profiles;
 
+    explicit ProfileTrajectory() { }
+
+    CalculationError calculate() {
+        return CalculationError::Working;
+    }
+
     void at_time(double time, std::array<double, DOFs>& new_position, std::array<double, DOFs>& new_velocity, std::array<double, DOFs>& new_acceleration) const {
         if (time > duration) {
-            // Keep constant acceleration
+            // Keep constant acceleration from final state
             for (size_t dof = 0; dof < DOFs; ++dof) {
                 std::tie(new_position[dof], new_velocity[dof], new_acceleration[dof]) = Profile::integrate(time - duration, profiles[dof].pf, profiles[dof].vf, profiles[dof].af, 0);
             }

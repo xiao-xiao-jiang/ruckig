@@ -67,6 +67,27 @@ limited by velocity, acceleration, and jerk constraints.";
         .value("Discrete", IP::DurationDiscretization::Discrete)
         .export_values();
 
+    py::class_<PathWaypoint<DOFs>> path_waypoint(m, "PathWaypoint");
+    path_waypoint.def(py::init<const std::array<double, DOFs>&>())
+        .def(py::init<const std::array<double, DOFs>&, PathWaypoint<DOFs>::Reference>());
+
+    py::enum_<PathWaypoint<DOFs>::Reference>(path_waypoint, "Reference")
+        .value("Absolute", PathWaypoint<DOFs>::Reference::Absolute)
+        .value("Relative", PathWaypoint<DOFs>::Reference::Relative)
+        .export_values();
+
+    py::class_<Path<DOFs>>(m, "Path")
+        .def(py::init<const std::array<double, DOFs>&, const std::vector<PathWaypoint<DOFs>>&, double>(), "start"_a, "waypoints"_a, "max_blend_distance"_a=0.0)
+        .def_readonly_static("degrees_of_freedom", &Path<DOFs>::degrees_of_freedom)
+        .def_readonly("length", &Path<DOFs>::length)
+        .def("q", &Path<DOFs>::q)
+        .def("pdq", &Path<DOFs>::pdq)
+        .def("pddq", &Path<DOFs>::pddq)
+        .def("pdddq", &Path<DOFs>::pdddq)
+        .def("dq", &Path<DOFs>::dq)
+        .def("ddq", &Path<DOFs>::ddq)
+        .def("dddq", &Path<DOFs>::dddq);
+
     py::class_<Trajectory<DOFs>>(m, "Trajectory")
         .def_readonly("duration", &Trajectory<DOFs>::duration)
         .def_readonly("independent_min_durations", &Trajectory<DOFs>::independent_min_durations)
