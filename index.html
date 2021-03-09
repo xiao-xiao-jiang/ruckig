@@ -114,17 +114,17 @@ $(function() {
 <p>To go into more detail, the <em>InputParameter</em> type has following members:</p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> Vector = std::array&lt;double, DOFs&gt;;</div>
 <div class="line"> </div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#ab5c5c0185e143c5305c82cd26f163d11">current_position</a>;</div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#ae95600c11ea70106fd7aeae083103f04">current_velocity</a>; <span class="comment">// Initialized to zero</span></div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#ad17d5ee35121be9782986f5edda572f2">current_acceleration</a>; <span class="comment">// Initialized to zero</span></div>
+<div class="line">Vector current_position;</div>
+<div class="line">Vector current_velocity; <span class="comment">// Initialized to zero</span></div>
+<div class="line">Vector current_acceleration; <span class="comment">// Initialized to zero</span></div>
 <div class="line"> </div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#aaf7e4b92288c4cce4c6a06e460ead9b4">target_position</a>;</div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#aa3dc3abec5a3312e836c6dd962569956">target_velocity</a>; <span class="comment">// Initialized to zero</span></div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#a3a0307111ead8e35d338ed96eaeb645d">target_acceleration</a>; <span class="comment">// Initialized to zero</span></div>
+<div class="line">Vector target_position;</div>
+<div class="line">Vector target_velocity; <span class="comment">// Initialized to zero</span></div>
+<div class="line">Vector target_acceleration; <span class="comment">// Initialized to zero</span></div>
 <div class="line"> </div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#a621db0c56fc437cc199f5d5309ad7a8f">max_velocity</a>;</div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#a714b8a30660621ed6a14aa52a171b62f">max_acceleration</a>;</div>
-<div class="line">Vector <a class="code" href="namespaceposition.html#a0cd1895878ec4aa5c7a24318576c442f">max_jerk</a>;</div>
+<div class="line">Vector max_velocity;</div>
+<div class="line">Vector max_acceleration;</div>
+<div class="line">Vector max_jerk;</div>
 <div class="line"> </div>
 <div class="line">std::optional&lt;Vector&gt; min_velocity; <span class="comment">// If not given, the negative maximum velocity will be used.</span></div>
 <div class="line">std::optional&lt;Vector&gt; min_acceleration; <span class="comment">// If not given, the negative maximum acceleration will be used.</span></div>
@@ -191,19 +191,10 @@ $(function() {
 <p>A publication is submitted ;) </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
-<div class="ttc" id="anamespaceposition_html_a0cd1895878ec4aa5c7a24318576c442f"><div class="ttname"><a href="namespaceposition.html#a0cd1895878ec4aa5c7a24318576c442f">position.max_jerk</a></div><div class="ttdeci">max_jerk</div><div class="ttdef"><b>Definition:</b> position.py:44</div></div>
-<div class="ttc" id="anamespaceposition_html_a621db0c56fc437cc199f5d5309ad7a8f"><div class="ttname"><a href="namespaceposition.html#a621db0c56fc437cc199f5d5309ad7a8f">position.max_velocity</a></div><div class="ttdeci">max_velocity</div><div class="ttdef"><b>Definition:</b> position.py:42</div></div>
 <div class="ttc" id="anamespaceruckig_html"><div class="ttname"><a href="namespaceruckig.html">ruckig</a></div><div class="ttdef"><b>Definition:</b> quintic.hpp:7</div></div>
-<div class="ttc" id="anamespaceposition_html_aa3dc3abec5a3312e836c6dd962569956"><div class="ttname"><a href="namespaceposition.html#aa3dc3abec5a3312e836c6dd962569956">position.target_velocity</a></div><div class="ttdeci">target_velocity</div><div class="ttdef"><b>Definition:</b> position.py:40</div></div>
-<div class="ttc" id="anamespaceposition_html_ae95600c11ea70106fd7aeae083103f04"><div class="ttname"><a href="namespaceposition.html#ae95600c11ea70106fd7aeae083103f04">position.current_velocity</a></div><div class="ttdeci">current_velocity</div><div class="ttdef"><b>Definition:</b> position.py:37</div></div>
 <div class="ttc" id="anamespaceruckig_html_a56ce59a766f7d30bd6958501127cc388"><div class="ttname"><a href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">ruckig::DurationDiscretization</a></div><div class="ttdeci">DurationDiscretization</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:34</div></div>
-<div class="ttc" id="anamespaceposition_html_a3a0307111ead8e35d338ed96eaeb645d"><div class="ttname"><a href="namespaceposition.html#a3a0307111ead8e35d338ed96eaeb645d">position.target_acceleration</a></div><div class="ttdeci">target_acceleration</div><div class="ttdef"><b>Definition:</b> position.py:41</div></div>
-<div class="ttc" id="anamespaceposition_html_a714b8a30660621ed6a14aa52a171b62f"><div class="ttname"><a href="namespaceposition.html#a714b8a30660621ed6a14aa52a171b62f">position.max_acceleration</a></div><div class="ttdeci">max_acceleration</div><div class="ttdef"><b>Definition:</b> position.py:43</div></div>
 <div class="ttc" id="anamespaceruckig_html_a47c13b0e731f894979621b17c63cd75c"><div class="ttname"><a href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">ruckig::Interface</a></div><div class="ttdeci">Interface</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:23</div></div>
 <div class="ttc" id="anamespaceruckig_html_a5ff5205f431128e168e1f134d117c10a"><div class="ttname"><a href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">ruckig::Synchronization</a></div><div class="ttdeci">Synchronization</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:28</div></div>
-<div class="ttc" id="anamespaceposition_html_aaf7e4b92288c4cce4c6a06e460ead9b4"><div class="ttname"><a href="namespaceposition.html#aaf7e4b92288c4cce4c6a06e460ead9b4">position.target_position</a></div><div class="ttdeci">target_position</div><div class="ttdef"><b>Definition:</b> position.py:39</div></div>
-<div class="ttc" id="anamespaceposition_html_ab5c5c0185e143c5305c82cd26f163d11"><div class="ttname"><a href="namespaceposition.html#ab5c5c0185e143c5305c82cd26f163d11">position.current_position</a></div><div class="ttdeci">current_position</div><div class="ttdef"><b>Definition:</b> position.py:36</div></div>
-<div class="ttc" id="anamespaceposition_html_ad17d5ee35121be9782986f5edda572f2"><div class="ttname"><a href="namespaceposition.html#ad17d5ee35121be9782986f5edda572f2">position.current_acceleration</a></div><div class="ttdeci">current_acceleration</div><div class="ttdef"><b>Definition:</b> position.py:38</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

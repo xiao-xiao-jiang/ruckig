@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['independent_5fmin_5fdurations_242',['independent_min_durations',['../classruckig_1_1_trajectory.html#a6f851f019da9a96a8029df7458b0ebad',1,'ruckig::Trajectory']]],
-  ['inp_243',['inp',['../namespaceposition.html#aa9e7c101efc4665a51a1cf9bdd72b7a7',1,'position']]],
-  ['interface_244',['interface',['../classruckig_1_1_input_parameter.html#a97d3879343d8709bd4779c173d57de80',1,'ruckig::InputParameter']]]
+  ['j_237',['j',['../structruckig_1_1_profile.html#aafa318423aa2df06e11c0c687ba26ee5',1,'ruckig::Profile']]],
+  ['j_5fbrakes_238',['j_brakes',['../structruckig_1_1_profile.html#ae8bddff381b1c0472fda67c03c38d084',1,'ruckig::Profile']]],
+  ['jerk_5fsigns_239',['jerk_signs',['../structruckig_1_1_profile.html#a3cb6683408c86112e20393e62887a54a',1,'ruckig::Profile']]]
 ];
