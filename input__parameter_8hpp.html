@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ruckig: /home/runner/work/ruckig/ruckig/include/ruckig/parameter.hpp File Reference</title>
+<title>Ruckig: /home/runner/work/ruckig/ruckig/include/ruckig/input_parameter.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,24 +72,20 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">parameter.hpp File Reference</div>  </div>
+<div class="title">input_parameter.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;<a class="el" href="trajectory_8hpp_source.html">ruckig/trajectory.hpp</a>&gt;</code><br />
 </div>
-<p><a href="parameter_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="input__parameter_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html">ruckig::InputParameter&lt; DOFs &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input type of the OTG.  <a href="classruckig_1_1_input_parameter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter&lt; DOFs &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output type of the OTG.  <a href="structruckig_1_1_output_parameter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -112,6 +108,19 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a84167d6e92f2bdcb86ce99d7aaa2d1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the OTGs update function.  <a href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">More...</a><br /></td></tr>
 <tr class="separator:a84167d6e92f2bdcb86ce99d7aaa2d1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c13b0e731f894979621b17c63cd75c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">ruckig::Interface</a> { <a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881">ruckig::Interface::Position</a>, 
+<a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12">ruckig::Interface::Velocity</a>
+ }</td></tr>
+<tr class="separator:a47c13b0e731f894979621b17c63cd75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff5205f431128e168e1f134d117c10a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">ruckig::Synchronization</a> { <a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aaa76d4ef5f3f6a672bbfab2865563e530">ruckig::Synchronization::Time</a>, 
+<a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa7ddc8e24add04a76f06998f3f12404e2">ruckig::Synchronization::TimeIfNecessary</a>, 
+<a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa6adf97f83acf6453d4a6a4b1070f3754">ruckig::Synchronization::None</a>
+ }</td></tr>
+<tr class="separator:a5ff5205f431128e168e1f134d117c10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ce59a766f7d30bd6958501127cc388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">ruckig::DurationDiscretization</a> { <a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7">ruckig::DurationDiscretization::Continuous</a>, 
+<a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553">ruckig::DurationDiscretization::Discrete</a>
+ }</td></tr>
+<tr class="separator:a56ce59a766f7d30bd6958501127cc388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

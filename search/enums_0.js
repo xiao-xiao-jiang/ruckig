@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['direction_282',['Direction',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739',1,'ruckig::Profile']]],
-  ['durationdiscretization_283',['DurationDiscretization',['../classruckig_1_1_input_parameter.html#a3e258d49902b9ba73c44a38c93edc656',1,'ruckig::InputParameter']]]
+  ['direction_290',['Direction',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739',1,'ruckig::Profile']]],
+  ['durationdiscretization_291',['DurationDiscretization',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388',1,'ruckig']]]
 ];

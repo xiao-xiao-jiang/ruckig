@@ -11,5 +11,5 @@ var searchData=
   ['acc1_5fvel_8',['ACC1_VEL',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53ae5dbaeccb06afaa5bc2c700188befba6',1,'ruckig::Profile']]],
   ['add_5finterval_9',['add_interval',['../structruckig_1_1_block.html#a622f0f4137bac1f7e54ca474de9131b6',1,'ruckig::Block']]],
   ['af_10',['af',['../structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8',1,'ruckig::Profile']]],
-  ['at_5ftime_11',['at_time',['../classruckig_1_1_reflexxes.html#a884a6f173c1b07ced3bad90a4f995a0b',1,'ruckig::Reflexxes::at_time()'],['../structruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7',1,'ruckig::Trajectory::at_time()']]]
+  ['at_5ftime_11',['at_time',['../classruckig_1_1_reflexxes.html#a884a6f173c1b07ced3bad90a4f995a0b',1,'ruckig::Reflexxes::at_time()'],['../classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7',1,'ruckig::Trajectory::at_time()']]]
 ];

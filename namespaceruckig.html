@@ -111,8 +111,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_smoothie.html">Smoothie</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative OTG algorithm (for comparison)  <a href="classruckig_1_1_smoothie.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_trajectory.html">Trajectory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for the generated trajectory.  <a href="structruckig_1_1_trajectory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html">Trajectory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for the generated trajectory.  <a href="classruckig_1_1_trajectory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_velocity_step1.html">VelocityStep1</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mathematical equations for Step 1 in velocity interface: Extremal profiles.  <a href="classruckig_1_1_velocity_step1.html#details">More...</a><br /></td></tr>
@@ -143,6 +143,19 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a84167d6e92f2bdcb86ce99d7aaa2d1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the OTGs update function.  <a href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">More...</a><br /></td></tr>
 <tr class="separator:a84167d6e92f2bdcb86ce99d7aaa2d1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c13b0e731f894979621b17c63cd75c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">Interface</a> { <a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881">Interface::Position</a>, 
+<a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12">Interface::Velocity</a>
+ }</td></tr>
+<tr class="separator:a47c13b0e731f894979621b17c63cd75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff5205f431128e168e1f134d117c10a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">Synchronization</a> { <a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aaa76d4ef5f3f6a672bbfab2865563e530">Synchronization::Time</a>, 
+<a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa7ddc8e24add04a76f06998f3f12404e2">Synchronization::TimeIfNecessary</a>, 
+<a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa6adf97f83acf6453d4a6a4b1070f3754">Synchronization::None</a>
+ }</td></tr>
+<tr class="separator:a5ff5205f431128e168e1f134d117c10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ce59a766f7d30bd6958501127cc388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">DurationDiscretization</a> { <a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7">DurationDiscretization::Continuous</a>, 
+<a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553">DurationDiscretization::Discrete</a>
+ }</td></tr>
+<tr class="separator:a56ce59a766f7d30bd6958501127cc388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -187,6 +200,62 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a56ce59a766f7d30bd6958501127cc388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ce59a766f7d30bd6958501127cc388">&#9670;&nbsp;</a></span>DurationDiscretization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">ruckig::DurationDiscretization</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7"></a>Continuous&#160;</td><td class="fielddoc"><p>Every trajectory duration is allowed (Default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553"></a>Discrete&#160;</td><td class="fielddoc"><p>The trajectory duration must be a multiple of the control cycle. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a47c13b0e731f894979621b17c63cd75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c13b0e731f894979621b17c63cd75c">&#9670;&nbsp;</a></span>Interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">ruckig::Interface</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"><p>Position-control: Full control over the entire kinematic state (Default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"><p>Velocity-control: Ignores the current position, target position, and velocity limits. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84167d6e92f2bdcb86ce99d7aaa2d1a9">&#9670;&nbsp;</a></span>Result</h2>
 
@@ -201,13 +270,50 @@ Functions</h2></td></tr>
 
 <p>Result type of the OTGs update function. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a115a54563ae42ca3a24086ebcfa55247"></a>Working&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9aec560baef13be51a94d11af00b213a5b"></a>Finished&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a3173be5b6f79afecb7dc34133716054f"></a>Error&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a9b3b154fff53beb0a29bb06aa317604d"></a>ErrorInvalidInput&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a4986e3d9d8893f38154617bdcf39f3f0"></a>ErrorTrajectoryDuration&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a52d54ee0435ff7fb2696e415390a31fd"></a>ErrorExecutionTimeCalculation&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9afaa49134239acb0fbf06455de762571d"></a>ErrorSynchronizationCalculation&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a115a54563ae42ca3a24086ebcfa55247"></a>Working&#160;</td><td class="fielddoc"><p>The trajectory is calculated normally. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9aec560baef13be51a94d11af00b213a5b"></a>Finished&#160;</td><td class="fielddoc"><p><a class="el" href="classruckig_1_1_trajectory.html" title="Interface for the generated trajectory.">Trajectory</a> has reached its final position. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a3173be5b6f79afecb7dc34133716054f"></a>Error&#160;</td><td class="fielddoc"><p>Unclassified error. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a9b3b154fff53beb0a29bb06aa317604d"></a>ErrorInvalidInput&#160;</td><td class="fielddoc"><p>Error in the input parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a4986e3d9d8893f38154617bdcf39f3f0"></a>ErrorTrajectoryDuration&#160;</td><td class="fielddoc"><p>The trajectory duration exceed the numeral limits. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9a52d54ee0435ff7fb2696e415390a31fd"></a>ErrorExecutionTimeCalculation&#160;</td><td class="fielddoc"><p>Error during the extremel time calculation (Step 1) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84167d6e92f2bdcb86ce99d7aaa2d1a9afaa49134239acb0fbf06455de762571d"></a>ErrorSynchronizationCalculation&#160;</td><td class="fielddoc"><p>Error during the synchronization calculation (Step 2) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5ff5205f431128e168e1f134d117c10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff5205f431128e168e1f134d117c10a">&#9670;&nbsp;</a></span>Synchronization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">ruckig::Synchronization</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ff5205f431128e168e1f134d117c10aaa76d4ef5f3f6a672bbfab2865563e530"></a>Time&#160;</td><td class="fielddoc"><p>Always synchronize the DoFs to reach the target at the same time (Default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ff5205f431128e168e1f134d117c10aa7ddc8e24add04a76f06998f3f12404e2"></a>TimeIfNecessary&#160;</td><td class="fielddoc"><p>Synchronize only when necessary (e.g. for non-zero target velocity or acceleration) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ff5205f431128e168e1f134d117c10aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>Calculate every DoF independently. </p>
+</td></tr>
 </table>
 
 </div>
