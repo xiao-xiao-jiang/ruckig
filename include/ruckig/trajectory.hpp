@@ -21,6 +21,7 @@ namespace ruckig {
 template<size_t DOFs>
 class PathTrajectory {
     using Vector = std::array<double, DOFs>;
+    constexpr static double eps {1e-10};
 
     double s0, ds0, dds0;
     double sf, dsf, ddsf;
@@ -30,10 +31,13 @@ class PathTrajectory {
 
     Profile main_profile;
 
+    std::vector<double> cumulative_times;
+
     std::tuple<double, double, double> time_parametrization(double time) const {
         const auto [new_p, new_v, new_a] = main_profile.state_at_time(time);
 
-        const double scale = (main_profile.pf - main_profile.p[0]) / std::get<LinearSegment<DOFs>>(path.segments[0]).length;
+        const auto segment = std::get<LinearSegment<DOFs>>(path.segments[0]);
+        const double scale = (main_profile.pf - main_profile.p[0]) / segment.length;
         double s = new_p / scale;
         double ds = new_v / scale;
         double dds = new_a / scale;
@@ -49,11 +53,29 @@ public:
     explicit PathTrajectory(const Path<DOFs>& path, Vector v0, Vector a0, Vector vf, Vector af): path(path), s0(0.0), sf(path.length), p0(path.q(0.0)), pf(path.q(path.length)), v0(v0), vf(vf), a0(a0), af(af) {}
 
     bool validate_boundary() {
-        ds0 = 0.0;
-        dds0 = 0.0;
+        auto pdq_s0 = path.pdq(s0);
+        auto pddq_s0 = path.pddq(s0);
+        auto pdq_sf = path.pdq(sf);
+        auto pddq_sf = path.pddq(sf);
 
-        dsf = 0.0;
-        ddsf = 0.0;
+        // Calculate from first DoF
+        ds0 = v0[0] / pdq_s0[0];
+        dds0 = (a0[0] - pddq_s0[0] * ds0 * ds0) / pdq_s0[0];
+
+        dsf = vf[0] / pdq_sf[0];
+        ddsf = (af[0] - pddq_sf[0] * dsf * dsf) / pdq_sf[0];
+
+        for (size_t dof = 1; dof < DOFs; ++dof) {
+            const double ds0_dof = v0[dof] / pdq_s0[dof];
+            const double dds0_dof = (a0[dof] - pddq_s0[dof] * ds0 * ds0) / pdq_s0[dof];
+
+            const double dsf_dof = vf[dof] / pdq_sf[dof];
+            const double ddsf_dof = (af[dof] - pddq_sf[dof] * dsf * dsf) / pdq_sf[dof];
+
+            if (std::abs(ds0 - ds0_dof) > eps || std::abs(dds0 - dds0_dof) > eps || std::abs(dsf - dsf_dof) > eps || std::abs(ddsf - ddsf_dof) > eps) {
+                return false;
+            }
+        }
 
         return true;
     }
@@ -319,7 +341,7 @@ struct Trajectory {
     std::variant<ProfileTrajectory<DOFs>, PathTrajectory<DOFs>> data;
 
     template<class T>
-    void set_data(T trajectory) {
+    void set_data(const T& trajectory) {
         data = trajectory;
         duration = trajectory.duration;
         independent_min_durations = trajectory.independent_min_durations;
