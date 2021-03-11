@@ -28,18 +28,18 @@ enum class Interface {
 };
 
 enum class Type {
-    Waypoint,
-    Path,
+    Waypoint, ///< Waypoint-based OTG
+    Path, ///< Path-based OTG
 };
 
 enum class Synchronization {
-    Time,
-    TimeIfNecessary,
-    None,
+    Time, ///< Always synchronize the DoFs to reach the target at the same time (Default)
+    TimeIfNecessary, ///< Synchronize only when necessary (e.g. for non-zero target velocity or acceleration)
+    None, ///< Calculate every DoF independently
 };
 
 enum class DurationDiscretization {
-    Continuous,
+    Continuous, ///< Every trajectory duration is allowed (Default)
     Discrete, ///< The trajectory duration must be a multiple of the control cycle
 };
 

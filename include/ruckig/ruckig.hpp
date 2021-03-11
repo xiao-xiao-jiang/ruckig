@@ -46,21 +46,15 @@ class Ruckig {
             ProfileTrajectory<DOFs> trajectory {};
             result = trajectory.template calculate<throw_error, return_error_at_maximal_duration>(current_input, delta_time);
             output.trajectory.set_data(trajectory);
+        }
 
-            if (result != Result::Working) {
-                return result;
-            }
+        if (result != Result::Working) {
+            return result;
         }
 
         output.time = 0.0;
         output.new_calculation = true;
-
-        switch (result) {
-            case Result::ErrorExecutionTimeCalculation: return Result::ErrorExecutionTimeCalculation;
-            case Result::ErrorSynchronizationCalculation: return Result::ErrorSynchronizationCalculation;
-            case Result::ErrorTrajectoryDuration: return Result::ErrorTrajectoryDuration;
-            case Result::Working: return Result::Working;
-        }
+        return Result::Working;
     }
 
 public:
