@@ -127,7 +127,7 @@ public:
 
     void at_time(double time, OutputParameter<DOFs>& output) {
         switch (current_input.interface) {
-        case InputParameter<DOFs>::Interface::Position: {
+        case Interface::Position: {
             rml->RMLPositionAtAGivenSampleTime(time, output_parameters.get());
 
             for (size_t dof = 0; dof < DOFs; dof += 1) {
@@ -136,7 +136,7 @@ public:
                 output.new_acceleration[dof] = output_parameters->NewAccelerationVector->VecData[dof];
             }
         } break;
-        case InputParameter<DOFs>::Interface::Velocity: {
+        case Interface::Velocity: {
             rml->RMLVelocityAtAGivenSampleTime(time, output_vel_parameters.get());
 
             for (size_t dof = 0; dof < DOFs; dof += 1) {

@@ -1,18 +1,17 @@
-import copy
+from copy import copy
 from pathlib import Path
-import sys
+from sys import path
 
 import matplotlib.pyplot as plt
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).parent.parent / 'build'))
+path.insert(0, str(Path(__file__).parent.parent / 'build'))
 
 from _ruckig import Quintic, InputParameter, OutputParameter, Result, Ruckig, Smoothie
 from _ruckig import Reflexxes
 
 
 def walk_through_trajectory(otg, inp, print_table=True):
-    t = 0.0
     t_list, out_list = [], []
     out = OutputParameter()
 
@@ -33,7 +32,7 @@ def walk_through_trajectory(otg, inp, print_table=True):
             # print(str(inp.current_position[0]) + '\t' + str(inp.current_position[1]))
 
         t_list.append(out.time)
-        out_list.append(copy.copy(out))
+        out_list.append(copy(out))
 
     return t_list, out_list
 

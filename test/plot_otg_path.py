@@ -1,4 +1,4 @@
-import copy
+from copy import copy
 from pathlib import Path as Pathlib
 import sys
 
@@ -12,7 +12,6 @@ from plot_path import plot_path
 
 
 def walk_through_trajectory(otg, inp, print_table=True):
-    t = 0.0
     t_list, out_list = [], []
     out = OutputParameter()
 
@@ -25,8 +24,7 @@ def walk_through_trajectory(otg, inp, print_table=True):
         inp.current_acceleration = out.new_acceleration
 
         t_list.append(out.time)
-        out_list.append(copy.copy(out))
-        t += otg.delta_time
+        out_list.append(copy(out))
 
     return t_list, out_list
 

@@ -29,8 +29,8 @@ limited by velocity, acceleration, and jerk constraints.";
     using IP = InputParameter<DOFs>;
     using OP = OutputParameter<DOFs>;
 
-    py::class_<IP> input_parameter(m, "InputParameter");
-    input_parameter.def(py::init<>())
+    py::class_<IP>(m, "InputParameter")
+        .def(py::init<>())
         .def_readonly_static("degrees_of_freedom", &IP::degrees_of_freedom)
         .def_readwrite("current_position", &IP::current_position)
         .def_readwrite("current_velocity", &IP::current_velocity)

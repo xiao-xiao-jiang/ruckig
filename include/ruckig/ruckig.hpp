@@ -10,13 +10,9 @@
 #include <optional>
 #include <tuple>
 
-#include <ruckig/block.hpp>
-#include <ruckig/brake.hpp>
 #include <ruckig/input_parameter.hpp>
 #include <ruckig/output_parameter.hpp>
 #include <ruckig/trajectory.hpp>
-#include <ruckig/position.hpp>
-#include <ruckig/velocity.hpp>
 
 
 namespace ruckig {
@@ -34,7 +30,7 @@ class Ruckig {
             return Result::ErrorInvalidInput;
         }
 
-        CalculationResult result;
+        Result result;
 
         if (input.path) {
             PathTrajectory<DOFs> trajectory {*(current_input.path), current_input.current_velocity, current_input.current_acceleration, current_input.target_velocity, current_input.target_acceleration};
@@ -45,21 +41,25 @@ class Ruckig {
 
             result = trajectory.template calculate<throw_error>(current_input, delta_time);
             output.trajectory.set_data(trajectory);
-        
+
         } else {
             ProfileTrajectory<DOFs> trajectory {};
             result = trajectory.template calculate<throw_error, return_error_at_maximal_duration>(current_input, delta_time);
             output.trajectory.set_data(trajectory);
+
+            if (result != Result::Working) {
+                return result;
+            }
         }
 
         output.time = 0.0;
         output.new_calculation = true;
 
         switch (result) {
-            case CalculationResult::ErrorExecutionTimeCalculation: return Result::ErrorExecutionTimeCalculation;
-            case CalculationResult::ErrorSynchronizationCalculation: return Result::ErrorSynchronizationCalculation;
-            case CalculationResult::ErrorTrajectoryDuration: return Result::ErrorTrajectoryDuration;
-            case CalculationResult::Working: return Result::Working;
+            case Result::ErrorExecutionTimeCalculation: return Result::ErrorExecutionTimeCalculation;
+            case Result::ErrorSynchronizationCalculation: return Result::ErrorSynchronizationCalculation;
+            case Result::ErrorTrajectoryDuration: return Result::ErrorTrajectoryDuration;
+            case Result::Working: return Result::Working;
         }
     }
 
@@ -75,7 +75,7 @@ public:
     explicit Ruckig() { }
     explicit Ruckig(double delta_time): delta_time(delta_time) { }
 
-    bool validate_input(const InputParameter<DOFs>& input) {
+    bool validate_input(const InputParameter<DOFs>& input) const {
         for (size_t dof = 0; dof < DOFs; ++dof) {
             if (input.interface == Interface::Position && input.max_velocity[dof] <= std::numeric_limits<double>::min()) {
                 return false;

@@ -12,30 +12,24 @@ namespace ruckig {
 
 //! Result type of the OTGs update function
 enum Result {
-    Working = 0,
-    Finished = 1,
-    Error = -1,
-    ErrorInvalidInput = -100,
-    ErrorTrajectoryDuration = -101,
-    ErrorExecutionTimeCalculation = -110,
-    ErrorSynchronizationCalculation = -111,
+    Working = 0, ///< The trajectory is calculated normally
+    Finished = 1, ///< Trajectory has reached its final position
+    Error = -1, ///< Unclassified error
+    ErrorInvalidInput = -100, ///< Error in the input parameter
+    ErrorTrajectoryDuration = -101, ///< The trajectory duration exceed the numeral limits
+    ErrorExecutionTimeCalculation = -110, ///< Error during the extremel time calculation (Step 1)
+    ErrorSynchronizationCalculation = -111, ///< Error during the synchronization calculation (Step 2)
 };
 
-enum class CalculationResult {
-    Working,
-    ErrorExecutionTimeCalculation,
-    ErrorSynchronizationCalculation,
-    ErrorTrajectoryDuration,
+
+enum class Interface {
+    Position, ///< Position-control: Full control over the entire kinematic state (Default)
+    Velocity, ///< Velocity-control: Ignores the current position, target position, and velocity limits
 };
 
 enum class Type {
     Waypoint,
     Path,
-};
-
-enum class Interface {
-    Position,
-    Velocity,
 };
 
 enum class Synchronization {
@@ -65,7 +59,7 @@ class InputParameter {
 public:
     using Vector = std::array<double, DOFs>;
     static constexpr size_t degrees_of_freedom {DOFs};
-    
+
     Interface interface {Interface::Position};
     Synchronization synchronization {Synchronization::Time};
     DurationDiscretization duration_discretization {DurationDiscretization::Continuous};

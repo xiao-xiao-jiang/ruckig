@@ -1,4 +1,4 @@
-#include <ruckig/ruckig.hpp>
+#include <ruckig/brake.hpp>
 
 
 namespace ruckig {
@@ -16,20 +16,20 @@ void Brake::acceleration_brake(double v0, double a0, double vMax, double vMin, d
 
     const double t_to_a_max = (a0 - aMax) / jMax;
     const double t_to_a_zero = a0 / jMax;
-    
+
     const double v_at_a_max = v_at_t(v0, a0, -jMax, t_to_a_max);
     const double v_at_a_zero = v_at_t(v0, a0, -jMax, t_to_a_zero);
 
     if ((v_at_a_zero > vMax && jMax > 0) || (v_at_a_zero < vMax && jMax < 0)) {
         velocity_brake(v0, a0, vMax, vMin, aMax, aMin, jMax, t_brake, j_brake);
-    
+
     } else if ((v_at_a_max < vMin && jMax > 0) || (v_at_a_max > vMin && jMax < 0)) {
         const double t_to_v_max = -(v_at_a_max + vMax)/aMax;
         const double t_to_v_min = -aMax/(2*jMax) - (v_at_a_max + vMin)/aMax;
 
         t_brake[0] = t_to_a_max + eps;
         t_brake[1] = std::max(std::min(t_to_v_max, t_to_v_min), 0.0);
-        
+
     } else {
         t_brake[0] = t_to_a_max + eps;
     }
@@ -49,7 +49,7 @@ void Brake::velocity_brake(double v0, double a0, double vMax, double vMin, doubl
 
         t_brake[0] = t_to_a_min - eps;
         t_brake[1] = std::max(std::min(t_to_v_max, t_to_v_min), 0.0);
-        
+
     } else {
         t_brake[0] = t_min_to_v_max - eps;
     }
