@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ruckig_162',['ruckig',['../namespaceruckig.html',1,'']]]
+  ['ruckig_155',['ruckig',['../namespaceruckig.html',1,'']]]
 ];

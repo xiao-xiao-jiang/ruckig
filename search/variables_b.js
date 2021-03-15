@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right_260',['right',['../structruckig_1_1_block_1_1_interval.html#a0c971d8968f07daa0850f93ac87644f7',1,'ruckig::Block::Interval']]]
+  ['synchronization_247',['synchronization',['../classruckig_1_1_input_parameter.html#a8e520b5bc6739698c1bb28c29640babf',1,'ruckig::InputParameter']]]
 ];
