@@ -385,75 +385,66 @@ $(function() {
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">// Safe Newton Method</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">// Requirements: f(l)*f(h) &lt;= 0</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> maxIts, <span class="keyword">typename</span> F, <span class="keyword">typename</span> DF&gt;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> safeNewton(<span class="keyword">const</span> F&amp; func, <span class="keyword">const</span> DF&amp; dfunc, <span class="keywordtype">double</span> l, <span class="keywordtype">double</span> h, <span class="keyword">const</span> <span class="keywordtype">double</span> tol) {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> fl = func(l);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> fh = func(h);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (fl == 0.0) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> l;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (fh == 0.0) {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span> h;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span> (fl &gt; 0.0) {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        std::swap(l, h);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">double</span> rts = 0.5 * (l + h);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordtype">double</span> dxold = std::abs(h - l);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">double</span> dx = dxold;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">double</span> f = func(rts);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">double</span> df = dfunc(rts);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">double</span> temp;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; maxIts; j++) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">if</span> ((((rts - h) * df - f) * ((rts - l) * df - f) &gt; 0.0) || (std::abs(2 * f) &gt; std::abs(dxold * df))) {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            dxold = dx;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            dx = 0.5 * (h - l);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            rts = l + dx;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">if</span> (l == rts) {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            dxold = dx;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            dx = f / df;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            temp = rts;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            rts -= dx;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordflow">if</span> (temp == rts) {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">if</span> (std::abs(dx) &lt; tol) {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;constexpr <span class="keywordtype">double</span> tolerance {1e-14};</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">// Calculate a single zero of polynom p(x) inside [lbound, ubound]</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">// Requirements: p(lbound)*p(ubound) &lt; 0, lbound &lt; ubound</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N, <span class="keywordtype">size_t</span> maxIts = 128&gt;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> shrinkInterval(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; p, <span class="keywordtype">double</span> l, <span class="keywordtype">double</span> h) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> deriv = polyDeri(p);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> fl = polyEval(p, l);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> fh = polyEval(p, h);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">if</span> (fl == 0.0) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">return</span> l;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (fh == 0.0) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">return</span> h;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (fl &gt; 0.0) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        std::swap(l, h);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">double</span> rts = 0.5 * (l + h);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">double</span> dxold = std::abs(h - l);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">double</span> dx = dxold;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">double</span> f = polyEval(p, rts);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">double</span> df = polyEval(deriv, rts);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">double</span> temp;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; maxIts; j++) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordflow">if</span> ((((rts - h) * df - f) * ((rts - l) * df - f) &gt; 0.0) || (std::abs(2 * f) &gt; std::abs(dxold * df))) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            dxold = dx;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            dx = 0.5 * (h - l);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            rts = l + dx;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordflow">if</span> (l == rts) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            dxold = dx;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            dx = f / df;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            temp = rts;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            rts -= dx;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">if</span> (temp == rts) {</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            }</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        f = func(rts);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        df = dfunc(rts);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span> (f &lt; 0.0) {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            l = rts;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            h = rts;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">return</span> rts;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;}</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">// Calculate a single zero of polynom p(x) inside [lbound, ubound]</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">// Requirements: p(lbound)*p(ubound) &lt; 0, lbound &lt; ubound</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;constexpr <span class="keywordtype">double</span> tolerance {1e-14};</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N, <span class="keywordtype">size_t</span> maxDblIts = 128&gt;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> shrinkInterval(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; p, <span class="keywordtype">double</span> lbound, <span class="keywordtype">double</span> ubound) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">auto</span> deriv = polyDeri(p);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">auto</span> func = [&amp;p](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> polyEval(p, x); };</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">auto</span> dfunc = [&amp;deriv](<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> polyEval(deriv, x); };</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> safeNewton&lt;maxDblIts&gt;(func, dfunc, lbound, ubound, tolerance);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;} <span class="comment">// namespace Roots</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">if</span> (std::abs(dx) &lt; tolerance) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        f = polyEval(p, rts);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        df = polyEval(deriv, rts);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (f &lt; 0.0) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            l = rts;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            h = rts;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> rts;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;}</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;} <span class="comment">// namespace Roots</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceruckig_html_a11aac51f01a8f0c5a35fecf4dd5e42a0"><div class="ttname"><a href="namespaceruckig.html#a11aac51f01a8f0c5a35fecf4dd5e42a0">ruckig::Abs</a></div><div class="ttdeci">double Abs(double v)</div><div class="ttdef"><b>Definition:</b> roots.hpp:18</div></div>
 <div class="ttc" id="anamespaceruckig_html"><div class="ttname"><a href="namespaceruckig.html">ruckig</a></div><div class="ttdef"><b>Definition:</b> quintic.hpp:7</div></div>

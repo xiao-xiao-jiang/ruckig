@@ -69,7 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classruckig_1_1_trajectory-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ruckig::Trajectory&lt; DOFs &gt; Class Template Reference</div>  </div>
@@ -85,23 +85,29 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a25f1640ca53d093dd88749cb240bd573"><td class="memTemplParams" colspan="2">template&lt;bool throw_error, bool return_error_at_maximal_duration&gt; </td></tr>
 <tr class="memitem:a25f1640ca53d093dd88749cb240bd573"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">calculate</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;inp, double delta_time)</td></tr>
-<tr class="memdesc:a25f1640ca53d093dd88749cb240bd573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate time-optimal waypoint-based trajectories.  <a href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">More...</a><br /></td></tr>
+<tr class="memdesc:a25f1640ca53d093dd88749cb240bd573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the time-optimal waypoint-based trajectory.  <a href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">More...</a><br /></td></tr>
 <tr class="separator:a25f1640ca53d093dd88749cb240bd573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7">at_time</a> (double time, std::array&lt; double, DOFs &gt; &amp;new_position, std::array&lt; double, DOFs &gt; &amp;new_velocity, std::array&lt; double, DOFs &gt; &amp;new_acceleration) const</td></tr>
-<tr class="memdesc:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output parameter for the given time.  <a href="classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7">More...</a><br /></td></tr>
+<tr class="memdesc:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the kinematic state at a given time.  <a href="classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7">More...</a><br /></td></tr>
 <tr class="separator:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb3fd0e4d286e893cc520766016d549"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a9cb3fd0e4d286e893cc520766016d549">get_position_extrema</a> ()</td></tr>
-<tr class="memdesc:a9cb3fd0e4d286e893cc520766016d549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the min/max values of the position for each DoF and the current trajectory.  <a href="classruckig_1_1_trajectory.html#a9cb3fd0e4d286e893cc520766016d549">More...</a><br /></td></tr>
-<tr class="separator:a9cb3fd0e4d286e893cc520766016d549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54206927272e18b545fa4a690fcc925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">get_duration</a> () const</td></tr>
+<tr class="memdesc:ac54206927272e18b545fa4a690fcc925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the duration of the (synchronized) trajectory.  <a href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">More...</a><br /></td></tr>
+<tr class="separator:ac54206927272e18b545fa4a690fcc925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74be0f746b645131aced161a67ec2c7"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ae74be0f746b645131aced161a67ec2c7">get_independent_min_durations</a> () const</td></tr>
+<tr class="memdesc:ae74be0f746b645131aced161a67ec2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum duration of each independent DoF.  <a href="classruckig_1_1_trajectory.html#ae74be0f746b645131aced161a67ec2c7">More...</a><br /></td></tr>
+<tr class="separator:ae74be0f746b645131aced161a67ec2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718e32d9a4626e133f063ef60fca6f7f"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a718e32d9a4626e133f063ef60fca6f7f">get_position_extrema</a> () const</td></tr>
+<tr class="memdesc:a718e32d9a4626e133f063ef60fca6f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the min/max values of the position for each DoF.  <a href="classruckig_1_1_trajectory.html#a718e32d9a4626e133f063ef60fca6f7f">More...</a><br /></td></tr>
+<tr class="separator:a718e32d9a4626e133f063ef60fca6f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a79d66bc2044fce6b042c2d5cf6b64cbf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a79d66bc2044fce6b042c2d5cf6b64cbf">duration</a></td></tr>
-<tr class="memdesc:a79d66bc2044fce6b042c2d5cf6b64cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duration of the synchronized trajectory.  <a href="classruckig_1_1_trajectory.html#a79d66bc2044fce6b042c2d5cf6b64cbf">More...</a><br /></td></tr>
-<tr class="separator:a79d66bc2044fce6b042c2d5cf6b64cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f851f019da9a96a8029df7458b0ebad"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a6f851f019da9a96a8029df7458b0ebad">independent_min_durations</a></td></tr>
-<tr class="memdesc:a6f851f019da9a96a8029df7458b0ebad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum duration of each independent DoF.  <a href="classruckig_1_1_trajectory.html#a6f851f019da9a96a8029df7458b0ebad">More...</a><br /></td></tr>
-<tr class="separator:a6f851f019da9a96a8029df7458b0ebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a85f199d07029c1d731e56e94f8b7b2c3"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a85f199d07029c1d731e56e94f8b7b2c3">Reflexxes&lt; DOFs &gt;</a></td></tr>
+<tr class="separator:a85f199d07029c1d731e56e94f8b7b2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209f33059ab34c5813cf0bf044be2187"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a209f33059ab34c5813cf0bf044be2187">Smoothie&lt; DOFs &gt;</a></td></tr>
+<tr class="separator:a209f33059ab34c5813cf0bf044be2187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa9880fdc7ec50dc7e951c6dafa85b5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#aefa9880fdc7ec50dc7e951c6dafa85b5">Quintic&lt; DOFs &gt;</a></td></tr>
+<tr class="separator:aefa9880fdc7ec50dc7e951c6dafa85b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;size_t DOFs&gt;<br />
@@ -157,7 +163,7 @@ template&lt;size_t DOFs&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the output parameter for the given time. </p>
+<p>Get the kinematic state at a given time. </p>
 
 </div>
 </div>
@@ -199,12 +205,70 @@ template&lt;bool throw_error, bool return_error_at_maximal_duration&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Calculate time-optimal waypoint-based trajectories. </p>
+<p>Calculate the time-optimal waypoint-based trajectory. </p>
 
 </div>
 </div>
-<a id="a9cb3fd0e4d286e893cc520766016d549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cb3fd0e4d286e893cc520766016d549">&#9670;&nbsp;</a></span>get_position_extrema()</h2>
+<a id="ac54206927272e18b545fa4a690fcc925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54206927272e18b545fa4a690fcc925">&#9670;&nbsp;</a></span>get_duration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_duration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the duration of the (synchronized) trajectory. </p>
+
+</div>
+</div>
+<a id="ae74be0f746b645131aced161a67ec2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74be0f746b645131aced161a67ec2c7">&#9670;&nbsp;</a></span>get_independent_min_durations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;double, DOFs&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_independent_min_durations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the minimum duration of each independent DoF. </p>
+
+</div>
+</div>
+<a id="a718e32d9a4626e133f063ef60fca6f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718e32d9a4626e133f063ef60fca6f7f">&#9670;&nbsp;</a></span>get_position_extrema()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +282,7 @@ template&lt;size_t DOFs&gt; </div>
           <td class="memname">std::array&lt;<a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>, DOFs&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_position_extrema </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -228,44 +292,80 @@ template&lt;size_t DOFs&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the min/max values of the position for each DoF and the current trajectory. </p>
+<p>Get the min/max values of the position for each DoF. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a79d66bc2044fce6b042c2d5cf6b64cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d66bc2044fce6b042c2d5cf6b64cbf">&#9670;&nbsp;</a></span>duration</h2>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aefa9880fdc7ec50dc7e951c6dafa85b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa9880fdc7ec50dc7e951c6dafa85b5">&#9670;&nbsp;</a></span>Quintic&lt; DOFs &gt;</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::duration</td>
+          <td class="memname">friend class <a class="el" href="classruckig_1_1_quintic.html">Quintic</a>&lt; DOFs &gt;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Duration of the synchronized trajectory. </p>
-
 </div>
 </div>
-<a id="a6f851f019da9a96a8029df7458b0ebad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f851f019da9a96a8029df7458b0ebad">&#9670;&nbsp;</a></span>independent_min_durations</h2>
+<a id="a85f199d07029c1d731e56e94f8b7b2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f199d07029c1d731e56e94f8b7b2c3">&#9670;&nbsp;</a></span>Reflexxes&lt; DOFs &gt;</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;double, DOFs&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::independent_min_durations</td>
+          <td class="memname">friend class <a class="el" href="classruckig_1_1_reflexxes.html">Reflexxes</a>&lt; DOFs &gt;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Minimum duration of each independent DoF. </p>
+</div>
+</div>
+<a id="a209f33059ab34c5813cf0bf044be2187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209f33059ab34c5813cf0bf044be2187">&#9670;&nbsp;</a></span>Smoothie&lt; DOFs &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classruckig_1_1_smoothie.html">Smoothie</a>&lt; DOFs &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

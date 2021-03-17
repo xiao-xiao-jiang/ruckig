@@ -5,7 +5,6 @@ var searchData=
   ['direction_29',['Direction',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739',1,'ruckig::Profile::Direction()'],['../structruckig_1_1_profile.html#a2ca5ea200d1cf2af5d9332f30e0464d2',1,'ruckig::Profile::direction()']]],
   ['discrete_30',['Discrete',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553',1,'ruckig']]],
   ['down_31',['DOWN',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739ac4e0e4e3118472beeb2ae75827450f1f',1,'ruckig::Profile']]],
-  ['duration_32',['duration',['../classruckig_1_1_trajectory.html#a79d66bc2044fce6b042c2d5cf6b64cbf',1,'ruckig::Trajectory']]],
-  ['duration_5fdiscretization_33',['duration_discretization',['../classruckig_1_1_input_parameter.html#a3f2f5019563fa9c8cce8e1eab5e4b617',1,'ruckig::InputParameter']]],
-  ['durationdiscretization_34',['DurationDiscretization',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388',1,'ruckig']]]
+  ['duration_5fdiscretization_32',['duration_discretization',['../classruckig_1_1_input_parameter.html#a3f2f5019563fa9c8cce8e1eab5e4b617',1,'ruckig::InputParameter']]],
+  ['durationdiscretization_33',['DurationDiscretization',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388',1,'ruckig']]]
 ];
