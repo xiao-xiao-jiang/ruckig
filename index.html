@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a class="code" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">Interface</a> interface; <span class="comment">// The default position interface controls the full kinematic state.</span></div>
 <div class="line"><a class="code" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">Synchronization</a> synchronization; <span class="comment">// Synchronization behavior of multiple DoFs</span></div>
 <div class="line"><a class="code" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">DurationDiscretization</a> duration_discretization; <span class="comment">// Whether the duration should be a discrete multiple of the control cycle (off by default)</span></div>
-</div><!-- fragment --><p>Members are implemented using the C++ standard <code>array</code> and <code>optional</code> type. Note that there are range constraints due to numerical reasons, see below for more details. To check the input before a calculation step, the <code>ruckig.validate_input(input)</code> method returns <code>false</code> if an input is not valid. Of course, the target state needs to be within the given kinematic limits. Additionally, the target acceleration needs to fulfill </p><div class="fragment"><div class="line">Abs(target_acceleration) &lt;= Sqrt(2 * max_jerk * (max_velocity - Abs(target_velocity)))</div>
+</div><!-- fragment --><p>Members are implemented using the C++ standard <code>array</code> and <code>optional</code> type. Note that there are range constraints due to numerical reasons, see below for more details. To check the input before a calculation step, the <code>ruckig.validate_input(input)</code> method returns <code>false</code> if an input is not valid. Of course, the target state needs to be within the given kinematic limits. Additionally, the target acceleration needs to fulfil </p><div class="fragment"><div class="line">Abs(target_acceleration) &lt;= Sqrt(2 * max_jerk * (max_velocity - Abs(target_velocity)))</div>
 </div><!-- fragment --><p>If a DoF is not enabled, it will be ignored in the calculation. A minimum duration can be optionally given. Furthermore, the minimum velocity and acceleration can be specified. If it is not given, the negative maximum velocity or acceleration will be used (similar to the jerk limit). For example, this might be useful in human robot collaboration settings with a different velocity limit towards a human. Or, the dynamic limits at a given configuration of the robot can be approximated much better with different acceleration limits.</p>
 <p>Furthermore, there are some options for advanced functionality, e.g. for velocity control or discrete trajectory durations. We refer to the <a href="https://pantor.github.io/ruckig/namespaceruckig.html">API documentation</a> of the enumerations within the <code>ruckig</code> namespace for all available options.</p>
 <h3>Result Type</h3>
@@ -164,12 +164,12 @@ $(function() {
 <div class="line">Vector new_velocity;</div>
 <div class="line">Vector new_acceleration;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">bool</span> new_calculation; <span class="comment">// Whether a new calactuion was performed in the last cycle</span></div>
+<div class="line"><span class="keywordtype">bool</span> new_calculation; <span class="comment">// Whether a new calculation was performed in the last cycle</span></div>
 <div class="line"><span class="keywordtype">double</span> calculation_duration; <span class="comment">// Duration of the calculation in the last cycle [µs]</span></div>
 <div class="line"> </div>
 <div class="line">Trajectory trajectory; <span class="comment">// The current trajectory</span></div>
-<div class="line"><span class="keywordtype">double</span> time; <span class="comment">// The current, auto-incremented time. Resetted to 0 at a new calculation.</span></div>
-</div><!-- fragment --><p>Moreover, the trajectory class has a range of usefull parameters and methods.</p>
+<div class="line"><span class="keywordtype">double</span> time; <span class="comment">// The current, auto-incremented time. Reset to 0 at a new calculation.</span></div>
+</div><!-- fragment --><p>Moreover, the trajectory class has a range of useful parameters and methods.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> duration; <span class="comment">// Duration of the trajectory</span></div>
 <div class="line">std::array&lt;double, DOFs&gt; independent_min_durations; <span class="comment">// Time-optimal profile for each independent DoF</span></div>
 <div class="line"> </div>
