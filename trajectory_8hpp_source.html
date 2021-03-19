@@ -145,7 +145,7 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            a0s[dof] = inp.current_acceleration[dof];</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment">// Integrate brake pre-trajectory</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; p.t_brakes[i] &gt; 0 &amp;&amp; i &lt; 2; ++i) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 2 &amp;&amp; p.t_brakes[i] &gt; 0; ++i) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                p.p_brakes[i] = p0s[dof];</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                p.v_brakes[i] = v0s[dof];</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                p.a_brakes[i] = a0s[dof];</div>
