@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['smoothie_206',['Smoothie',['../classruckig_1_1_smoothie.html#a3c1537755b2476ed0ae2fb9600cf2066',1,'ruckig::Smoothie']]],
-  ['sqrt_207',['Sqrt',['../namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628',1,'ruckig']]],
-  ['synchronize_208',['synchronize',['../classruckig_1_1_block.html#a5976be68d61c2ee46578476c3c758451',1,'ruckig::Block']]]
+  ['quintic_213',['Quintic',['../classruckig_1_1_quintic.html#ade4cf6dd15a4484485f240e73cb483b7',1,'ruckig::Quintic']]]
 ];

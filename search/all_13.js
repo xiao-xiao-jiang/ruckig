@@ -1,17 +1,7 @@
 var searchData=
 [
-  ['v_128',['v',['../structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722',1,'ruckig::Profile']]],
-  ['v_5fat_5fa_5fzero_129',['v_at_a_zero',['../namespaceruckig.html#a7fd5b73571b4274e4062b57ddb086714',1,'ruckig']]],
-  ['v_5fat_5ft_130',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
-  ['v_5fbrakes_131',['v_brakes',['../structruckig_1_1_profile.html#a1186ebb86cc607d02cc20e4e9b3edf57',1,'ruckig::Profile']]],
-  ['validate_5finput_132',['validate_input',['../classruckig_1_1_smoothie.html#aea5beb601658796ebe001eb7ee9cf2b1',1,'ruckig::Smoothie::validate_input()'],['../classruckig_1_1_ruckig.html#ac9763b5dfd21de67bbe61ab5c378ed12',1,'ruckig::Ruckig::validate_input()']]],
-  ['vector_133',['Vector',['../classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce',1,'ruckig::InputParameter']]],
-  ['vel_134',['VEL',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53aa3a448d1135671c0db409157841e73d5',1,'ruckig::Profile']]],
-  ['velocity_135',['Velocity',['../namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12',1,'ruckig']]],
-  ['velocity_2dstep1_2ecpp_136',['velocity-step1.cpp',['../velocity-step1_8cpp.html',1,'']]],
-  ['velocity_2dstep2_2ecpp_137',['velocity-step2.cpp',['../velocity-step2_8cpp.html',1,'']]],
-  ['velocity_2ehpp_138',['velocity.hpp',['../velocity_8hpp.html',1,'']]],
-  ['velocitystep1_139',['VelocityStep1',['../classruckig_1_1_velocity_step1.html',1,'ruckig::VelocityStep1'],['../classruckig_1_1_velocity_step1.html#a37eea46bbe1400485c5d7e7159831595',1,'ruckig::VelocityStep1::VelocityStep1()']]],
-  ['velocitystep2_140',['VelocityStep2',['../classruckig_1_1_velocity_step2.html',1,'ruckig::VelocityStep2'],['../classruckig_1_1_velocity_step2.html#a6a9bdad5489fbc003a7cfc95afba6894',1,'ruckig::VelocityStep2::VelocityStep2()']]],
-  ['vf_141',['vf',['../structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909',1,'ruckig::Profile']]]
+  ['uddu_129',['UDDU',['../structruckig_1_1_profile.html#a3e29df91c25f6764d3d6580a15212c2ea735730012ca9aa99e91edbcbcb2e95e8',1,'ruckig::Profile']]],
+  ['udud_130',['UDUD',['../structruckig_1_1_profile.html#a3e29df91c25f6764d3d6580a15212c2eab8849b1984bdab156402b5d1c97945b3',1,'ruckig::Profile']]],
+  ['up_131',['UP',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739afbaedde498cdead4f2780217646e9ba1',1,'ruckig::Profile']]],
+  ['update_132',['update',['../classruckig_1_1_quintic.html#a52b838209cc13a5ff869d6729133d714',1,'ruckig::Quintic::update()'],['../classruckig_1_1_reflexxes.html#ac744d53c51b54382b5f16654a58faf77',1,'ruckig::Reflexxes::update()'],['../classruckig_1_1_smoothie.html#afea6254a89b901105865d8f8e205b7f2',1,'ruckig::Smoothie::update()'],['../classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb',1,'ruckig::Ruckig::update()']]]
 ];

@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['new_5facceleration_66',['new_acceleration',['../structruckig_1_1_output_parameter.html#a8b1cd7d01bb901084a9ac434022507f8',1,'ruckig::OutputParameter']]],
-  ['new_5fcalculation_67',['new_calculation',['../structruckig_1_1_output_parameter.html#a5b018d5675418927a8d30d10cfe84967',1,'ruckig::OutputParameter']]],
-  ['new_5fposition_68',['new_position',['../structruckig_1_1_output_parameter.html#a1e31ab56e8696d747e474ff814b6dbc2',1,'ruckig::OutputParameter']]],
-  ['new_5fvelocity_69',['new_velocity',['../structruckig_1_1_output_parameter.html#a91320318ad3227e4ac7febc5dc95584e',1,'ruckig::OutputParameter']]],
-  ['none_70',['NONE',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53ab50339a10e1de285ac99d4c3990b8693',1,'ruckig::Profile::NONE()'],['../namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa6adf97f83acf6453d4a6a4b1070f3754',1,'ruckig::None()']]]
+  ['main_61',['main',['../position_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'position.cpp']]],
+  ['max_62',['max',['../structruckig_1_1_position_extrema.html#ac404417f4d3095e48d2acd5a9583eec5',1,'ruckig::PositionExtrema']]],
+  ['max_5facceleration_63',['max_acceleration',['../classruckig_1_1_input_parameter.html#a3a064b0819b3005bbf029b6d43353a73',1,'ruckig::InputParameter']]],
+  ['max_5fjerk_64',['max_jerk',['../classruckig_1_1_input_parameter.html#a8c61040f44fad0849ebb313979a3cd44',1,'ruckig::InputParameter']]],
+  ['max_5fvelocity_65',['max_velocity',['../classruckig_1_1_input_parameter.html#a76612facb7c6897da86d9a18304ef46f',1,'ruckig::InputParameter']]],
+  ['min_66',['min',['../structruckig_1_1_position_extrema.html#a73f34a1fd1bc66bc3ace575c86616b98',1,'ruckig::PositionExtrema']]],
+  ['min_5facceleration_67',['min_acceleration',['../classruckig_1_1_input_parameter.html#aaa49014ab71cc6e0bb7f6b918b91bdd3',1,'ruckig::InputParameter']]],
+  ['min_5fvelocity_68',['min_velocity',['../classruckig_1_1_input_parameter.html#ab46edaeca9a9d991b2e7c7ffad6c9119',1,'ruckig::InputParameter']]],
+  ['minimum_5fduration_69',['minimum_duration',['../classruckig_1_1_input_parameter.html#a9ff807bf36d58afc6648150dbb78d4a6',1,'ruckig::InputParameter']]]
 ];
