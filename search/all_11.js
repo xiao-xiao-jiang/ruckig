@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['quintic_116',['Quintic',['../classruckig_1_1_quintic.html',1,'ruckig::Quintic&lt; DOFs &gt;'],['../classruckig_1_1_quintic.html#ade4cf6dd15a4484485f240e73cb483b7',1,'ruckig::Quintic::Quintic()']]],
-  ['quintic_2ehpp_117',['quintic.hpp',['../quintic_8hpp.html',1,'']]],
-  ['quintic_3c_20dofs_20_3e_118',['Quintic&lt; DOFs &gt;',['../classruckig_1_1_trajectory.html#aefa9880fdc7ec50dc7e951c6dafa85b5',1,'ruckig::Trajectory']]]
+  ['quintic_115',['Quintic',['../classruckig_1_1_quintic.html',1,'ruckig::Quintic&lt; DOFs &gt;'],['../classruckig_1_1_quintic.html#ade4cf6dd15a4484485f240e73cb483b7',1,'ruckig::Quintic::Quintic()']]],
+  ['quintic_2ehpp_116',['quintic.hpp',['../quintic_8hpp.html',1,'']]],
+  ['quintic_3c_20dofs_20_3e_117',['Quintic&lt; DOFs &gt;',['../classruckig_1_1_trajectory.html#aefa9880fdc7ec50dc7e951c6dafa85b5',1,'ruckig::Trajectory']]]
 ];
