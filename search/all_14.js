@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['v_133',['v',['../structruckig_1_1_profile.html#a9037fdd1f5a069723d4a48a6b3b08722',1,'ruckig::Profile']]],
-  ['v_5fat_5fa_5fzero_134',['v_at_a_zero',['../namespaceruckig.html#a7fd5b73571b4274e4062b57ddb086714',1,'ruckig']]],
-  ['v_5fat_5ft_135',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
-  ['v_5fbrakes_136',['v_brakes',['../structruckig_1_1_profile.html#a1186ebb86cc607d02cc20e4e9b3edf57',1,'ruckig::Profile']]],
-  ['validate_5finput_137',['validate_input',['../classruckig_1_1_smoothie.html#aea5beb601658796ebe001eb7ee9cf2b1',1,'ruckig::Smoothie::validate_input()'],['../classruckig_1_1_ruckig.html#ac9763b5dfd21de67bbe61ab5c378ed12',1,'ruckig::Ruckig::validate_input()']]],
-  ['vector_138',['Vector',['../classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce',1,'ruckig::InputParameter']]],
-  ['vel_139',['VEL',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53aa3a448d1135671c0db409157841e73d5',1,'ruckig::Profile']]],
-  ['velocity_140',['Velocity',['../namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12',1,'ruckig']]],
-  ['velocity_2dstep1_2ecpp_141',['velocity-step1.cpp',['../velocity-step1_8cpp.html',1,'']]],
-  ['velocity_2dstep2_2ecpp_142',['velocity-step2.cpp',['../velocity-step2_8cpp.html',1,'']]],
-  ['velocity_2ehpp_143',['velocity.hpp',['../velocity_8hpp.html',1,'']]],
-  ['velocitystep1_144',['VelocityStep1',['../classruckig_1_1_velocity_step1.html',1,'ruckig::VelocityStep1'],['../classruckig_1_1_velocity_step1.html#a37eea46bbe1400485c5d7e7159831595',1,'ruckig::VelocityStep1::VelocityStep1()']]],
-  ['velocitystep2_145',['VelocityStep2',['../classruckig_1_1_velocity_step2.html',1,'ruckig::VelocityStep2'],['../classruckig_1_1_velocity_step2.html#a6a9bdad5489fbc003a7cfc95afba6894',1,'ruckig::VelocityStep2::VelocityStep2()']]],
-  ['vf_146',['vf',['../structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909',1,'ruckig::Profile']]]
+  ['t_137',['t',['../structruckig_1_1_profile.html#a2bc5950650548a42934a1c06f13a5513',1,'ruckig::Profile']]],
+  ['t_5fbrake_138',['t_brake',['../structruckig_1_1_profile.html#aa4de687cd66d2f96402430b769e29fe4',1,'ruckig::Profile']]],
+  ['t_5fbrakes_139',['t_brakes',['../structruckig_1_1_profile.html#af8720c72c339f78c80394b989a5f136f',1,'ruckig::Profile']]],
+  ['t_5fmax_140',['t_max',['../structruckig_1_1_position_extrema.html#a029fc43ba30203a4a7ffb66f2d87a834',1,'ruckig::PositionExtrema']]],
+  ['t_5fmin_141',['t_min',['../classruckig_1_1_block.html#afdcd4db887bf661d52e787eb319b936e',1,'ruckig::Block::t_min()'],['../structruckig_1_1_position_extrema.html#a34c7e7ac590e880dfc9761bf9d76f069',1,'ruckig::PositionExtrema::t_min()']]],
+  ['t_5fsum_142',['t_sum',['../structruckig_1_1_profile.html#aa214b57a822aec2d7c952a7156b3cd5f',1,'ruckig::Profile']]],
+  ['target_5facceleration_143',['target_acceleration',['../classruckig_1_1_input_parameter.html#a0a27ad818be39d08b0c04dd16110eb4f',1,'ruckig::InputParameter']]],
+  ['target_5fposition_144',['target_position',['../classruckig_1_1_input_parameter.html#afdaa639547877a33b55db961c61a2a5b',1,'ruckig::InputParameter']]],
+  ['target_5fvelocity_145',['target_velocity',['../classruckig_1_1_input_parameter.html#ac63e509adce3b0da1de847ee79cf228d',1,'ruckig::InputParameter']]],
+  ['time_146',['time',['../structruckig_1_1_output_parameter.html#ae5d91694171325f0a87eca37d90cc27a',1,'ruckig::OutputParameter::time()'],['../namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aaa76d4ef5f3f6a672bbfab2865563e530',1,'ruckig::Time()']]],
+  ['timeifnecessary_147',['TimeIfNecessary',['../namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa7ddc8e24add04a76f06998f3f12404e2',1,'ruckig']]],
+  ['to_5fstring_148',['to_string',['../classruckig_1_1_input_parameter.html#af3b54e2a81b190a995e7da7aa701911c',1,'ruckig::InputParameter::to_string()'],['../structruckig_1_1_profile.html#ad9938a2febac8bb21ee77b2827c015db',1,'ruckig::Profile::to_string()']]],
+  ['trajectory_149',['Trajectory',['../classruckig_1_1_trajectory.html',1,'ruckig::Trajectory&lt; DOFs &gt;'],['../structruckig_1_1_output_parameter.html#a792e57830acbd01e894982b5e5bcd885',1,'ruckig::OutputParameter::trajectory()']]],
+  ['trajectory_2ehpp_150',['trajectory.hpp',['../trajectory_8hpp.html',1,'']]]
 ];

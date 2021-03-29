@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['smoothie_216',['Smoothie',['../classruckig_1_1_smoothie.html#a3c1537755b2476ed0ae2fb9600cf2066',1,'ruckig::Smoothie']]],
-  ['sqrt_217',['Sqrt',['../namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628',1,'ruckig']]],
-  ['synchronize_218',['synchronize',['../classruckig_1_1_block.html#a5976be68d61c2ee46578476c3c758451',1,'ruckig::Block']]]
+  ['reflexxes_244',['Reflexxes',['../classruckig_1_1_reflexxes.html#a552a9713c34620243811e9a95d3ca33e',1,'ruckig::Reflexxes::Reflexxes()'],['../classruckig_1_1_reflexxes.html#abe1b314f846e99a7f33df326f2f88349',1,'ruckig::Reflexxes::Reflexxes(double delta_time)']]],
+  ['ruckig_245',['Ruckig',['../classruckig_1_1_ruckig.html#a4700f96753cbd51077cd997e88226bfe',1,'ruckig::Ruckig::Ruckig()'],['../classruckig_1_1_ruckig.html#a5084106f029b084cbf49394f86869d81',1,'ruckig::Ruckig::Ruckig(double delta_time)']]],
+  ['run_246',['run',['../classsetup_1_1_c_make_build.html#aaeaa47a0e82fe56564dd8cec58f772c9',1,'setup::CMakeBuild']]]
 ];

@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['new_5facceleration_70',['new_acceleration',['../structruckig_1_1_output_parameter.html#a8b1cd7d01bb901084a9ac434022507f8',1,'ruckig::OutputParameter']]],
-  ['new_5fcalculation_71',['new_calculation',['../structruckig_1_1_output_parameter.html#a5b018d5675418927a8d30d10cfe84967',1,'ruckig::OutputParameter']]],
-  ['new_5fposition_72',['new_position',['../structruckig_1_1_output_parameter.html#a1e31ab56e8696d747e474ff814b6dbc2',1,'ruckig::OutputParameter']]],
-  ['new_5fvelocity_73',['new_velocity',['../structruckig_1_1_output_parameter.html#a91320318ad3227e4ac7febc5dc95584e',1,'ruckig::OutputParameter']]],
-  ['none_74',['NONE',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53ab50339a10e1de285ac99d4c3990b8693',1,'ruckig::Profile::NONE()'],['../namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa6adf97f83acf6453d4a6a4b1070f3754',1,'ruckig::None()']]]
+  ['license_72',['license',['../classsetup_1_1_c_make_build.html#a7b40708e5ee04bad6278837dec41e493',1,'setup::CMakeBuild']]],
+  ['limits_73',['Limits',['../structruckig_1_1_profile.html#ae6c0b468ba4eefc11ddf5caee92c6f53',1,'ruckig::Profile::Limits()'],['../structruckig_1_1_profile.html#a635ccd9bd804ae391ebb13435fe01989',1,'ruckig::Profile::limits()'],['../namespaceruckig.html#a13481e645093ae0bf190682a088f001d',1,'ruckig::Limits()']]],
+  ['long_5fdescription_74',['long_description',['../classsetup_1_1_c_make_build.html#af3067e9df007cc6de9c8598277d3b5ac',1,'setup.CMakeBuild.long_description()'],['../namespacesetup.html#a4cda9dbfb952875376a0749fe08a5bde',1,'setup.long_description()']]],
+  ['long_5fdescription_5fcontent_5ftype_75',['long_description_content_type',['../classsetup_1_1_c_make_build.html#abb812019da832f7cd41b28be3b358000',1,'setup::CMakeBuild']]]
 ];

@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['define_29',['define',['../struct_per_d_o_f.html#ab821e14ef2dd41214067e39fc2a5c2fe',1,'PerDOF']]],
-  ['degrees_5fof_5ffreedom_30',['degrees_of_freedom',['../classruckig_1_1_quintic.html#aa77152774e305060ab15b421641ff809',1,'ruckig::Quintic::degrees_of_freedom()'],['../classruckig_1_1_reflexxes.html#afd4081c45852a1cd758ef798296927e9',1,'ruckig::Reflexxes::degrees_of_freedom()'],['../classruckig_1_1_smoothie.html#adebbacce25eb50795f1505e221d9855b',1,'ruckig::Smoothie::degrees_of_freedom()'],['../classruckig_1_1_input_parameter.html#a05b1936fec85483ad277248ab5d35c92',1,'ruckig::InputParameter::degrees_of_freedom()'],['../structruckig_1_1_output_parameter.html#a8c9e69770232cc0d73311807799961da',1,'ruckig::OutputParameter::degrees_of_freedom()'],['../classruckig_1_1_ruckig.html#a16f7376727bf88eec33a2253d824e83e',1,'ruckig::Ruckig::degrees_of_freedom()']]],
-  ['delta_5ftime_31',['delta_time',['../classruckig_1_1_quintic.html#a5b98e813f235c39abf8f40e87e1aa554',1,'ruckig::Quintic::delta_time()'],['../classruckig_1_1_reflexxes.html#aea13b448efe0308c91c490f6720bf84c',1,'ruckig::Reflexxes::delta_time()'],['../classruckig_1_1_smoothie.html#a64a6f9cb6eb413ac0766dc10cfa00220',1,'ruckig::Smoothie::delta_time()'],['../classruckig_1_1_ruckig.html#a4ffc0a287e8839d25ef6f3cbbdb59924',1,'ruckig::Ruckig::delta_time()']]],
-  ['direction_32',['Direction',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739',1,'ruckig::Profile::Direction()'],['../structruckig_1_1_profile.html#a2ca5ea200d1cf2af5d9332f30e0464d2',1,'ruckig::Profile::direction()']]],
-  ['discrete_33',['Discrete',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553',1,'ruckig']]],
-  ['down_34',['DOWN',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739ac4e0e4e3118472beeb2ae75827450f1f',1,'ruckig::Profile']]],
-  ['duration_5fdiscretization_35',['duration_discretization',['../classruckig_1_1_input_parameter.html#a3f2f5019563fa9c8cce8e1eab5e4b617',1,'ruckig::InputParameter']]],
-  ['durationdiscretization_36',['DurationDiscretization',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388',1,'ruckig']]]
+  ['calculate_22',['calculate',['../classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573',1,'ruckig::Trajectory']]],
+  ['calculate_5fblock_23',['calculate_block',['../classruckig_1_1_block.html#a834329fe8e6f33f28fdca1c1b04e1161',1,'ruckig::Block']]],
+  ['calculation_5fduration_24',['calculation_duration',['../structruckig_1_1_output_parameter.html#a9cbad641e20fc589a3f20e6a4820216d',1,'ruckig::OutputParameter']]],
+  ['cast_5funique_25',['cast_unique',['../python_8cpp.html#a611c9e2fa01f6a49ca49c43542f5b925',1,'cast_unique():&#160;python.cpp'],['../python_8cpp.html#a49c3476341e9a56591ae7eab27ec6f19',1,'cast_unique(double delta_time):&#160;python.cpp']]],
+  ['check_26',['check',['../structruckig_1_1_profile.html#afe24e5ffae0b039e9345a62c52510be7',1,'ruckig::Profile::check(double jf, double aMax, double aMin)'],['../structruckig_1_1_profile.html#a982cc20d0fefce298992c9d92bc2815c',1,'ruckig::Profile::check(double jf, double vMax, double aMax, double aMin)'],['../structruckig_1_1_profile.html#a215a6d742190d89a91bee6e95981cc74',1,'ruckig::Profile::check([[maybe_unused]] double tf, double jf, double vMax, double aMax, double aMin)'],['../structruckig_1_1_profile.html#ad4335b4b56a5ee9c5a260f2fdd2f01cb',1,'ruckig::Profile::check(double tf, double jf, double vMax, double aMax, double aMin, double jMax)']]],
+  ['check_5fposition_5fextremum_27',['check_position_extremum',['../structruckig_1_1_profile.html#a3917ca8e3fc834a0f811646354014143',1,'ruckig::Profile']]],
+  ['check_5fstep_5ffor_5fposition_5fextremum_28',['check_step_for_position_extremum',['../structruckig_1_1_profile.html#a7cc768d1eeadb759a23a07f789f69f5c',1,'ruckig::Profile']]],
+  ['classifiers_29',['classifiers',['../classsetup_1_1_c_make_build.html#a2fbb474682037cf132e3ef76d826fd4b',1,'setup::CMakeBuild']]],
+  ['cmakebuild_30',['CMakeBuild',['../classsetup_1_1_c_make_build.html',1,'setup']]],
+  ['cmakeextension_31',['CMakeExtension',['../classsetup_1_1_c_make_extension.html',1,'setup']]],
+  ['cmdclass_32',['cmdclass',['../classsetup_1_1_c_make_build.html#ac4b0e821c3961a4e452704cc4099048a',1,'setup::CMakeBuild']]],
+  ['continuous_33',['Continuous',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7',1,'ruckig']]],
+  ['current_5facceleration_34',['current_acceleration',['../classruckig_1_1_input_parameter.html#a5366cfd5039f07f1df5bac52d555eb46',1,'ruckig::InputParameter']]],
+  ['current_5fposition_35',['current_position',['../classruckig_1_1_input_parameter.html#a68e3e74e833753cbf8824db5a2215ce5',1,'ruckig::InputParameter']]],
+  ['current_5fvelocity_36',['current_velocity',['../classruckig_1_1_input_parameter.html#a0ebaaf77bffd32fb36f575b0e8fb154d',1,'ruckig::InputParameter']]]
 ];
