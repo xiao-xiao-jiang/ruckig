@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['set_5fboundary_128',['set_boundary',['../structruckig_1_1_profile.html#ad7fa98889e8cda4e8bf153163c00dd16',1,'ruckig::Profile::set_boundary(double p0, double v0, double a0, double pf, double vf, double af)'],['../structruckig_1_1_profile.html#af54e85a8e9fc2ee0af9eb4398e0947b5',1,'ruckig::Profile::set_boundary(double p0, double v0, double a0, double vf, double af)']]],
+  ['set_5fboundary_128',['set_boundary',['../structruckig_1_1_profile.html#abb89c4080d80987ed2fa6c31a69766cb',1,'ruckig::Profile::set_boundary(double p0_new, double v0_new, double a0_new, double pf_new, double vf_new, double af_new)'],['../structruckig_1_1_profile.html#ae39f59e1686e809c134059b8ff263263',1,'ruckig::Profile::set_boundary(double p0_new, double v0_new, double a0_new, double vf_new, double af_new)']]],
   ['setup_129',['setup',['../namespacesetup.html',1,'']]],
   ['setup_2epy_130',['setup.py',['../setup_8py.html',1,'']]],
   ['smoothie_131',['Smoothie',['../classruckig_1_1_smoothie.html',1,'ruckig::Smoothie&lt; DOFs &gt;'],['../classruckig_1_1_smoothie.html#a3c1537755b2476ed0ae2fb9600cf2066',1,'ruckig::Smoothie::Smoothie()']]],

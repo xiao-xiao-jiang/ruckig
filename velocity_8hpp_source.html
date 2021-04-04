@@ -85,7 +85,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classruckig_1_1_velocity_step1.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classruckig_1_1_velocity_step1.html">VelocityStep1</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">double</span> p0, v0, a0;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">double</span> vf, af;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">double</span> aMax, aMin, jMax;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">double</span> _aMax, _aMin, _jMax;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// Max 3 valid profiles</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::array&lt;Profile, 3&gt; valid_profiles;</div>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classruckig_1_1_velocity_step2.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classruckig_1_1_velocity_step2.html">VelocityStep2</a> {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> p0, v0, a0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> tf, vf, af; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> aMax, aMin, jMax;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> _aMax, _aMin, _jMax;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> time_acc0(<a class="code" href="structruckig_1_1_profile.html">Profile</a>&amp; profile, <span class="keywordtype">double</span> aMax, <span class="keywordtype">double</span> aMin, <span class="keywordtype">double</span> jMax);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> time_none(<a class="code" href="structruckig_1_1_profile.html">Profile</a>&amp; profile, <span class="keywordtype">double</span> aMax, <span class="keywordtype">double</span> aMin, <span class="keywordtype">double</span> jMax);</div>
