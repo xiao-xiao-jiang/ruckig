@@ -121,6 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4335b4b56a5ee9c5a260f2fdd2f01cb"><td class="memTemplParams" colspan="2">template&lt;JerkSigns jerk_signs, Limits limits&gt; </td></tr>
 <tr class="memitem:ad4335b4b56a5ee9c5a260f2fdd2f01cb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ad4335b4b56a5ee9c5a260f2fdd2f01cb">check</a> (double tf, double jf, double vMax, double aMax, double aMin, double jMax)</td></tr>
 <tr class="separator:ad4335b4b56a5ee9c5a260f2fdd2f01cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fa98889e8cda4e8bf153163c00dd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ad7fa98889e8cda4e8bf153163c00dd16">set_boundary</a> (double p0, double v0, double a0, double <a class="el" href="structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64">pf</a>, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>)</td></tr>
+<tr class="memdesc:ad7fa98889e8cda4e8bf153163c00dd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set boundary values for the position interface.  <a href="structruckig_1_1_profile.html#ad7fa98889e8cda4e8bf153163c00dd16">More...</a><br /></td></tr>
+<tr class="separator:ad7fa98889e8cda4e8bf153163c00dd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54e85a8e9fc2ee0af9eb4398e0947b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#af54e85a8e9fc2ee0af9eb4398e0947b5">set_boundary</a> (double p0, double v0, double a0, double <a class="el" href="structruckig_1_1_profile.html#aea6f5139d98d45428f32d0efeb38d909">vf</a>, double <a class="el" href="structruckig_1_1_profile.html#ab73126a23f9fee9c859b3b832f8b1ab8">af</a>)</td></tr>
+<tr class="memdesc:af54e85a8e9fc2ee0af9eb4398e0947b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set boundary values for the velocity interface.  <a href="structruckig_1_1_profile.html#af54e85a8e9fc2ee0af9eb4398e0947b5">More...</a><br /></td></tr>
+<tr class="separator:af54e85a8e9fc2ee0af9eb4398e0947b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71134f06ed24ff2481c20e9dd4bf84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d">get_position_extrema</a> () const</td></tr>
 <tr class="separator:aa71134f06ed24ff2481c20e9dd4bf84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9938a2febac8bb21ee77b2827c015db"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_profile.html#ad9938a2febac8bb21ee77b2827c015db">to_string</a> () const</td></tr>
@@ -694,6 +700,124 @@ template&lt;JerkSigns jerk_signs, Limits limits&gt; </div>
 </div><div class="memdoc">
 
 <p>Integrate with constant jerk for duration t. Returns new position, new velocity, and new acceleration. </p>
+
+</div>
+</div>
+<a id="ad7fa98889e8cda4e8bf153163c00dd16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7fa98889e8cda4e8bf153163c00dd16">&#9670;&nbsp;</a></span>set_boundary() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ruckig::Profile::set_boundary </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>af</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set boundary values for the position interface. </p>
+
+</div>
+</div>
+<a id="af54e85a8e9fc2ee0af9eb4398e0947b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54e85a8e9fc2ee0af9eb4398e0947b5">&#9670;&nbsp;</a></span>set_boundary() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ruckig::Profile::set_boundary </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>af</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set boundary values for the velocity interface. </p>
 
 </div>
 </div>
