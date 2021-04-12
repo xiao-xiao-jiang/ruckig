@@ -92,9 +92,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a834329fe8e6f33f28fdca1c1b04e1161"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:a834329fe8e6f33f28fdca1c1b04e1161"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#a834329fe8e6f33f28fdca1c1b04e1161">calculate_block</a> (<a class="el" href="classruckig_1_1_block.html">Block</a> &amp;block, const std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, N &gt; &amp;valid_profiles, const size_t valid_profile_counter)</td></tr>
-<tr class="separator:a834329fe8e6f33f28fdca1c1b04e1161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276cb1d05d95ac274486e4cd57ca2bc6"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a276cb1d05d95ac274486e4cd57ca2bc6"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#a276cb1d05d95ac274486e4cd57ca2bc6">calculate_block</a> (<a class="el" href="classruckig_1_1_block.html">Block</a> &amp;block, std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, N &gt; &amp;valid_profiles, size_t valid_profile_counter)</td></tr>
+<tr class="separator:a276cb1d05d95ac274486e4cd57ca2bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5976be68d61c2ee46578476c3c758451"><td class="memTemplParams" colspan="2">template&lt;size_t DOFs&gt; </td></tr>
 <tr class="memitem:a5976be68d61c2ee46578476c3c758451"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#a5976be68d61c2ee46578476c3c758451">synchronize</a> (const std::array&lt; <a class="el" href="classruckig_1_1_block.html">Block</a>, DOFs &gt; &amp;blocks, std::optional&lt; double &gt; <a class="el" href="classruckig_1_1_block.html#afdcd4db887bf661d52e787eb319b936e">t_min</a>, double &amp;t_sync, int &amp;limiting_dof, std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, DOFs &gt; &amp;profiles, bool discrete_duration, double delta_time)</td></tr>
 <tr class="separator:a5976be68d61c2ee46578476c3c758451"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,8 +165,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a834329fe8e6f33f28fdca1c1b04e1161"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a834329fe8e6f33f28fdca1c1b04e1161">&#9670;&nbsp;</a></span>calculate_block()</h2>
+<a id="a276cb1d05d95ac274486e4cd57ca2bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276cb1d05d95ac274486e4cd57ca2bc6">&#9670;&nbsp;</a></span>calculate_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,13 +185,13 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, N &gt; &amp;&#160;</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>valid_profiles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>valid_profile_counter</em>&#160;</td>
         </tr>
         <tr>
