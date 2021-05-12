@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['to_5fstring_253',['to_string',['../classruckig_1_1_input_parameter.html#af3b54e2a81b190a995e7da7aa701911c',1,'ruckig::InputParameter::to_string()'],['../structruckig_1_1_profile.html#ad9938a2febac8bb21ee77b2827c015db',1,'ruckig::Profile::to_string()']]]
+  ['update_242',['update',['../classruckig_1_1_reflexxes.html#ac744d53c51b54382b5f16654a58faf77',1,'ruckig::Reflexxes::update()'],['../classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb',1,'ruckig::Ruckig::update()']]]
 ];

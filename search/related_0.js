@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quintic_3c_20dofs_20_3e_364',['Quintic&lt; DOFs &gt;',['../classruckig_1_1_trajectory.html#aefa9880fdc7ec50dc7e951c6dafa85b5',1,'ruckig::Trajectory']]]
+  ['reflexxes_3c_20dofs_20_3e_352',['Reflexxes&lt; DOFs &gt;',['../classruckig_1_1_trajectory.html#a85f199d07029c1d731e56e94f8b7b2c3',1,'ruckig::Trajectory']]]
 ];
