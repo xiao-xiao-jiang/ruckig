@@ -74,6 +74,7 @@ $(function() {
 <p><a href="https://github.com/pantor/ruckig/releases"><object type="image/svg+xml" data="https://img.shields.io/github/v/release/pantor/ruckig.svg?include_prereleases&amp;sort=semver" style="pointer-events: none;">Releases</object> </a></p>
 <p><a href="https://github.com/pantor/ruckig/blob/master/LICENSE"><object type="image/svg+xml" data="https://img.shields.io/badge/license-MIT-green.svg" style="pointer-events: none;">LGPL</object> </a> </p>
 <p>Ruckig calculates a time-optimal trajectory given a <em>target</em> waypoint with position, velocity, and acceleration starting from <em>any</em> initial state limited by velocity, acceleration, and jerk constraints. Ruckig is a more powerful and open-source alternative to the <a href="http://reflexxes.ws/">Reflexxes Type IV</a> library. In fact, Ruckig is the first Type V trajectory generator and even supports directional velocity and acceleration limits, while also being faster on top. For robotics and machining applications, Ruckig allows both instant reactions to unforeseen events as well as simple offline trajectory planning.</p>
+<p>More information can be found in the corresponding paper <a href="https://arxiv.org/abs/2105.04830">Jerk-limited Real-time Trajectory Generation with Arbitrary Target States</a>, accepted for the <em>Robotics: Science and Systems (RSS), 2021</em> conference.</p>
 <h2>Installation</h2>
 <p>Ruckig has no dependencies (except for testing). To build Ruckig using CMake, just run</p>
 <div class="fragment"><div class="line">mkdir -p build</div>
@@ -195,8 +196,13 @@ $(function() {
 <li>Pybind11 v2.6 (only for python wrapper)</li>
 </ul>
 <h2>Citation</h2>
-<p>A publication is submitted ;) </p>
-</div></div><!-- PageDoc -->
+<div class="fragment"><div class="line">@article{berscheid2021jerk,</div>
+<div class="line">  title={Jerk-limited Real-time Trajectory Generation with Arbitrary Target States},</div>
+<div class="line">  author={Berscheid, Lars and Kr{\&quot;o}ger, Torsten},</div>
+<div class="line">  journal={Robotics: Science and Systems XVII (accepted)},</div>
+<div class="line">  year={2021}</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <div class="ttc" id="anamespaceruckig_html"><div class="ttname"><a href="namespaceruckig.html">ruckig</a></div><div class="ttdef"><b>Definition:</b> quintic.hpp:7</div></div>
 <div class="ttc" id="anamespaceruckig_html_a56ce59a766f7d30bd6958501127cc388"><div class="ttname"><a href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">ruckig::DurationDiscretization</a></div><div class="ttdeci">DurationDiscretization</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:35</div></div>
