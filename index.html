@@ -105,8 +105,8 @@ $(function() {
 <div class="line"> </div>
 <div class="line">OutputParameter&lt;6&gt; output; <span class="comment">// Number DoFs</span></div>
 </div><!-- fragment --><p>Given all input and output resources, we can iterate over the trajectory at each discrete time step. For most applications, this loop must run within a real-time thread and controls the actual hardware.</p>
-<div class="fragment"><div class="line">while (ruckig.update(input, output) == Result::Working) {</div>
-<div class="line">  // Make use of the new state here!</div>
+<div class="fragment"><div class="line"><span class="keywordflow">while</span> (<a class="code" href="namespaceruckig.html">ruckig</a>.update(input, output) == <a class="code" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9a115a54563ae42ca3a24086ebcfa55247">Result::Working</a>) {</div>
+<div class="line">  <span class="comment">// Make use of the new state here!</span></div>
 <div class="line"> </div>
 <div class="line">  input.current_position = output.new_position;</div>
 <div class="line">  input.current_velocity = output.new_velocity;</div>
@@ -204,6 +204,7 @@ $(function() {
 <div class="line">}</div>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
+<div class="ttc" id="anamespaceruckig_html_a84167d6e92f2bdcb86ce99d7aaa2d1a9a115a54563ae42ca3a24086ebcfa55247"><div class="ttname"><a href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9a115a54563ae42ca3a24086ebcfa55247">ruckig::Working</a></div><div class="ttdeci">@ Working</div><div class="ttdoc">The trajectory is calculated normally.</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:13</div></div>
 <div class="ttc" id="anamespaceruckig_html"><div class="ttname"><a href="namespaceruckig.html">ruckig</a></div><div class="ttdef"><b>Definition:</b> block.hpp:11</div></div>
 <div class="ttc" id="anamespaceruckig_html_a56ce59a766f7d30bd6958501127cc388"><div class="ttname"><a href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">ruckig::DurationDiscretization</a></div><div class="ttdeci">DurationDiscretization</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:35</div></div>
 <div class="ttc" id="anamespaceruckig_html_a47c13b0e731f894979621b17c63cd75c"><div class="ttname"><a href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">ruckig::Interface</a></div><div class="ttdeci">Interface</div><div class="ttdef"><b>Definition:</b> input_parameter.hpp:23</div></div>
