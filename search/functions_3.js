@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['calculate_213',['calculate',['../classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573',1,'ruckig::Trajectory']]],
-  ['calculate_5fblock_214',['calculate_block',['../classruckig_1_1_block.html#a276cb1d05d95ac274486e4cd57ca2bc6',1,'ruckig::Block']]],
-  ['cast_5funique_215',['cast_unique',['../python_8cpp.html#a611c9e2fa01f6a49ca49c43542f5b925',1,'cast_unique():&#160;python.cpp'],['../python_8cpp.html#a49c3476341e9a56591ae7eab27ec6f19',1,'cast_unique(double delta_time):&#160;python.cpp']]],
-  ['check_216',['check',['../structruckig_1_1_profile.html#afe24e5ffae0b039e9345a62c52510be7',1,'ruckig::Profile::check(double jf, double aMax, double aMin)'],['../structruckig_1_1_profile.html#a982cc20d0fefce298992c9d92bc2815c',1,'ruckig::Profile::check(double jf, double vMax, double aMax, double aMin)'],['../structruckig_1_1_profile.html#a215a6d742190d89a91bee6e95981cc74',1,'ruckig::Profile::check([[maybe_unused]] double tf, double jf, double vMax, double aMax, double aMin)'],['../structruckig_1_1_profile.html#ad4335b4b56a5ee9c5a260f2fdd2f01cb',1,'ruckig::Profile::check(double tf, double jf, double vMax, double aMax, double aMin, double jMax)']]],
-  ['check_5fposition_5fextremum_217',['check_position_extremum',['../structruckig_1_1_profile.html#a3917ca8e3fc834a0f811646354014143',1,'ruckig::Profile']]],
-  ['check_5fstep_5ffor_5fposition_5fextremum_218',['check_step_for_position_extremum',['../structruckig_1_1_profile.html#a7cc768d1eeadb759a23a07f789f69f5c',1,'ruckig::Profile']]]
+  ['get_5fduration_186',['get_duration',['../classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925',1,'ruckig::Trajectory']]],
+  ['get_5findependent_5fmin_5fdurations_187',['get_independent_min_durations',['../classruckig_1_1_trajectory.html#ae74be0f746b645131aced161a67ec2c7',1,'ruckig::Trajectory']]],
+  ['get_5fposition_5fbrake_5ftrajectory_188',['get_position_brake_trajectory',['../classruckig_1_1_brake.html#acf8c354388ca7a743e001b4f663dc29c',1,'ruckig::Brake']]],
+  ['get_5fposition_5fextrema_189',['get_position_extrema',['../structruckig_1_1_profile.html#aa71134f06ed24ff2481c20e9dd4bf84d',1,'ruckig::Profile::get_position_extrema()'],['../classruckig_1_1_trajectory.html#a718e32d9a4626e133f063ef60fca6f7f',1,'ruckig::Trajectory::get_position_extrema()']]],
+  ['get_5fprofile_190',['get_profile',['../classruckig_1_1_position_step1.html#aef23483dbb4f6ca67ba8ed3d74629a47',1,'ruckig::PositionStep1::get_profile()'],['../classruckig_1_1_position_step2.html#a5f4f88594b66f0faa3093d65838e4f00',1,'ruckig::PositionStep2::get_profile()'],['../classruckig_1_1_velocity_step1.html#ab2b11778bf80026d82582d9b058559ff',1,'ruckig::VelocityStep1::get_profile()'],['../classruckig_1_1_velocity_step2.html#a63743361e13791cbef414c4bf0366e68',1,'ruckig::VelocityStep2::get_profile()']]],
+  ['get_5fvelocity_5fbrake_5ftrajectory_191',['get_velocity_brake_trajectory',['../classruckig_1_1_brake.html#a89868f2ff622c335ce300ce6e22733bd',1,'ruckig::Brake']]]
 ];

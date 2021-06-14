@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['positionstep1_231',['PositionStep1',['../classruckig_1_1_position_step1.html#afe3527b9fdabb575cd5b9ce8cd5a792f',1,'ruckig::PositionStep1']]],
-  ['positionstep2_232',['PositionStep2',['../classruckig_1_1_position_step2.html#a15a77b05ae5ddcc9a59cea93cdc52468',1,'ruckig::PositionStep2']]],
-  ['power_233',['Power',['../namespaceruckig.html#ad684ea3ed8d724f9c18c27f3f06b812d',1,'ruckig']]],
-  ['pybind11_5fmodule_234',['PYBIND11_MODULE',['../python_8cpp.html#a2c59d488b61c153043708be1b51964d4',1,'python.cpp']]]
+  ['set_5fboundary_203',['set_boundary',['../structruckig_1_1_profile.html#abb89c4080d80987ed2fa6c31a69766cb',1,'ruckig::Profile::set_boundary(double p0_new, double v0_new, double a0_new, double pf_new, double vf_new, double af_new)'],['../structruckig_1_1_profile.html#ae39f59e1686e809c134059b8ff263263',1,'ruckig::Profile::set_boundary(double p0_new, double v0_new, double a0_new, double vf_new, double af_new)']]],
+  ['sqrt_204',['Sqrt',['../namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628',1,'ruckig']]],
+  ['synchronize_205',['synchronize',['../classruckig_1_1_block.html#a5976be68d61c2ee46578476c3c758451',1,'ruckig::Block']]]
 ];

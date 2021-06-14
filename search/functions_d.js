@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['to_5fstring_241',['to_string',['../classruckig_1_1_input_parameter.html#af3b54e2a81b190a995e7da7aa701911c',1,'ruckig::InputParameter::to_string()'],['../structruckig_1_1_profile.html#ad9938a2febac8bb21ee77b2827c015db',1,'ruckig::Profile::to_string()']]]
+  ['v_5fat_5fa_5fzero_208',['v_at_a_zero',['../namespaceruckig.html#a7fd5b73571b4274e4062b57ddb086714',1,'ruckig']]],
+  ['v_5fat_5ft_209',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
+  ['validate_5finput_210',['validate_input',['../classruckig_1_1_ruckig.html#ac9763b5dfd21de67bbe61ab5c378ed12',1,'ruckig::Ruckig']]],
+  ['velocitystep1_211',['VelocityStep1',['../classruckig_1_1_velocity_step1.html#a37eea46bbe1400485c5d7e7159831595',1,'ruckig::VelocityStep1']]],
+  ['velocitystep2_212',['VelocityStep2',['../classruckig_1_1_velocity_step2.html#a6a9bdad5489fbc003a7cfc95afba6894',1,'ruckig::VelocityStep2']]]
 ];

@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['operator_21_3d_90',['operator!=',['../classruckig_1_1_input_parameter.html#a292a929568b46a7fa1493dc3415a9f36',1,'ruckig::InputParameter']]],
-  ['output_91',['Output',['../classruckig_1_1_ruckig.html#a8782788e1a8381d6ea35a9f604f20e34',1,'ruckig::Ruckig']]],
-  ['output_5fparameter_2ehpp_92',['output_parameter.hpp',['../output__parameter_8hpp.html',1,'']]],
-  ['outputparameter_93',['OutputParameter',['../structruckig_1_1_output_parameter.html',1,'ruckig']]]
+  ['readme_2emd_96',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['reflexxes_97',['Reflexxes',['../classruckig_1_1_reflexxes.html',1,'ruckig::Reflexxes&lt; DOFs &gt;'],['../classruckig_1_1_reflexxes.html#a552a9713c34620243811e9a95d3ca33e',1,'ruckig::Reflexxes::Reflexxes()'],['../classruckig_1_1_reflexxes.html#abe1b314f846e99a7f33df326f2f88349',1,'ruckig::Reflexxes::Reflexxes(double delta_time)']]],
+  ['reflexxes_3c_20dofs_20_3e_98',['Reflexxes&lt; DOFs &gt;',['../classruckig_1_1_trajectory.html#a85f199d07029c1d731e56e94f8b7b2c3',1,'ruckig::Trajectory']]],
+  ['reflexxes_5fcomparison_2ehpp_99',['reflexxes_comparison.hpp',['../reflexxes__comparison_8hpp.html',1,'']]],
+  ['result_100',['Result',['../namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9',1,'ruckig']]],
+  ['roots_2ehpp_101',['roots.hpp',['../roots_8hpp.html',1,'']]],
+  ['ruckig_102',['Ruckig',['../classruckig_1_1_ruckig.html',1,'ruckig::Ruckig&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;'],['../namespaceruckig.html',1,'ruckig'],['../classruckig_1_1_ruckig.html#a4700f96753cbd51077cd997e88226bfe',1,'ruckig::Ruckig::Ruckig()'],['../classruckig_1_1_ruckig.html#a5084106f029b084cbf49394f86869d81',1,'ruckig::Ruckig::Ruckig(double delta_time)']]],
+  ['ruckig_2ehpp_103',['ruckig.hpp',['../ruckig_8hpp.html',1,'']]]
 ];

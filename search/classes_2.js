@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inputparameter_172',['InputParameter',['../classruckig_1_1_input_parameter.html',1,'ruckig']]]
+  ['outputparameter_145',['OutputParameter',['../structruckig_1_1_output_parameter.html',1,'ruckig']]]
 ];

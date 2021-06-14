@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['trajectory_181',['Trajectory',['../classruckig_1_1_trajectory.html',1,'ruckig']]]
+  ['velocitystep1_153',['VelocityStep1',['../classruckig_1_1_velocity_step1.html',1,'ruckig']]],
+  ['velocitystep2_154',['VelocityStep2',['../classruckig_1_1_velocity_step2.html',1,'ruckig']]]
 ];
