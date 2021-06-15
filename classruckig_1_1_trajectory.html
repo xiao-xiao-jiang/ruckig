@@ -88,7 +88,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a25f1640ca53d093dd88749cb240bd573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the time-optimal waypoint-based trajectory.  <a href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">More...</a><br /></td></tr>
 <tr class="separator:a25f1640ca53d093dd88749cb240bd573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7">at_time</a> (double time, std::array&lt; double, DOFs &gt; &amp;new_position, std::array&lt; double, DOFs &gt; &amp;new_velocity, std::array&lt; double, DOFs &gt; &amp;new_acceleration) const</td></tr>
-<tr class="memdesc:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the kinematic state at a given time.  <a href="classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7">More...</a><br /></td></tr>
 <tr class="separator:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54206927272e18b545fa4a690fcc925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">get_duration</a> () const</td></tr>
 <tr class="memdesc:ac54206927272e18b545fa4a690fcc925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the duration of the (synchronized) trajectory.  <a href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">More...</a><br /></td></tr>
@@ -158,8 +157,7 @@ template&lt;size_t DOFs&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the kinematic state at a given time. </p>
+<p>Get the kinematic state at a given time The Python wrapper takes <code>time</code> as an argument, and returns <code>new_position</code>, <code>new_velocity</code>, and <code>new_acceleration</code> instead. </p>
 
 </div>
 </div>
