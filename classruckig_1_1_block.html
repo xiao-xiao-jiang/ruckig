@@ -89,15 +89,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6a2a39d9fd28a7121a2ec8c3b47850a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1ef6d473cf4ddc9e1bfe4660fae65a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#ada1ef6d473cf4ddc9e1bfe4660fae65a">Block</a> (const <a class="el" href="structruckig_1_1_profile.html">Profile</a> &amp;<a class="el" href="classruckig_1_1_block.html#a73b87c3f7d8247c54fdedf4c451b16da">p_min</a>)</td></tr>
 <tr class="separator:ada1ef6d473cf4ddc9e1bfe4660fae65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e3ec5548f2b8da43eac0384ee51948"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#aa9e3ec5548f2b8da43eac0384ee51948">is_blocked</a> (double t) const</td></tr>
+<tr class="separator:aa9e3ec5548f2b8da43eac0384ee51948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a276cb1d05d95ac274486e4cd57ca2bc6"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:a276cb1d05d95ac274486e4cd57ca2bc6"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#a276cb1d05d95ac274486e4cd57ca2bc6">calculate_block</a> (<a class="el" href="classruckig_1_1_block.html">Block</a> &amp;block, std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, N &gt; &amp;valid_profiles, size_t valid_profile_counter)</td></tr>
 <tr class="separator:a276cb1d05d95ac274486e4cd57ca2bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5976be68d61c2ee46578476c3c758451"><td class="memTemplParams" colspan="2">template&lt;size_t DOFs&gt; </td></tr>
-<tr class="memitem:a5976be68d61c2ee46578476c3c758451"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_block.html#a5976be68d61c2ee46578476c3c758451">synchronize</a> (const std::array&lt; <a class="el" href="classruckig_1_1_block.html">Block</a>, DOFs &gt; &amp;blocks, std::optional&lt; double &gt; <a class="el" href="classruckig_1_1_block.html#afdcd4db887bf661d52e787eb319b936e">t_min</a>, double &amp;t_sync, int &amp;limiting_dof, std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, DOFs &gt; &amp;profiles, bool discrete_duration, double delta_time)</td></tr>
-<tr class="separator:a5976be68d61c2ee46578476c3c758451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -209,68 +208,26 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a5976be68d61c2ee46578476c3c758451"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5976be68d61c2ee46578476c3c758451">&#9670;&nbsp;</a></span>synchronize()</h2>
+<a id="aa9e3ec5548f2b8da43eac0384ee51948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e3ec5548f2b8da43eac0384ee51948">&#9670;&nbsp;</a></span>is_blocked()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool ruckig::Block::synchronize </td>
+          <td class="memname">bool ruckig::Block::is_blocked </td>
           <td>(</td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="classruckig_1_1_block.html">Block</a>, DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>blocks</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::optional&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>t_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>t_sync</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>limiting_dof</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; <a class="el" href="structruckig_1_1_profile.html">Profile</a>, DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>profiles</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>discrete_duration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>delta_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
