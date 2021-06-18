@@ -187,7 +187,7 @@ $(function() {
 <h2>Tests and Numerical Stability</h2>
 <p>The current test suite validates over 5.000.000.000 random trajectories. The numerical exactness is tested for the final position and final velocity to be within <code>1e-8</code>, for the velocity, acceleration and jerk limit to be within <code>1e-12</code>, and for the final acceleration as well to be within a numerical error of <code>1e-12</code>. The maximal supported trajectory duration is <code>7e3</code>, which sounds short but should suffice for most applications seeking for time-optimality. Note that Ruckig will also output values outside of this range, there is however no guarantee for correctness.</p>
 <h2>Benchmark</h2>
-<p>We find that Ruckig is around twice as fast as Reflexxes Type IV and well-suited for control cycles as low as half a millisecond.</p>
+<p>We find that Ruckig is more than twice as fast as Reflexxes Type IV and well-suited for control cycles as low as half a millisecond.</p>
 <p><img src="https://github.com/pantor/ruckig/raw/master/doc/benchmark.png?raw=true" alt="Benchmark" class="inline"/></p>
 <h2>Development</h2>
 <p>Ruckig is written in C++17. It is continuously tested on <code>ubuntu-latest</code>, <code>macos-latest</code>, and <code>windows-latest</code> against following versions</p>
