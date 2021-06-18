@@ -8,7 +8,7 @@ var searchData=
   ['check_5fposition_5fextremum_22',['check_position_extremum',['../structruckig_1_1_profile.html#a3917ca8e3fc834a0f811646354014143',1,'ruckig::Profile']]],
   ['check_5fstep_5ffor_5fposition_5fextremum_23',['check_step_for_position_extremum',['../structruckig_1_1_profile.html#a7cc768d1eeadb759a23a07f789f69f5c',1,'ruckig::Profile']]],
   ['continuous_24',['Continuous',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7',1,'ruckig']]],
-  ['current_5facceleration_25',['current_acceleration',['../classruckig_1_1_input_parameter.html#a5366cfd5039f07f1df5bac52d555eb46',1,'ruckig::InputParameter']]],
-  ['current_5fposition_26',['current_position',['../classruckig_1_1_input_parameter.html#a68e3e74e833753cbf8824db5a2215ce5',1,'ruckig::InputParameter']]],
-  ['current_5fvelocity_27',['current_velocity',['../classruckig_1_1_input_parameter.html#a0ebaaf77bffd32fb36f575b0e8fb154d',1,'ruckig::InputParameter']]]
+  ['current_5facceleration_25',['current_acceleration',['../classruckig_1_1_input_parameter.html#a5819975854a9b2b93badc6e8813ce2d3',1,'ruckig::InputParameter']]],
+  ['current_5fposition_26',['current_position',['../classruckig_1_1_input_parameter.html#a899a55378daff56dddd5846790e7359c',1,'ruckig::InputParameter']]],
+  ['current_5fvelocity_27',['current_velocity',['../classruckig_1_1_input_parameter.html#ac35aefc72e4f8c9730f6c7d85de0fae1',1,'ruckig::InputParameter']]]
 ];

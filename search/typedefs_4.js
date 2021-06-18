@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector_266',['Vector',['../classruckig_1_1_input_parameter.html#ae50fdda7cd9e126071069d055196d8ce',1,'ruckig::InputParameter']]]
+  ['vector_266',['Vector',['../structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7',1,'ruckig::OutputParameter']]]
 ];

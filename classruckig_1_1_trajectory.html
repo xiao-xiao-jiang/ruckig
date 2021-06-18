@@ -87,17 +87,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25f1640ca53d093dd88749cb240bd573"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">calculate</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;inp, double delta_time)</td></tr>
 <tr class="memdesc:a25f1640ca53d093dd88749cb240bd573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the time-optimal waypoint-based trajectory.  <a href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">More...</a><br /></td></tr>
 <tr class="separator:a25f1640ca53d093dd88749cb240bd573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#adb0cb12e202f1f3ab9b141289e3abfd7">at_time</a> (double time, std::array&lt; double, DOFs &gt; &amp;new_position, std::array&lt; double, DOFs &gt; &amp;new_velocity, std::array&lt; double, DOFs &gt; &amp;new_acceleration) const</td></tr>
-<tr class="separator:adb0cb12e202f1f3ab9b141289e3abfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d240a59f901c5fb10c5bbc19d3c0cc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a6d240a59f901c5fb10c5bbc19d3c0cc9">at_time</a> (double time, Vector&lt; double &gt; &amp;new_position, Vector&lt; double &gt; &amp;new_velocity, Vector&lt; double &gt; &amp;new_acceleration) const</td></tr>
+<tr class="separator:a6d240a59f901c5fb10c5bbc19d3c0cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54206927272e18b545fa4a690fcc925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">get_duration</a> () const</td></tr>
 <tr class="memdesc:ac54206927272e18b545fa4a690fcc925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the duration of the (synchronized) trajectory.  <a href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">More...</a><br /></td></tr>
 <tr class="separator:ac54206927272e18b545fa4a690fcc925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae74be0f746b645131aced161a67ec2c7"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ae74be0f746b645131aced161a67ec2c7">get_independent_min_durations</a> () const</td></tr>
-<tr class="memdesc:ae74be0f746b645131aced161a67ec2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum duration of each independent DoF.  <a href="classruckig_1_1_trajectory.html#ae74be0f746b645131aced161a67ec2c7">More...</a><br /></td></tr>
-<tr class="separator:ae74be0f746b645131aced161a67ec2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718e32d9a4626e133f063ef60fca6f7f"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>, DOFs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a718e32d9a4626e133f063ef60fca6f7f">get_position_extrema</a> () const</td></tr>
-<tr class="memdesc:a718e32d9a4626e133f063ef60fca6f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the min/max values of the position for each DoF.  <a href="classruckig_1_1_trajectory.html#a718e32d9a4626e133f063ef60fca6f7f">More...</a><br /></td></tr>
-<tr class="separator:a718e32d9a4626e133f063ef60fca6f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b556c19eca0dfdeb032afed95955e6"><td class="memItemLeft" align="right" valign="top">Vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#af2b556c19eca0dfdeb032afed95955e6">get_independent_min_durations</a> () const</td></tr>
+<tr class="memdesc:af2b556c19eca0dfdeb032afed95955e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum duration of each independent DoF.  <a href="classruckig_1_1_trajectory.html#af2b556c19eca0dfdeb032afed95955e6">More...</a><br /></td></tr>
+<tr class="separator:af2b556c19eca0dfdeb032afed95955e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8c9f9f8dec15190a998549650d53de"><td class="memItemLeft" align="right" valign="top">Vector&lt; <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#afe8c9f9f8dec15190a998549650d53de">get_position_extrema</a> () const</td></tr>
+<tr class="memdesc:afe8c9f9f8dec15190a998549650d53de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the min/max values of the position for each DoF.  <a href="classruckig_1_1_trajectory.html#afe8c9f9f8dec15190a998549650d53de">More...</a><br /></td></tr>
+<tr class="separator:afe8c9f9f8dec15190a998549650d53de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -110,8 +110,8 @@ class ruckig::Trajectory&lt; DOFs &gt;</h3>
 
 <p>Interface for the generated trajectory. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adb0cb12e202f1f3ab9b141289e3abfd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0cb12e202f1f3ab9b141289e3abfd7">&#9670;&nbsp;</a></span>at_time()</h2>
+<a id="a6d240a59f901c5fb10c5bbc19d3c0cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d240a59f901c5fb10c5bbc19d3c0cc9">&#9670;&nbsp;</a></span>at_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,19 +130,19 @@ template&lt;size_t DOFs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::array&lt; double, DOFs &gt; &amp;&#160;</td>
+          <td class="paramtype">Vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>new_position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::array&lt; double, DOFs &gt; &amp;&#160;</td>
+          <td class="paramtype">Vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>new_velocity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::array&lt; double, DOFs &gt; &amp;&#160;</td>
+          <td class="paramtype">Vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>new_acceleration</em>&#160;</td>
         </tr>
         <tr>
@@ -232,8 +232,8 @@ template&lt;size_t DOFs&gt; </div>
 
 </div>
 </div>
-<a id="ae74be0f746b645131aced161a67ec2c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae74be0f746b645131aced161a67ec2c7">&#9670;&nbsp;</a></span>get_independent_min_durations()</h2>
+<a id="af2b556c19eca0dfdeb032afed95955e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b556c19eca0dfdeb032afed95955e6">&#9670;&nbsp;</a></span>get_independent_min_durations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +244,7 @@ template&lt;size_t DOFs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;double, DOFs&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_independent_min_durations </td>
+          <td class="memname">Vector&lt;double&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_independent_min_durations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -261,8 +261,8 @@ template&lt;size_t DOFs&gt; </div>
 
 </div>
 </div>
-<a id="a718e32d9a4626e133f063ef60fca6f7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a718e32d9a4626e133f063ef60fca6f7f">&#9670;&nbsp;</a></span>get_position_extrema()</h2>
+<a id="afe8c9f9f8dec15190a998549650d53de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8c9f9f8dec15190a998549650d53de">&#9670;&nbsp;</a></span>get_position_extrema()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +273,7 @@ template&lt;size_t DOFs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>, DOFs&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_position_extrema </td>
+          <td class="memname">Vector&lt;<a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a>&gt; <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_position_extrema </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
