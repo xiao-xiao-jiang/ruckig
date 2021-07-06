@@ -98,6 +98,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe8c9f9f8dec15190a998549650d53de"><td class="memItemLeft" align="right" valign="top">Vector&lt; <a class="el" href="structruckig_1_1_position_extrema.html">PositionExtrema</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#afe8c9f9f8dec15190a998549650d53de">get_position_extrema</a> () const</td></tr>
 <tr class="memdesc:afe8c9f9f8dec15190a998549650d53de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the min/max values of the position for each DoF.  <a href="classruckig_1_1_trajectory.html#afe8c9f9f8dec15190a998549650d53de">More...</a><br /></td></tr>
 <tr class="separator:afe8c9f9f8dec15190a998549650d53de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7320d79f44f252eb4d0904b56dfa391"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ab7320d79f44f252eb4d0904b56dfa391">get_first_time_at_position</a> (size_t dof, double position, double &amp;time) const</td></tr>
+<tr class="separator:ab7320d79f44f252eb4d0904b56dfa391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -229,6 +231,51 @@ template&lt;size_t DOFs&gt; </div>
 </div><div class="memdoc">
 
 <p>Get the duration of the (synchronized) trajectory. </p>
+
+</div>
+</div>
+<a id="ab7320d79f44f252eb4d0904b56dfa391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7320d79f44f252eb4d0904b56dfa391">&#9670;&nbsp;</a></span>get_first_time_at_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::get_first_time_at_position </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dof</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the time that this trajectory passes a specific position of a given DoF the first time If the position is passed, this method returns true, otherwise false The Python wrapper takes <code>dof</code> and <code>position</code> as arguments and returns <code>time</code> (or <code>None</code>) instead </p>
 
 </div>
 </div>
