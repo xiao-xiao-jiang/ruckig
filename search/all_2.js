@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calculate_17',['calculate',['../classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573',1,'ruckig::Trajectory']]],
+  ['calculate_17',['calculate',['../classruckig_1_1_ruckig.html#a85ba3839d118d921b022cebdbb61577f',1,'ruckig::Ruckig::calculate()'],['../classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573',1,'ruckig::Trajectory::calculate()']]],
   ['calculate_5fblock_18',['calculate_block',['../classruckig_1_1_block.html#a276cb1d05d95ac274486e4cd57ca2bc6',1,'ruckig::Block']]],
   ['calculation_5fduration_19',['calculation_duration',['../structruckig_1_1_output_parameter.html#a9cbad641e20fc589a3f20e6a4820216d',1,'ruckig::OutputParameter']]],
   ['cast_5funique_20',['cast_unique',['../python_8cpp.html#a54b0010c3cbf5fd7a8ab1d02efecc9c7',1,'python.cpp']]],
