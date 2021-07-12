@@ -1,22 +1,11 @@
 var searchData=
 [
-  ['p_78',['p',['../structruckig_1_1_profile.html#a30b074b9392dc0636e214b84ca3b42c0',1,'ruckig::Profile']]],
-  ['p_5fbrakes_79',['p_brakes',['../structruckig_1_1_profile.html#a511da94d2380444aaded934de07fe273',1,'ruckig::Profile']]],
-  ['p_5fmin_80',['p_min',['../classruckig_1_1_block.html#a73b87c3f7d8247c54fdedf4c451b16da',1,'ruckig::Block']]],
-  ['pf_81',['pf',['../structruckig_1_1_profile.html#ae81b22ceab3b0fc5d46239130745db64',1,'ruckig::Profile']]],
-  ['phase_82',['Phase',['../namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa5e35d7fff7b903516cba242ff68fc6d3',1,'ruckig']]],
-  ['position_83',['Position',['../namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881',1,'ruckig']]],
-  ['position_2dstep1_2ecpp_84',['position-step1.cpp',['../position-step1_8cpp.html',1,'']]],
-  ['position_2dstep2_2ecpp_85',['position-step2.cpp',['../position-step2_8cpp.html',1,'']]],
-  ['position_2ecpp_86',['position.cpp',['../position_8cpp.html',1,'']]],
-  ['position_2ehpp_87',['position.hpp',['../position_8hpp.html',1,'']]],
-  ['position_2epy_88',['position.py',['../position_8py.html',1,'']]],
-  ['positionextrema_89',['PositionExtrema',['../structruckig_1_1_position_extrema.html',1,'ruckig']]],
-  ['positionstep1_90',['PositionStep1',['../classruckig_1_1_position_step1.html',1,'ruckig::PositionStep1'],['../classruckig_1_1_position_step1.html#afe3527b9fdabb575cd5b9ce8cd5a792f',1,'ruckig::PositionStep1::PositionStep1()']]],
-  ['positionstep2_91',['PositionStep2',['../classruckig_1_1_position_step2.html',1,'ruckig::PositionStep2'],['../classruckig_1_1_position_step2.html#a15a77b05ae5ddcc9a59cea93cdc52468',1,'ruckig::PositionStep2::PositionStep2()']]],
-  ['power2_92',['Power2',['../namespaceruckig.html#af7a168d6d36e3a7f484d95e0c76bda76',1,'ruckig']]],
-  ['profile_93',['Profile',['../structruckig_1_1_profile.html',1,'ruckig']]],
-  ['profile_2ehpp_94',['profile.hpp',['../profile_8hpp.html',1,'']]],
-  ['pybind11_5fmodule_95',['PYBIND11_MODULE',['../python_8cpp.html#a2c59d488b61c153043708be1b51964d4',1,'python.cpp']]],
-  ['python_2ecpp_96',['python.cpp',['../python_8cpp.html',1,'']]]
+  ['readme_2emd_95',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['reflexxes_96',['Reflexxes',['../classruckig_1_1_reflexxes.html',1,'ruckig::Reflexxes&lt; DOFs &gt;'],['../classruckig_1_1_reflexxes.html#a552a9713c34620243811e9a95d3ca33e',1,'ruckig::Reflexxes::Reflexxes()']]],
+  ['reflexxes_3c_20dofs_20_3e_97',['Reflexxes&lt; DOFs &gt;',['../classruckig_1_1_trajectory.html#a85f199d07029c1d731e56e94f8b7b2c3',1,'ruckig::Trajectory']]],
+  ['reflexxes_5fcomparison_2ehpp_98',['reflexxes_comparison.hpp',['../reflexxes__comparison_8hpp.html',1,'']]],
+  ['result_99',['Result',['../namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9',1,'ruckig']]],
+  ['roots_2ehpp_100',['roots.hpp',['../roots_8hpp.html',1,'']]],
+  ['ruckig_101',['Ruckig',['../classruckig_1_1_ruckig.html',1,'ruckig::Ruckig&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;'],['../namespaceruckig.html',1,'ruckig']]],
+  ['ruckig_2ehpp_102',['ruckig.hpp',['../ruckig_8hpp.html',1,'']]]
 ];

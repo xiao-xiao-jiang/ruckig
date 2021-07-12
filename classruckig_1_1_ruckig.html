@@ -68,9 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classruckig_1_1_ruckig-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ruckig::Ruckig&lt; DOFs, throw_error, return_error_at_maximal_duration &gt; Class Template Reference</div>  </div>
@@ -82,226 +80,32 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="ruckig_8hpp_source.html">ruckig.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a4700f96753cbd51077cd997e88226bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#a4700f96753cbd51077cd997e88226bfe">Ruckig</a> ()</td></tr>
-<tr class="separator:a4700f96753cbd51077cd997e88226bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5084106f029b084cbf49394f86869d81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#a5084106f029b084cbf49394f86869d81">Ruckig</a> (double <a class="el" href="classruckig_1_1_ruckig.html#a4ffc0a287e8839d25ef6f3cbbdb59924">delta_time</a>)</td></tr>
-<tr class="separator:a5084106f029b084cbf49394f86869d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9763b5dfd21de67bbe61ab5c378ed12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#ac9763b5dfd21de67bbe61ab5c378ed12">validate_input</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;input) const</td></tr>
-<tr class="memdesc:ac9763b5dfd21de67bbe61ab5c378ed12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the input for the trajectory calculation.  <a href="classruckig_1_1_ruckig.html#ac9763b5dfd21de67bbe61ab5c378ed12">More...</a><br /></td></tr>
-<tr class="separator:ac9763b5dfd21de67bbe61ab5c378ed12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85ba3839d118d921b022cebdbb61577f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#a85ba3839d118d921b022cebdbb61577f">calculate</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;input, <a class="el" href="classruckig_1_1_trajectory.html">Trajectory</a>&lt; DOFs &gt; &amp;trajectory)</td></tr>
-<tr class="memdesc:a85ba3839d118d921b022cebdbb61577f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a new trajectory for the given input.  <a href="classruckig_1_1_ruckig.html#a85ba3839d118d921b022cebdbb61577f">More...</a><br /></td></tr>
-<tr class="separator:a85ba3839d118d921b022cebdbb61577f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90bcd408b4edeacc3ea6a0e1c6439cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb">update</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;input, <a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;output)</td></tr>
-<tr class="memdesc:ad90bcd408b4edeacc3ea6a0e1c6439cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next output state (with step delta_time) along the calculated trajectory for the given input.  <a href="classruckig_1_1_ruckig.html#ad90bcd408b4edeacc3ea6a0e1c6439cb">More...</a><br /></td></tr>
-<tr class="separator:ad90bcd408b4edeacc3ea6a0e1c6439cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ab9b3bd91ef7f719d5bc14c3625669846"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#ab9b3bd91ef7f719d5bc14c3625669846">degrees_of_freedom</a></td></tr>
+<tr class="separator:ab9b3bd91ef7f719d5bc14c3625669846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ffc0a287e8839d25ef6f3cbbdb59924"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#a4ffc0a287e8839d25ef6f3cbbdb59924">delta_time</a></td></tr>
 <tr class="memdesc:a4ffc0a287e8839d25ef6f3cbbdb59924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time step between updates (cycle time) in [s].  <a href="classruckig_1_1_ruckig.html#a4ffc0a287e8839d25ef6f3cbbdb59924">More...</a><br /></td></tr>
 <tr class="separator:a4ffc0a287e8839d25ef6f3cbbdb59924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a16f7376727bf88eec33a2253d824e83e"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_ruckig.html#a16f7376727bf88eec33a2253d824e83e">degrees_of_freedom</a> {DOFs}</td></tr>
-<tr class="separator:a16f7376727bf88eec33a2253d824e83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt;<br />
+<div class="textblock"><h3>template&lt;size_t DOFs = 0, bool throw_error = false, bool return_error_at_maximal_duration = true&gt;<br />
 class ruckig::Ruckig&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;</h3>
 
 <p>Main class for the <a class="el" href="classruckig_1_1_ruckig.html" title="Main class for the Ruckig algorithm.">Ruckig</a> algorithm. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4700f96753cbd51077cd997e88226bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4700f96753cbd51077cd997e88226bfe">&#9670;&nbsp;</a></span>Ruckig() <span class="overload">[1/2]</span></h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab9b3bd91ef7f719d5bc14c3625669846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b3bd91ef7f719d5bc14c3625669846">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;size_t DOFs = 0, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::<a class="el" href="classruckig_1_1_ruckig.html">Ruckig</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">size_t <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::degrees_of_freedom</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5084106f029b084cbf49394f86869d81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5084106f029b084cbf49394f86869d81">&#9670;&nbsp;</a></span>Ruckig() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::<a class="el" href="classruckig_1_1_ruckig.html">Ruckig</a> </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>delta_time</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a85ba3839d118d921b022cebdbb61577f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85ba3839d118d921b022cebdbb61577f">&#9670;&nbsp;</a></span>calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a> <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::calculate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classruckig_1_1_trajectory.html">Trajectory</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>trajectory</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculate a new trajectory for the given input. </p>
-
-</div>
-</div>
-<a id="ad90bcd408b4edeacc3ea6a0e1c6439cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad90bcd408b4edeacc3ea6a0e1c6439cb">&#9670;&nbsp;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a> <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the next output state (with step delta_time) along the calculated trajectory for the given input. </p>
-
-</div>
-</div>
-<a id="ac9763b5dfd21de67bbe61ab5c378ed12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9763b5dfd21de67bbe61ab5c378ed12">&#9670;&nbsp;</a></span>validate_input()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::validate_input </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Validate the input for the trajectory calculation. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a16f7376727bf88eec33a2253d824e83e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16f7376727bf88eec33a2253d824e83e">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr size_t <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::degrees_of_freedom {DOFs}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -312,7 +116,7 @@ template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t DOFs, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
+template&lt;size_t DOFs = 0, bool throw_error = false, bool return_error_at_maximal_duration = true&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const double <a class="el" href="classruckig_1_1_ruckig.html">ruckig::Ruckig</a>&lt; DOFs, throw_error, return_error_at_maximal_duration &gt;::delta_time</td>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['set_5fboundary_206',['set_boundary',['../structruckig_1_1_profile.html#abb89c4080d80987ed2fa6c31a69766cb',1,'ruckig::Profile::set_boundary(double p0_new, double v0_new, double a0_new, double pf_new, double vf_new, double af_new)'],['../structruckig_1_1_profile.html#ae39f59e1686e809c134059b8ff263263',1,'ruckig::Profile::set_boundary(double p0_new, double v0_new, double a0_new, double vf_new, double af_new)']]],
-  ['sqrt_207',['Sqrt',['../namespaceruckig.html#a33eb514e2c5ef12e59e6dd0e1bfa6628',1,'ruckig']]]
+  ['v_5fat_5fa_5fzero_201',['v_at_a_zero',['../namespaceruckig.html#a7fd5b73571b4274e4062b57ddb086714',1,'ruckig']]],
+  ['v_5fat_5ft_202',['v_at_t',['../namespaceruckig.html#a44a56a5b90b258ac5f1118f3a91905f6',1,'ruckig']]],
+  ['velocitystep1_203',['VelocityStep1',['../classruckig_1_1_velocity_step1.html#a37eea46bbe1400485c5d7e7159831595',1,'ruckig::VelocityStep1']]],
+  ['velocitystep2_204',['VelocityStep2',['../classruckig_1_1_velocity_step2.html#a6a9bdad5489fbc003a7cfc95afba6894',1,'ruckig::VelocityStep2']]]
 ];

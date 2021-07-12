@@ -70,7 +70,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structruckig_1_1_output_parameter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ruckig::OutputParameter&lt; DOFs &gt; Struct Template Reference</div>  </div>
@@ -84,17 +83,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8f9f50b4a9eb947b772cada5e429b2b7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8f9f50b4a9eb947b772cada5e429b2b7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a> = std::array&lt; T, DOFs &gt;</td></tr>
-<tr class="separator:a8f9f50b4a9eb947b772cada5e429b2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a7514e6e60cc47ebc1d848eca3703e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ab5a7514e6e60cc47ebc1d848eca3703e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a> = typename std::conditional&lt; DOFs &gt;=1, std::array&lt; T, DOFs &gt;, std::vector&lt; T &gt; &gt;::type</td></tr>
+<tr class="separator:ab5a7514e6e60cc47ebc1d848eca3703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9ba2d06fb9e5909a0faab10ce056b1bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a9ba2d06fb9e5909a0faab10ce056b1bc">new_position</a></td></tr>
+<tr class="memitem:a92dc329b0b1a6f060ff9ead5551f94bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a92dc329b0b1a6f060ff9ead5551f94bf">degrees_of_freedom</a></td></tr>
+<tr class="separator:a92dc329b0b1a6f060ff9ead5551f94bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba2d06fb9e5909a0faab10ce056b1bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a9ba2d06fb9e5909a0faab10ce056b1bc">new_position</a></td></tr>
 <tr class="separator:a9ba2d06fb9e5909a0faab10ce056b1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c6e97e369886d6364222937c9f35ea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a0c6e97e369886d6364222937c9f35ea6">new_velocity</a></td></tr>
+<tr class="memitem:a0c6e97e369886d6364222937c9f35ea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a0c6e97e369886d6364222937c9f35ea6">new_velocity</a></td></tr>
 <tr class="separator:a0c6e97e369886d6364222937c9f35ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542b76377a4311c1d55f4d9ed1d263e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a542b76377a4311c1d55f4d9ed1d263e0">new_acceleration</a></td></tr>
+<tr class="memitem:a542b76377a4311c1d55f4d9ed1d263e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a542b76377a4311c1d55f4d9ed1d263e0">new_acceleration</a></td></tr>
 <tr class="separator:a542b76377a4311c1d55f4d9ed1d263e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b018d5675418927a8d30d10cfe84967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a5b018d5675418927a8d30d10cfe84967">new_calculation</a> {false}</td></tr>
 <tr class="memdesc:a5b018d5675418927a8d30d10cfe84967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Was a new trajectory calculation performed in the last cycle?  <a href="structruckig_1_1_output_parameter.html#a5b018d5675418927a8d30d10cfe84967">More...</a><br /></td></tr>
@@ -108,11 +109,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae5d91694171325f0a87eca37d90cc27a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#ae5d91694171325f0a87eca37d90cc27a">time</a></td></tr>
 <tr class="memdesc:ae5d91694171325f0a87eca37d90cc27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current time on trajectory.  <a href="structruckig_1_1_output_parameter.html#ae5d91694171325f0a87eca37d90cc27a">More...</a><br /></td></tr>
 <tr class="separator:ae5d91694171325f0a87eca37d90cc27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a8c9e69770232cc0d73311807799961da"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruckig_1_1_output_parameter.html#a8c9e69770232cc0d73311807799961da">degrees_of_freedom</a> {DOFs}</td></tr>
-<tr class="separator:a8c9e69770232cc0d73311807799961da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;size_t DOFs&gt;<br />
@@ -120,8 +116,8 @@ struct ruckig::OutputParameter&lt; DOFs &gt;</h3>
 
 <p>Output type of the OTG. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8f9f50b4a9eb947b772cada5e429b2b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f9f50b4a9eb947b772cada5e429b2b7">&#9670;&nbsp;</a></span>Vector</h2>
+<a id="ab5a7514e6e60cc47ebc1d848eca3703e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a7514e6e60cc47ebc1d848eca3703e">&#9670;&nbsp;</a></span>Vector</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +127,7 @@ template&lt;size_t DOFs&gt; </div>
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::<a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a> =  std::array&lt;T, DOFs&gt;</td>
+          <td class="memname">using <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::<a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a> =  typename std::conditional&lt;DOFs &gt;= 1, std::array&lt;T, DOFs&gt;, std::vector&lt;T&gt; &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,26 +153,18 @@ template&lt;size_t DOFs&gt; </div>
 
 </div>
 </div>
-<a id="a8c9e69770232cc0d73311807799961da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c9e69770232cc0d73311807799961da">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
+<a id="a92dc329b0b1a6f060ff9ead5551f94bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92dc329b0b1a6f060ff9ead5551f94bf">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t DOFs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::degrees_of_freedom {DOFs}</td>
+          <td class="memname">size_t <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::degrees_of_freedom</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -190,7 +178,7 @@ template&lt;size_t DOFs&gt; </div>
 template&lt;size_t DOFs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a>&lt;double&gt; <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::new_acceleration</td>
+          <td class="memname"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a>&lt;double&gt; <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::new_acceleration</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -224,7 +212,7 @@ template&lt;size_t DOFs&gt; </div>
 template&lt;size_t DOFs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a>&lt;double&gt; <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::new_position</td>
+          <td class="memname"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a>&lt;double&gt; <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::new_position</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,7 +228,7 @@ template&lt;size_t DOFs&gt; </div>
 template&lt;size_t DOFs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structruckig_1_1_output_parameter.html#a8f9f50b4a9eb947b772cada5e429b2b7">Vector</a>&lt;double&gt; <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::new_velocity</td>
+          <td class="memname"><a class="el" href="structruckig_1_1_output_parameter.html#ab5a7514e6e60cc47ebc1d848eca3703e">Vector</a>&lt;double&gt; <a class="el" href="structruckig_1_1_output_parameter.html">ruckig::OutputParameter</a>&lt; DOFs &gt;::new_velocity</td>
         </tr>
       </table>
 </div><div class="memdoc">

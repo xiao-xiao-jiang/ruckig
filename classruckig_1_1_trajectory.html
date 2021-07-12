@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classruckig_1_1_trajectory-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -83,10 +84,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25f1640ca53d093dd88749cb240bd573"><td class="memTemplParams" colspan="2">template&lt;bool throw_error, bool return_error_at_maximal_duration&gt; </td></tr>
-<tr class="memitem:a25f1640ca53d093dd88749cb240bd573"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">calculate</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;inp, double delta_time)</td></tr>
-<tr class="memdesc:a25f1640ca53d093dd88749cb240bd573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the time-optimal waypoint-based trajectory.  <a href="classruckig_1_1_trajectory.html#a25f1640ca53d093dd88749cb240bd573">More...</a><br /></td></tr>
-<tr class="separator:a25f1640ca53d093dd88749cb240bd573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4b77545ab91dfae5ae1c65a66b8dc2"><td class="memItemLeft" align="right" valign="top">bool return_error_at_maximal_duration <a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a8b4b77545ab91dfae5ae1c65a66b8dc2">calculate</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;inp, double delta_time)</td></tr>
+<tr class="separator:a8b4b77545ab91dfae5ae1c65a66b8dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d240a59f901c5fb10c5bbc19d3c0cc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a6d240a59f901c5fb10c5bbc19d3c0cc9">at_time</a> (double time, Vector&lt; double &gt; &amp;new_position, Vector&lt; double &gt; &amp;new_velocity, Vector&lt; double &gt; &amp;new_acceleration) const</td></tr>
 <tr class="separator:a6d240a59f901c5fb10c5bbc19d3c0cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54206927272e18b545fa4a690fcc925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ac54206927272e18b545fa4a690fcc925">get_duration</a> () const</td></tr>
@@ -100,6 +99,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe8c9f9f8dec15190a998549650d53de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7320d79f44f252eb4d0904b56dfa391"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#ab7320d79f44f252eb4d0904b56dfa391">get_first_time_at_position</a> (size_t dof, double position, double &amp;time) const</td></tr>
 <tr class="separator:ab7320d79f44f252eb4d0904b56dfa391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a74ace23fc658958a6119a5b29b9ff44e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_trajectory.html#a74ace23fc658958a6119a5b29b9ff44e">degrees_of_freedom</a></td></tr>
+<tr class="separator:a74ace23fc658958a6119a5b29b9ff44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -163,21 +167,19 @@ template&lt;size_t DOFs&gt; </div>
 
 </div>
 </div>
-<a id="a25f1640ca53d093dd88749cb240bd573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f1640ca53d093dd88749cb240bd573">&#9670;&nbsp;</a></span>calculate()</h2>
+<a id="a8b4b77545ab91dfae5ae1c65a66b8dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4b77545ab91dfae5ae1c65a66b8dc2">&#9670;&nbsp;</a></span>calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t DOFs&gt; </div>
-<div class="memtemplate">
-template&lt;bool throw_error, bool return_error_at_maximal_duration&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a> <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::calculate </td>
+          <td class="memname">bool return_error_at_maximal_duration <a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a> <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::calculate </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
           <td class="paramname"><em>inp</em>, </td>
@@ -200,8 +202,6 @@ template&lt;bool throw_error, bool return_error_at_maximal_duration&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Calculate the time-optimal waypoint-based trajectory. </p>
 
 </div>
 </div>
@@ -358,6 +358,23 @@ template&lt;size_t DOFs&gt; </div>
 <span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a74ace23fc658958a6119a5b29b9ff44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ace23fc658958a6119a5b29b9ff44e">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classruckig_1_1_trajectory.html">ruckig::Trajectory</a>&lt; DOFs &gt;::degrees_of_freedom</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

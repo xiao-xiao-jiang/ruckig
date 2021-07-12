@@ -70,7 +70,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classruckig_1_1_reflexxes-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ruckig::Reflexxes&lt; DOFs &gt; Class Template Reference</div>  </div>
@@ -86,22 +85,13 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a552a9713c34620243811e9a95d3ca33e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#a552a9713c34620243811e9a95d3ca33e">Reflexxes</a> ()</td></tr>
 <tr class="separator:a552a9713c34620243811e9a95d3ca33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe1b314f846e99a7f33df326f2f88349"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#abe1b314f846e99a7f33df326f2f88349">Reflexxes</a> (double <a class="el" href="classruckig_1_1_reflexxes.html#aea13b448efe0308c91c490f6720bf84c">delta_time</a>)</td></tr>
-<tr class="separator:abe1b314f846e99a7f33df326f2f88349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac744d53c51b54382b5f16654a58faf77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#ac744d53c51b54382b5f16654a58faf77">update</a> (const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;input, <a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;output)</td></tr>
-<tr class="separator:ac744d53c51b54382b5f16654a58faf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a884a6f173c1b07ced3bad90a4f995a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#a884a6f173c1b07ced3bad90a4f995a0b">at_time</a> (double time, <a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;output)</td></tr>
-<tr class="separator:a884a6f173c1b07ced3bad90a4f995a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a090d1511e673223dbc70e4ee56d3d5c2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#a090d1511e673223dbc70e4ee56d3d5c2">degrees_of_freedom</a></td></tr>
+<tr class="separator:a090d1511e673223dbc70e4ee56d3d5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea13b448efe0308c91c490f6720bf84c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#aea13b448efe0308c91c490f6720bf84c">delta_time</a></td></tr>
 <tr class="separator:aea13b448efe0308c91c490f6720bf84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:afd4081c45852a1cd758ef798296927e9"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_reflexxes.html#afd4081c45852a1cd758ef798296927e9">degrees_of_freedom</a> {DOFs}</td></tr>
-<tr class="separator:afd4081c45852a1cd758ef798296927e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;size_t DOFs&gt;<br />
@@ -110,7 +100,7 @@ class ruckig::Reflexxes&lt; DOFs &gt;</h3>
 <p>Wrapper around <a class="el" href="classruckig_1_1_reflexxes.html" title="Wrapper around Reflexxes as an alternative OTG algorithm (for comparison)">Reflexxes</a> as an alternative OTG algorithm (for comparison) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a552a9713c34620243811e9a95d3ca33e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a552a9713c34620243811e9a95d3ca33e">&#9670;&nbsp;</a></span>Reflexxes() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a552a9713c34620243811e9a95d3ca33e">&#9670;&nbsp;</a></span>Reflexxes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,132 +126,19 @@ template&lt;size_t DOFs&gt; </div>
 
 </div>
 </div>
-<a id="abe1b314f846e99a7f33df326f2f88349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe1b314f846e99a7f33df326f2f88349">&#9670;&nbsp;</a></span>Reflexxes() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classruckig_1_1_reflexxes.html">ruckig::Reflexxes</a>&lt; DOFs &gt;::<a class="el" href="classruckig_1_1_reflexxes.html">Reflexxes</a> </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>delta_time</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a884a6f173c1b07ced3bad90a4f995a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a884a6f173c1b07ced3bad90a4f995a0b">&#9670;&nbsp;</a></span>at_time()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classruckig_1_1_reflexxes.html">ruckig::Reflexxes</a>&lt; DOFs &gt;::at_time </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac744d53c51b54382b5f16654a58faf77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac744d53c51b54382b5f16654a58faf77">&#9670;&nbsp;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">Result</a> <a class="el" href="classruckig_1_1_reflexxes.html">ruckig::Reflexxes</a>&lt; DOFs &gt;::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classruckig_1_1_input_parameter.html">InputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structruckig_1_1_output_parameter.html">OutputParameter</a>&lt; DOFs &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afd4081c45852a1cd758ef798296927e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd4081c45852a1cd758ef798296927e9">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
+<a id="a090d1511e673223dbc70e4ee56d3d5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090d1511e673223dbc70e4ee56d3d5c2">&#9670;&nbsp;</a></span>degrees_of_freedom</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t DOFs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t <a class="el" href="classruckig_1_1_reflexxes.html">ruckig::Reflexxes</a>&lt; DOFs &gt;::degrees_of_freedom {DOFs}</td>
+          <td class="memname">size_t <a class="el" href="classruckig_1_1_reflexxes.html">ruckig::Reflexxes</a>&lt; DOFs &gt;::degrees_of_freedom</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
