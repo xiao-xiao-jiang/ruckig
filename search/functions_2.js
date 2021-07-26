@@ -1,7 +1,7 @@
 var searchData=
 [
   ['calculate_188',['calculate',['../classruckig_1_1_trajectory.html#a8b4b77545ab91dfae5ae1c65a66b8dc2',1,'ruckig::Trajectory']]],
-  ['calculate_5fblock_189',['calculate_block',['../classruckig_1_1_block.html#a276cb1d05d95ac274486e4cd57ca2bc6',1,'ruckig::Block']]],
+  ['calculate_5fblock_189',['calculate_block',['../classruckig_1_1_block.html#a7ffde8741eb42983850b97c4af423c84',1,'ruckig::Block']]],
   ['check_190',['check',['../structruckig_1_1_profile.html#a6da0672ab735009dab1d383a58de58a9',1,'ruckig::Profile']]],
   ['check_5ffor_5fvelocity_191',['check_for_velocity',['../structruckig_1_1_profile.html#abdec03f7e618168fc98382d85e9865c3',1,'ruckig::Profile']]],
   ['check_5ffor_5fvelocity_5fwith_5ftiming_192',['check_for_velocity_with_timing',['../structruckig_1_1_profile.html#a3d2b304709ddf8ad1660a3e6bb6275f9',1,'ruckig::Profile']]],
