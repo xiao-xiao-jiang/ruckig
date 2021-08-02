@@ -6,5 +6,6 @@ var searchData=
   ['discrete_34',['Discrete',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553',1,'ruckig']]],
   ['down_35',['DOWN',['../structruckig_1_1_profile.html#a826998b0828b3c2fa3779d6ea5677739ac4e0e4e3118472beeb2ae75827450f1f',1,'ruckig::Profile']]],
   ['duration_5fdiscretization_36',['duration_discretization',['../classruckig_1_1_input_parameter.html#a3f2f5019563fa9c8cce8e1eab5e4b617',1,'ruckig::InputParameter']]],
-  ['durationdiscretization_37',['DurationDiscretization',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388',1,'ruckig']]]
+  ['durationdiscretization_37',['DurationDiscretization',['../namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388',1,'ruckig']]],
+  ['dynamicdofs_38',['DynamicDOFs',['../namespaceruckig.html#a5076beec58ca54690776e06236f89c40',1,'ruckig']]]
 ];
