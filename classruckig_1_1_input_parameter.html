@@ -84,8 +84,8 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:afbfc9b1976f7b4198bc812e7a124025e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#afbfc9b1976f7b4198bc812e7a124025e">degrees_of_freedom</a></td></tr>
 <tr class="separator:afbfc9b1976f7b4198bc812e7a124025e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d3879343d8709bd4779c173d57de80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">Interface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a97d3879343d8709bd4779c173d57de80">interface</a> {<a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881">Interface::Position</a>}</td></tr>
-<tr class="separator:a97d3879343d8709bd4779c173d57de80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae952392a6cb3980000d58347ab4b0122"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67">ControlInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#ae952392a6cb3980000d58347ab4b0122">control_interface</a> {<a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67a52f5e0bc3859bc5f5e25130b6c7e8881">ControlInterface::Position</a>}</td></tr>
+<tr class="separator:ae952392a6cb3980000d58347ab4b0122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e520b5bc6739698c1bb28c29640babf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">Synchronization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a8e520b5bc6739698c1bb28c29640babf">synchronization</a> {<a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aaa76d4ef5f3f6a672bbfab2865563e530">Synchronization::Time</a>}</td></tr>
 <tr class="separator:a8e520b5bc6739698c1bb28c29640babf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f2f5019563fa9c8cce8e1eab5e4b617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388">DurationDiscretization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a3f2f5019563fa9c8cce8e1eab5e4b617">duration_discretization</a> {<a class="el" href="namespaceruckig.html#a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7">DurationDiscretization::Continuous</a>}</td></tr>
@@ -119,8 +119,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a86f55a541a1507c52b7034a1bc8b6398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate waypoints.  <a href="classruckig_1_1_input_parameter.html#a86f55a541a1507c52b7034a1bc8b6398">More...</a><br /></td></tr>
 <tr class="separator:a86f55a541a1507c52b7034a1bc8b6398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18817679356d606dfc14d32a08bd6d3c"><td class="memItemLeft" align="right" valign="top">Vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a18817679356d606dfc14d32a08bd6d3c">enabled</a></td></tr>
+<tr class="memdesc:a18817679356d606dfc14d32a08bd6d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the DoF considered for calculation?  <a href="classruckig_1_1_input_parameter.html#a18817679356d606dfc14d32a08bd6d3c">More...</a><br /></td></tr>
 <tr class="separator:a18817679356d606dfc14d32a08bd6d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff807bf36d58afc6648150dbb78d4a6"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classruckig_1_1_input_parameter.html#a9ff807bf36d58afc6648150dbb78d4a6">minimum_duration</a></td></tr>
+<tr class="memdesc:a9ff807bf36d58afc6648150dbb78d4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional minimum trajectory duration.  <a href="classruckig_1_1_input_parameter.html#a9ff807bf36d58afc6648150dbb78d4a6">More...</a><br /></td></tr>
 <tr class="separator:a9ff807bf36d58afc6648150dbb78d4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -129,6 +131,22 @@ class ruckig::InputParameter&lt; DOFs &gt;</h3>
 
 <p>Input type of the OTG. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae952392a6cb3980000d58347ab4b0122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae952392a6cb3980000d58347ab4b0122">&#9670;&nbsp;</a></span>control_interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t DOFs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67">ControlInterface</a> <a class="el" href="classruckig_1_1_input_parameter.html">ruckig::InputParameter</a>&lt; DOFs &gt;::control_interface {<a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67a52f5e0bc3859bc5f5e25130b6c7e8881">ControlInterface::Position</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5819975854a9b2b93badc6e8813ce2d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5819975854a9b2b93badc6e8813ce2d3">&#9670;&nbsp;</a></span>current_acceleration</h2>
 
@@ -225,21 +243,7 @@ template&lt;size_t DOFs&gt; </div>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a97d3879343d8709bd4779c173d57de80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97d3879343d8709bd4779c173d57de80">&#9670;&nbsp;</a></span>interface</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t DOFs&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">Interface</a> <a class="el" href="classruckig_1_1_input_parameter.html">ruckig::InputParameter</a>&lt; DOFs &gt;::interface {<a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881">Interface::Position</a>}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Is the DoF considered for calculation? </p>
 
 </div>
 </div>
@@ -356,6 +360,8 @@ template&lt;size_t DOFs&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Optional minimum trajectory duration. </p>
 
 </div>
 </div>

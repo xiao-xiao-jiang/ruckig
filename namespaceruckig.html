@@ -138,10 +138,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a84167d6e92f2bdcb86ce99d7aaa2d1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the OTGs update function.  <a href="namespaceruckig.html#a84167d6e92f2bdcb86ce99d7aaa2d1a9">More...</a><br /></td></tr>
 <tr class="separator:a84167d6e92f2bdcb86ce99d7aaa2d1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c13b0e731f894979621b17c63cd75c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">Interface</a> { <a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881">Interface::Position</a>, 
-<a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12">Interface::Velocity</a>
+<tr class="memitem:aea6d4d50dc5519967d616818d33d0d67"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67">ControlInterface</a> { <a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67a52f5e0bc3859bc5f5e25130b6c7e8881">ControlInterface::Position</a>, 
+<a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67a88156d46910a2d733443c339a9231d12">ControlInterface::Velocity</a>
  }</td></tr>
-<tr class="separator:a47c13b0e731f894979621b17c63cd75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aea6d4d50dc5519967d616818d33d0d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff5205f431128e168e1f134d117c10a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10a">Synchronization</a> { <a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa5e35d7fff7b903516cba242ff68fc6d3">Synchronization::Phase</a>, 
 <a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aaa76d4ef5f3f6a672bbfab2865563e530">Synchronization::Time</a>, 
 <a class="el" href="namespaceruckig.html#a5ff5205f431128e168e1f134d117c10aa7ddc8e24add04a76f06998f3f12404e2">Synchronization::TimeIfNecessary</a>, 
@@ -201,6 +201,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aea6d4d50dc5519967d616818d33d0d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6d4d50dc5519967d616818d33d0d67">&#9670;&nbsp;</a></span>ControlInterface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceruckig.html#aea6d4d50dc5519967d616818d33d0d67">ruckig::ControlInterface</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea6d4d50dc5519967d616818d33d0d67a52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"><p>Position-control: Full control over the entire kinematic state (Default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea6d4d50dc5519967d616818d33d0d67a88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"><p>Velocity-control: Ignores the current position, target position, and velocity limits. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a56ce59a766f7d30bd6958501127cc388"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56ce59a766f7d30bd6958501127cc388">&#9670;&nbsp;</a></span>DurationDiscretization</h2>
 
@@ -224,34 +252,6 @@ Variables</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a56ce59a766f7d30bd6958501127cc388a535863a82f163709557e59e2eb8139a7"></a>Continuous&#160;</td><td class="fielddoc"><p>Every trajectory duration is allowed (Default) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a56ce59a766f7d30bd6958501127cc388a4984667940802dedc139aa7a430a6553"></a>Discrete&#160;</td><td class="fielddoc"><p>The trajectory duration must be a multiple of the control cycle. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a47c13b0e731f894979621b17c63cd75c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47c13b0e731f894979621b17c63cd75c">&#9670;&nbsp;</a></span>Interface</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespaceruckig.html#a47c13b0e731f894979621b17c63cd75c">ruckig::Interface</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47c13b0e731f894979621b17c63cd75ca52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"><p>Position-control: Full control over the entire kinematic state (Default) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a47c13b0e731f894979621b17c63cd75ca88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"><p>Velocity-control: Ignores the current position, target position, and velocity limits. </p>
 </td></tr>
 </table>
 
